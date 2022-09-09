@@ -1,7 +1,11 @@
-.page{
+.page {
   position: relative;
   overflow-x: hidden;
   min-height: 100vh;
   font-family: 'Ruberoid';
   letter-spacing: -0.02em;
+}
+
+.main {
+  background: #07031E;
 }

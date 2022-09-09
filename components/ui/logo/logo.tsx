@@ -8,7 +8,7 @@ const Logo: FunctionComponent = () => {
     <div className={`${styles.containerBorder} ${styles.polygon}`}>
       <div className={`${styles.container} ${styles.polygon}`}>
         <Link href="/">
-          <a>
+          <a className={styles.link}>
             <img src="/logo.png" width={155} height={42} alt="" />
           </a>
         </Link>

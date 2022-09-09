@@ -1,27 +1,26 @@
 .top-border {
   height: 81px;
   background-color: red;
-  clip-path: polygon(
-    0% 80px,
-    20% 80px,
-    25% 0%,
-    75% 0%,
-    80% 80px,
-    100% 80px,
-    100% 81px,
-    calc(80% - 1px) 81px,
-    calc(75% - 1px) 1px,
-    calc(25% + 1px) 1px,
-    calc(20% + 1px) 81px,
-    0% 81px
-  );
+  clip-path: polygon(0% 80px,
+      20% 80px,
+      25% 0%,
+      75% 0%,
+      80% 80px,
+      100% 80px,
+      100% 81px,
+      calc(80% - 1px) 81px,
+      calc(75% - 1px) 1px,
+      calc(25% + 1px) 1px,
+      calc(20% + 1px) 81px,
+      0% 81px);
   /* margin-top: 80px; */
   /* background: linear-gradient(
       180deg,
       rgba(17, 217, 235, 1) 0%,
       rgba(228, 43, 200, 1) 40%
     ); */
-  background: linear-gradient(180deg, #11d9eb 0%, #e42bc8 100%);
+  /* background: linear-gradient(180deg, #11d9eb 0%, #e42bc8 100%); */
+  background: transparent;
 }
 
 .container {
@@ -29,20 +28,18 @@
   margin-top: -80px;
   background: center no-repeat url("/images/block2-bg.jpg");
   background-size: cover;
-  clip-path: polygon(
-    0 80px,
-    20% 80px,
-    25% 0%,
-    75% 0%,
-    80% 80px,
-    100% 80px,
-    100% calc(100% - 80px),
-    80% calc(100% - 80px),
-    75% 100%,
-    25% 100%,
-    20% calc(100% - 80px),
-    0 calc(100% - 80px)
-  );
+  clip-path: polygon(0 80px,
+      20% 80px,
+      25% 0%,
+      75% 0%,
+      80% 80px,
+      100% 80px,
+      100% calc(100% - 80px),
+      80% calc(100% - 80px),
+      75% 100%,
+      25% 100%,
+      20% calc(100% - 80px),
+      0 calc(100% - 80px));
 }
 
 .content {
@@ -58,9 +55,9 @@
 }
 
 .info {
-	text-align: left;
-	display: flex;
-	align-items: center;
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .info__paragraph {
@@ -81,7 +78,7 @@
   background: center no-repeat url("/icons/video-border1.svg");
   background-size: contain;
   position: relative;
-  max-width: 700px;  
+  max-width: 700px;
 }
 
 .video-block video {
@@ -93,16 +90,14 @@
   margin: auto;
   z-index: -1;
   width: 100%;
-  clip-path: polygon(
-    0% 7.5%,
-    0% 92.5%,
-    4.5% 100%,
-    95.5% 100%,
-    100% 92.5%,
-    100% 7.5%,
-    95.5% 0,
-    4.5% 0
-  );
+  clip-path: polygon(0% 7.5%,
+      0% 92.5%,
+      4.5% 100%,
+      95.5% 100%,
+      100% 92.5%,
+      100% 7.5%,
+      95.5% 0,
+      4.5% 0);
   /* height: 100%; */
   /* aspect-ratio: 1.78/1; */
   /* height: 100%; */
@@ -112,7 +107,7 @@
   /* width: inherit; */
   z-index: -1;
   object-fit: cover;
-  
+
 }
 
 .columns2 {

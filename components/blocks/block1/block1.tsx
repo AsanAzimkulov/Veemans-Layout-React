@@ -7,8 +7,8 @@ const Block1: FunctionComponent = () => {
   return (
     <div className={styles["wrapper"]}>
       <div className={styles["video-bg"]}>
-        <video  autoPlay={true} muted loop>
-          <source src="/videos/2.mp4"  type="video/mp4" />
+        <video autoPlay={true} muted loop>
+          <source src="/videos/2.mp4" type="video/mp4" />
         </video>
       </div>
       {/* <div className={styles["bottom-border"]}>
@@ -18,7 +18,7 @@ const Block1: FunctionComponent = () => {
         <div className={styles.firstWrapper}>
           <div className={styles.first__top}>
             <div className={styles.first__title1}>
-              Veemans is a Web 3 blockchain
+              Veemans is a web3.0 APP
             </div>
             <div className={styles["first__apps-block"]}>
               <a href="">
@@ -39,7 +39,7 @@ const Block1: FunctionComponent = () => {
               </a>
             </div>
           </div>
-          <img src="/icons/title.png" className={ styles.topLogo } alt="" />
+          <img src="/icons/title.png" className={styles.topLogo} alt="" />
           <div className={styles["first__block2"]}>
             <div>
               <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
@@ -49,16 +49,16 @@ const Block1: FunctionComponent = () => {
               <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
             </div>
             <div className={styles["first__text"]}>
-              Make your daily travel profitable and exciting with DRIVE 2 EARN{" "}
+              Make your daily travel profitable
               <br />
-              APP VEEMANS, upgrade your NFT VEEMAN, create alliances, capture{" "}
-              <br />
-              territories, get VMS tokens, increase your income
+              with NFT game Veemans
             </div>
           </div>
           <div className={styles["first__block3"]}>
             <Button1 variant="1">Join The Community</Button1>
-            <Button1 variant="2">White Paper</Button1>
+            <div className={styles.whitePaperIcon}>
+              <Button1 variant="2"> Paper</Button1>
+            </div>
           </div>
           <div className={styles["first__solana"]}>
             <Image src="/icons/solana.svg" width="180" height="28" alt=""></Image>

@@ -15,10 +15,11 @@ const Header: FunctionComponent = () => {
     <header className={styles.container}>
       <Logo></Logo>
       <nav className={styles.topCenterMenu}>
-        <Link href="">How does it work</Link>
-        <Link href="">NFT Car</Link>
-        <Link href="">Partners and teams</Link>
-        <Link href="">Questions</Link>
+        <Link href="">About</Link>
+        <Link href="">NFT Veeman</Link>
+        <Link href="">Ecosystem</Link>
+        <Link href="">PVP competition</Link>
+        <Link href="">Road Map</Link>
       </nav>
       <BurgerMenu></BurgerMenu>
     </header>

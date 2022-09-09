@@ -1,0 +1,25 @@
+<svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_1070_1310)">
+<mask id="path-1-inside-1_1070_1310" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4067 0H2C0.895431 0 0 0.895428 0 2V22.1652C0 23.2698 0.895433 24.1652 2 24.1652H19.5909C20.6955 24.1652 21.5909 23.2698 21.5909 22.1652V7.96521L13.4067 0Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4067 0H2C0.895431 0 0 0.895428 0 2V22.1652C0 23.2698 0.895433 24.1652 2 24.1652H19.5909C20.6955 24.1652 21.5909 23.2698 21.5909 22.1652V7.96521L13.4067 0Z" fill="url(#paint0_linear_1070_1310)" fill-opacity="0.05"/>
+<path d="M13.4067 0L14.1042 -0.716629L13.813 -1H13.4067V0ZM21.5909 7.96521H22.5909V7.54303L22.2884 7.24858L21.5909 7.96521ZM2 1H13.4067V-1H2V1ZM1 2C1 1.44771 1.44771 1 2 1V-1C0.343147 -1 -1 0.343142 -1 2H1ZM1 22.1652V2H-1V22.1652H1ZM2 23.1652C1.44772 23.1652 1 22.7175 1 22.1652H-1C-1 23.8221 0.34315 25.1652 2 25.1652V23.1652ZM19.5909 23.1652H2V25.1652H19.5909V23.1652ZM20.5909 22.1652C20.5909 22.7175 20.1432 23.1652 19.5909 23.1652V25.1652C21.2478 25.1652 22.5909 23.8221 22.5909 22.1652H20.5909ZM20.5909 7.96521V22.1652H22.5909V7.96521H20.5909ZM22.2884 7.24858L14.1042 -0.716629L12.7093 0.716629L20.8935 8.68184L22.2884 7.24858Z" fill="#11D9EB" mask="url(#path-1-inside-1_1070_1310)"/>
+</g>
+<path d="M5.39746 8.52856H11.8747" stroke="#11D9EB" stroke-linecap="round"/>
+<path d="M5.39746 12.7305H16.1929" stroke="#11D9EB" stroke-linecap="round"/>
+<path d="M5.39746 16.9333H16.1929" stroke="#11D9EB" stroke-linecap="round"/>
+<defs>
+<filter id="filter0_b_1070_1310" x="-30" y="-30" width="81.5908" height="84.1653" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="15"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1070_1310"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1070_1310" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1070_1310" x1="0.503849" y1="20.0582" x2="21.3492" y2="19.7638" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E42BC8"/>
+<stop offset="0.52934" stop-color="#5670FD"/>
+<stop offset="1" stop-color="#1DCEF4"/>
+</linearGradient>
+</defs>
+</svg>

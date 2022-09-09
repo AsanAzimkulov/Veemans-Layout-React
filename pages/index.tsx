@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
-      <main>
+      <main className={styles.main}>
         <Block1></Block1>
         <Block2></Block2>
         <Block3>
@@ -61,32 +61,32 @@ const Home: NextPage = () => {
 
         {/*Project Partners*/}
         <BlockTeam title="Project Partners" members={[
-        	{'title': 'Eleanor Pena', 'email': 'curtis.weaver@example.com'},
-        	{'title': 'Robert Fox', 'email': 'georgia.young@example.com'},
-        	{'title': 'Marvin McKinney', 'email': 'nevaeh.simmons@example.com'},
-        	{'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com'},
-        	{'title': 'Darrell Steward', 'email': 'alma.lawson@example.com'}
+          { 'title': 'Eleanor Pena', 'email': 'curtis.weaver@example.com' },
+          { 'title': 'Robert Fox', 'email': 'georgia.young@example.com' },
+          { 'title': 'Marvin McKinney', 'email': 'nevaeh.simmons@example.com' },
+          { 'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com' },
+          { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
         ]}></BlockTeam>
 
         {/*Team*/}
-        <div style={{'marginTop': '70px'}}>
-            <BlockTeam title="Team" members={[
-            	{'title': 'Jane Cooper', 'email': 'debra.holt@example.com'},
-            	{'title': 'Leslie Alexander', 'email': 'bill.sanders@example.com'},
-            	{'title': 'Dianne Russell', 'email': 'sara.cruz@example.com'},
-            	{'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com'},
-            	{'title': 'Darrell Steward', 'email': 'alma.lawson@example.com'}
-            ]}></BlockTeam>
+        <div style={{ 'marginTop': '70px' }}>
+          <BlockTeam title="Team" members={[
+            { 'title': 'Jane Cooper', 'email': 'debra.holt@example.com' },
+            { 'title': 'Leslie Alexander', 'email': 'bill.sanders@example.com' },
+            { 'title': 'Dianne Russell', 'email': 'sara.cruz@example.com' },
+            { 'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com' },
+            { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
+          ]}></BlockTeam>
         </div>
 
-    	{/*FAQ*/}
-    	<BlockFAQ items={[
-    		{'title': 'How do I buy NFT Veemans ?', 'desc': 'abcd'},
-    		{'title': 'How much are our NFT’S warth ?', 'desc': 'abcd'},
-    		{'title': 'How do I buy SOL ?', 'desc': 'abcd'},
-    		{'title': 'What if I don’t drive ?', 'desc': 'abcd'},
-    		{'title': 'Why are there no funds on board ?', 'desc': 'abcd'}
-    	]}></BlockFAQ>
+        {/*FAQ*/}
+        <BlockFAQ items={[
+          { 'title': 'How do I buy NFT Veemans ?', 'desc': 'abcd' },
+          { 'title': 'How much are our NFT’S warth ?', 'desc': 'abcd' },
+          { 'title': 'How do I buy SOL ?', 'desc': 'abcd' },
+          { 'title': 'What if I don’t drive ?', 'desc': 'abcd' },
+          { 'title': 'Why are there no funds on board ?', 'desc': 'abcd' }
+        ]}></BlockFAQ>
 
         <Fotter></Fotter>
       </main>

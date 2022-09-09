@@ -8,11 +8,22 @@
   display: grid;
   align-items: center;
   align-content: center;
+  background: transparent;
+  margin-top: -25px;
 }
 
 .menuIcon {
   display: inherit;
   padding: 0px 100px;
+  display: inherit;
+  padding: 0px 100px;
+  padding-right: 19px;
+  justify-content: end;
+}
+
+.menuIcon img {
+  width: 34px;
+  color: #11D9EB;
 }
 
 .menuArea {
@@ -32,6 +43,7 @@
 .containerBorder:hover .menuIcon {
   display: none;
 }
+
 .containerBorder:hover .menuArea {
   display: block;
 }
@@ -46,9 +58,8 @@
   width: 25vw;
   height: 80px;
   position: relative;
-  background: linear-gradient(
-    140deg,
-    rgba(17, 217, 235, 1) 0%,
-    rgba(228, 43, 200, 1) 40%
-  );
+  background: linear-gradient(140deg,
+      rgba(17, 217, 235, 1) 0%,
+      rgba(228, 43, 200, 1) 40%);
+  background: transparent;
 }
