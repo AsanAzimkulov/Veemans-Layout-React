@@ -3,35 +3,47 @@
   /*background: url("/images/bg3-1.svg") center -1000px no-repeat;*/
   margin-top: -80px;
   background-size: 100%;
-  clip-path: polygon(
-    0% 0%,
-    20% 0%,
-    25% 80px,
-    75% 80px,
-    80% 0%,
-    100% 0%,
-    100% 100%,
-    0% 100%
-  );
+  clip-path: polygon(0% 0%,
+      20% 0%,
+      25% 80px,
+      75% 80px,
+      80% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%);
+}
+
+.container::before {
+  position: absolute;
+  top: 0px;
+  display: block;
+  left: 0px;
+  /* opacity: 0.05; */
+  height: 100%;
+  /* left: 25%; */
+  width: 100%;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(/_next/static/media/bg-m-d.2d2a7330.svg);
+  top: -900px;
+  background-size: cover;
 }
 
 .top-border {
   height: 81px;
   background-color: red;
-  clip-path: polygon(
-    0% 0px,
-    20% 0px,
-    25% 80px,
-    75% 80px,
-    80% 0px,
-    100% 0px,
-    100% 1px,
-    calc(80% + 1px) 1px,
-    calc(75% + 1px) 81px,
-    calc(25% - 1px) 81px,
-    calc(20% - 1px) 1px,
-    0% 1px
-  );
+  clip-path: polygon(0% 0px,
+      20% 0px,
+      25% 80px,
+      75% 80px,
+      80% 0px,
+      100% 0px,
+      100% 1px,
+      calc(80% + 1px) 1px,
+      calc(75% + 1px) 81px,
+      calc(25% - 1px) 81px,
+      calc(20% - 1px) 1px,
+      0% 1px);
   /* margin-top: 80px; */
   /* background: linear-gradient(
       180deg,

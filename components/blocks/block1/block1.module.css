@@ -5,9 +5,11 @@
   position: relative;
   overflow: hidden;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon();
   position: relative;
+  margin-bottom: 150px;
 }
+
 
 .wrapper::after {
   width: 100vw;
@@ -22,19 +24,34 @@
   transform: rotate(-180deg);
 }
 
-.wrapper::before {
-  content: '';
+
+.border {
   position: absolute;
-  width: calc(100vw - 50px);
-  height: calc(100% - 18px);
-  left: 15px;
-  right: 35px;
   top: 15px;
-  background: linear-gradient(180deg, #11D9EB 20.34%, #E42BC8 90.2%);
-  -webkit-mask-box-image: url(../../../public/icons/border-main.svg);
-  ;
+  left: 15px;
+  right: 15px;
+  width: calc(100vw - 50px);
+  height: 100vh;
+  background: transparent;
+  box-sizing: border-box;
+
+  clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36px) 55px, 100% 55px, 100% 1060px, 69.63% 1060px, calc(69.63% - 30px) 1010px, calc(33.66% - 30px) 1010px, calc(33.66% - 60px) 1060px, 0% 1060px, 0% 1px, 1px 1px, 1px 1059px, calc(33.66% - 61px) 1059px, calc(33.66% - 31px) 1009px, calc(69.63% - 29px) 1009px, calc(69.63% + 1px) 1059px, calc(100% - 1px) 1059px, calc(100% - 1px) 56px, calc(93.13% + 35px) 56px, calc(93.13% - 1px) 1px, 0% 1px);
+
+  z-index:10;
+
+  background: linear-gradient(89.09deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
+}
 
 
+
+
+
+
+.clip-path {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 1px solid black;
 }
 
 .topLogo {
@@ -189,13 +206,16 @@
   grid-template-columns: auto auto;
   justify-content: center;
   grid-column-gap: 70px;
+  z-index: 2;
+  position: relative;
 }
 
 .first__solana {
   position: absolute;
-  bottom: 13vh;
+  bottom: 100px;
   margin: auto;
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 2;
 }

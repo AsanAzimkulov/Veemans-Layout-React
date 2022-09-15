@@ -4,8 +4,12 @@ import Button1 from "../../ui/button1/button1";
 import styles from "./block1.module.css";
 
 const Block1: FunctionComponent = () => {
+
+
   return (
     <div className={styles["wrapper"]}>
+      <div className={styles["border"]}>
+      </div>
       <div className={styles["video-bg"]}>
         <video autoPlay={true} muted loop>
           <source src="/videos/2.mp4" type="video/mp4" />

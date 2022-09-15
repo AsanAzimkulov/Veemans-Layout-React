@@ -12,13 +12,36 @@
   margin-top: -25px;
 }
 
+.container:hover {
+  padding-left: 57px;
+  grid-template-rows: 1fr minmax(40px, auto);
+  align-items: start;
+  padding-top: 6px;
+  padding-bottom: 40px;
+  padding-right: 37px;
+}
+
+.close {
+  margin-left: auto;
+  width: 38px;
+  height: 38px;
+  display: block;
+  margin-bottom: 33px;
+  cursor: pointer;
+}
+
+.socials {
+  display: none;
+}
+
 .menuIcon {
   display: inherit;
   padding: 0px 100px;
   display: inherit;
   padding: 0px 100px;
-  padding-right: 19px;
+  padding-right: 34px;
   justify-content: end;
+  cursor: pointer;
 }
 
 .menuIcon img {
@@ -28,16 +51,27 @@
 
 .menuArea {
   display: none;
-  padding-left: 100px;
 }
 
 .menuLink {
   display: block;
   padding: 10px 0px;
+  font-family: 'Ruberoid';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
+.menuLink:hover {
+  color: #11D9EB;
 }
 
 .containerBorder:hover {
-  height: 265px;
+  width: 22.55vw;
+  height: 100vh;
+  background: #07031E;
 }
 
 .containerBorder:hover .menuIcon {
@@ -46,17 +80,31 @@
 
 .containerBorder:hover .menuArea {
   display: block;
+  margin-top: 33px;
+}
+
+.containerBorder:hover .socials {
+  display: block;
+}
+
+.socialsList {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 17px;
+  padding: 0px;
+  list-style-type: none;
+  width: max-content;
 }
 
 .polygon {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%); */
 }
 
 .containerBorder {
-  position: relative;
-  transition: height 0.3s;
+  position: sticky;
+  transition: width 0.3s;
   width: 25vw;
-  height: 80px;
+  height: 85px;
   position: relative;
   background: linear-gradient(140deg,
       rgba(17, 217, 235, 1) 0%,
