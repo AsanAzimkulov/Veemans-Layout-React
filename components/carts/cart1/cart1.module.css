@@ -5,14 +5,29 @@
   margin-top: 30px;
   display: grid;
   position: relative;
-} 
+}
+
+
+@supports not (aspect-ratio: 1.12/1) {
+  .container::before {
+    float: left;
+    padding-top: 112%;
+    content: "";
+  }
+
+  .container::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
 
 .icon {
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
-  margin:auto;
+  margin: auto;
   height: 110px;
   width: 100px;
   height: calc(100%/3);
@@ -25,7 +40,7 @@
   background-size: cover;
 }
 
-.icon > div {
+.icon>div {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -33,7 +48,7 @@
   align-items: center;
 }
 
-.icon > div > div {
+.icon>div>div {
   width: 100%;
 }
 
