@@ -36,6 +36,26 @@
   top: -70px;
   background-size: cover;
 } */
+.whitePaperIcon {
+  position: relative;
+}
+
+.whitePaperIcon div div div {
+  padding-left: 30px;
+}
+
+.whitePaperIcon::before {
+  pointer-events: none;
+
+  content: '';
+  position: absolute;
+  left: 65px;
+  width: 22px;
+  height: 24px;
+  z-index: 5;
+  top: 24px;
+  background-image: url(../../../public/images/Npaper.svg);
+}
 
 
 .content {
@@ -108,6 +128,12 @@
   margin-top: 130px;
   display: grid;
   grid-template-columns: auto auto;
-  grid-column-gap: 70px;
   justify-content: center;
+  grid-column-gap: 70px;
+  z-index: 2;
+  position: relative;
+}
+
+.columns3 svg {
+  display: block;
 }

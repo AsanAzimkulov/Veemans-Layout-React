@@ -23,7 +23,6 @@
 .wrap1 {
   height: inherit;
   width: inherit;
-  background: url("/icons/button1.svg") center no-repeat;
 }
 
 .wrap2 {
@@ -72,4 +71,20 @@
 .bg2 {
   /* backdrop-filter: blur(8px); */
 
+}
+
+.bgsvg {
+  position: absolute;
+  transform: scaleY(1.02) translateY(1px) scaleX(0.88) translateX(-1px);
+  transform-origin: left;
+}
+
+.bgsvg .p {
+  transition: 0.6s linear;
+  stroke-dasharray: 247 52 263 55;
+}
+
+.container:hover .bgsvg .p {
+  stroke-dasharray: 270 55 273 63;
+  stroke-dashoffset: 365;
 }

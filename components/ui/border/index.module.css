@@ -1,10 +1,10 @@
 .border {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 15px;
   right: 15px;
   width: calc(100vw - 50px);
-  height: calc(100vh - 30px);
+  height: calc(100vh - 47px);
   background: transparent;
   box-sizing: border-box;
 

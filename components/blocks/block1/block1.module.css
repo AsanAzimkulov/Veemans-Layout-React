@@ -54,6 +54,8 @@
 }
 
 .whitePaperIcon::before {
+  pointer-events: none;
+
   content: '';
   position: absolute;
   left: 65px;

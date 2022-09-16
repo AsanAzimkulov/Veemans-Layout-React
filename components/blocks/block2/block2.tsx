@@ -69,7 +69,9 @@ const Block2: FunctionComponent = () => {
         </div>
         <div className={styles["columns3"]}>
           <Button1 variant="1">Join The Community</Button1>
-          <Button1 variant="2">White Paper</Button1>
+          <div className={styles.whitePaperIcon}>
+                <Button1 variant="2"> Paper</Button1>
+              </div>
         </div>
         
       </div>
