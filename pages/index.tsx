@@ -31,30 +31,34 @@ const Home: NextPage = () => {
       <Header></Header>
       <main className={styles.main}>
         <Block1></Block1>
-        <Block2></Block2>
-        <Block3>
-          <Block31></Block31>
-        </Block3>
 
-        <Block4></Block4>
+        <div className={styles.mainBg}>
+          <Block2></Block2>
+          <Block3>
+            <Block31></Block31>
+          </Block3>
 
-        {/*Classes of NFT*/}
-        <Block5></Block5>
+          <Block4></Block4>
 
-        {/*The Motion Roller is looped*/}
-        <Block6></Block6>
+          {/*Classes of NFT*/}
+          <Block5></Block5>
 
-        {/*Elements of the Veemans Ecosystem*/}
-        <Block7></Block7>
+          {/*The Motion Roller is looped*/}
+          <Block6></Block6>
 
-        {/*Sport PvP competitions with real users*/}
-        <Block8></Block8>
+          {/*Elements of the Veemans Ecosystem*/}
+          <Block7></Block7>
 
-        {/*VMN Token Distribution*/}
-        <Block9></Block9>
+          {/*Sport PvP competitions with real users*/}
+          <Block8></Block8>
 
-        {/*Roadmap*/}
-        <Block10></Block10>
+          {/*VMN Token Distribution*/}
+          <Block9></Block9>
+
+          {/*Roadmap*/}
+          <Block10></Block10>
+
+        </div>
 
         {/*Partners*/}
         <Block11></Block11>

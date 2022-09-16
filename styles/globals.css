@@ -43,7 +43,7 @@ a {
 
 
 .contentWrapper {
-  max-width: 1625px;
-  margin: 0px auto;
+  max-width: 1625px !important;
+  margin: 0px auto !important;
   /* padding: 0px 100px; */
 }

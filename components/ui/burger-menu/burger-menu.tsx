@@ -1,24 +1,26 @@
 import Image from "next/image";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
+import OutsideAlerter from "../../customs/OutsideAlerter";
 import styles from "./burger-menu.module.css";
 
 
 const BurgerMenu: FunctionComponent = () => {
-
+  const [isOpened, setIsOpened] = useState<boolean>(false);
   const onCloseMenu = () => {
-    const click = new Event('click', { bubbles: true });
-    if (typeof window !== undefined) {
-      window.dispatchEvent(click);
-    }
+    setIsOpened(false);
   }
+  const onOpenMenu = () => {
+    setIsOpened(true);
+  }
+
   return (
-    <div className={`${styles.containerBorder} ${styles.polygon}`}>
-      <div className={`${styles.container} ${styles.polygon}`}>
-        <div className={styles.menuIcon} onClick={onCloseMenu}>
+    <OutsideAlerter cb={onCloseMenu} className={`${styles.containerBorder} ${styles.polygon} ${isOpened ? styles.containerBorder_opened : ''}`}>
+      <div className={`${styles.container} ${isOpened ? styles.container_opened : ''} ${styles.polygon}`}>
+        <div className={styles.menuIcon} onClick={onOpenMenu}>
           <img src="/icons/burger.svg" width={28} alt="" />
         </div>
         <div className={styles.menuArea}>
-          <img src="/icons/crosshair-blue.svg" alt="Close menu" className={styles.close} />
+          <img src="/icons/crosshair-blue.svg" alt="Close menu" className={styles.close} onClick={onCloseMenu} />
           <a href="#" className={styles.menuLink}>About</a>
           <a href="#" className={styles.menuLink}>NFT Veeman</a>
           <a href="#" className={styles.menuLink}>EcoSystem</a>
@@ -50,7 +52,7 @@ const BurgerMenu: FunctionComponent = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </OutsideAlerter>
   );
 };
 

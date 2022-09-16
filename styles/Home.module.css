@@ -9,3 +9,20 @@
 .main {
   background: #07031E;
 }
+
+.mainBg {
+  background-image: url(../public/images/mainBG.png);
+  background-position: center 0px;
+  background-size: cover;
+  position: relative;
+}
+
+.mainBg::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 522px;
+  background: linear-gradient(180deg, #080522 60.5%, rgba(12, 7, 42, 0) 70%);
+  bottom: -42px;
+  transform: rotateX(180deg);
+}

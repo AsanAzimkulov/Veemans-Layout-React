@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.container::before {
+/* .container::before {
   position: absolute;
   top: 0px;
   display: block;
@@ -35,7 +35,7 @@
   background-image: url(../../../public/images/bg-m.jpg);
   top: -70px;
   background-size: cover;
-}
+} */
 
 
 .content {
@@ -78,24 +78,20 @@
 }
 
 .video-block video {
-  position: absolute;
-  top: 0px;
+  /* position: absolute; */
+  top: 3px;
   bottom: 0px;
   left: 0px;
+  height: 390px;
+  margin-top: 0.8%;
   right: 0px;
-  margin: auto;
+  /* margin: auto; */
   z-index: -1;
-  width: 100%;
-  clip-path: polygon(0% 7.5%,
-      0% 92.5%,
-      4.5% 100%,
-      95.5% 100%,
-      100% 92.5%,
-      100% 7.5%,
-      95.5% 0,
-      4.5% 0);
-
+  width: 698px;
+  -webkit-clip-path: polygon(0% 7.5%, 0% 92.5%, 4.5% 100%, 95.5% 100%, 100% 92.5%, 100% 7.5%, 95.5% 0, 4.5% 0);
+  clip-path: polygon(0% 7.5%, 0% 92.5%, 4.5% 100%, 95.5% 100%, 100% 92.5%, 100% 7.5%, 95.5% 0, 4.5% 0);
   z-index: -1;
+  -o-object-fit: cover;
   object-fit: cover;
 
 }

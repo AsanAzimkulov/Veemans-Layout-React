@@ -26,7 +26,7 @@
 
 
 .border {
-  position: absolute;
+  position: fixed;
   top: 15px;
   left: 15px;
   right: 15px;
@@ -37,7 +37,7 @@
 
   clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36px) 55px, 100% 55px, 100% 1060px, 69.63% 1060px, calc(69.63% - 30px) 1010px, calc(33.66% - 30px) 1010px, calc(33.66% - 60px) 1060px, 0% 1060px, 0% 1px, 1px 1px, 1px 1059px, calc(33.66% - 61px) 1059px, calc(33.66% - 31px) 1009px, calc(69.63% - 29px) 1009px, calc(69.63% + 1px) 1059px, calc(100% - 1px) 1059px, calc(100% - 1px) 56px, calc(93.13% + 35px) 56px, calc(93.13% - 1px) 1px, 0% 1px);
 
-  z-index:10;
+  z-index: 10;
 
   background: linear-gradient(89.09deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
 }

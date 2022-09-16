@@ -1,6 +1,7 @@
 .container {
-  padding: 50px 7.5% 0px;
+  /* padding: 50px 7.5% 0px; */
   /* margin-top: 240px; */
+  max-width: 1480px;
 }
 
 .columns1 {

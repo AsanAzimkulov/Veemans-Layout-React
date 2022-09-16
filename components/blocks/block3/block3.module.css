@@ -13,21 +13,20 @@
       0% 100%);
 }
 
-.container::before {
+/* .container::before {
   position: absolute;
   top: 0px;
   display: block;
   left: 0px;
-  /* opacity: 0.05; */
   height: 100%;
-  /* left: 25%; */
   width: 100%;
   background-repeat: no-repeat;
   content: '';
   background-image: url(/_next/static/media/bg-m-d.2d2a7330.svg);
   top: -900px;
   background-size: cover;
-}
+  max-width: 1480px !important;
+} */
 
 .top-border {
   height: 81px;
@@ -50,7 +49,7 @@
       rgba(17, 217, 235, 1) 0%,
       rgba(228, 43, 200, 1) 40%
     ); */
-  background: linear-gradient(-90deg, #11d9eb 0%, #e42bc8 100%);
+  background: transparent;
 }
 
 /* .bg1 {

@@ -12,7 +12,7 @@
   margin-top: -25px;
 }
 
-.container:hover {
+.container_opened {
   padding-left: 57px;
   grid-template-rows: 1fr minmax(40px, auto);
   align-items: start;
@@ -68,22 +68,22 @@
   color: #11D9EB;
 }
 
-.containerBorder:hover {
-  width: 22.55vw;
-  height: 100vh;
-  background: #07031E;
+.containerBorder_opened {
+  width: 22.55vw !important;
+  height: 100vh !important;
+  background: #07031E !important;
 }
 
-.containerBorder:hover .menuIcon {
+.containerBorder_opened .menuIcon {
   display: none;
 }
 
-.containerBorder:hover .menuArea {
+.containerBorder_opened .menuArea {
   display: block;
   margin-top: 33px;
 }
 
-.containerBorder:hover .socials {
+.containerBorder_opened .socials {
   display: block;
 }
 
@@ -105,9 +105,12 @@
   transition: width 0.3s;
   width: 25vw;
   height: 85px;
-  position: relative;
   background: linear-gradient(140deg,
       rgba(17, 217, 235, 1) 0%,
       rgba(228, 43, 200, 1) 40%);
   background: transparent;
+  position: absolute;
+  /* position: relative; */
+  top: 0px;
+  right: 0px;
 }
