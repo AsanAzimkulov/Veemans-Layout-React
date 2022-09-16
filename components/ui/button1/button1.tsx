@@ -17,15 +17,9 @@ const Button1: FunctionComponent<Props> = ({ children, variant }) => {
   return (
     <div className={styles.container} onMouseEnter={onHover}>
       <svg xmlns="http://www.w3.org/2000/svg" width={265} height={70} viewBox="0 0 265 70" fill="none" className={styles.bgsvg}>
-        <g filter="url(#filter0_b_1070_549)">
-          <path d="M1 51.1548L20 69.5203H1V51.1548Z" fill="url(#paint0_linear_1070_549)" fillOpacity="0.3" />
-        </g>
-        <g filter="url(#filter1_b_1070_549)">
-          <path d="M265 19.2566L246 0.891039H265V19.2566Z" fill="url(#paint1_linear_1070_549)" fillOpacity="0.3" />
-        </g>
-        <g filter="url(#filter2_b_1070_549)">
-          <path d="M7.5 30.1203L35.5624 6.22412H258.5V42.2243L232.708 64.1872H7.5V30.1203Z" stroke="#11D9EB" />
-        </g>
+        <path d="M1 51.1548L20 69.5203H1V51.1548Z" fill="url(#paint0_linear_1070_549)" fillOpacity="0.3" />
+        <path d="M265 19.2566L246 0.891039H265V19.2566Z" fill="url(#paint1_linear_1070_549)" fillOpacity="0.3" />
+        <path d="M7.5 30.1203L35.5624 6.22412H258.5V42.2243L232.708 64.1872H7.5V30.1203Z" stroke="#11D9EB" />
         <path d="M0.5 28.4937L30.0416 0.5H264.5V42.7686L237.346 68.5H0.5V28.4937Z" stroke="url(#paint2_linear_1070_549)" className={styles.p} />
         <defs>
           <filter id="filter0_b_1070_549" x={-29} y="21.1548" width={79} height="78.3655" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">

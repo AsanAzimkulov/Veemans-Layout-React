@@ -24,7 +24,7 @@
   font-weight: bold;
   margin-top: 15px;
   position: fixed;
-  margin-left: 30vw;
+  margin-left: calc(50vw - 371px);
 }
 
 .topCenterMenu a:hover {
