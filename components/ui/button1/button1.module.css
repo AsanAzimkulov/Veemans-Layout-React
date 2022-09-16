@@ -23,9 +23,7 @@
 .wrap1 {
   height: inherit;
   width: inherit;
-  background-image: url("/icons/button1.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("/icons/button1.svg") center no-repeat;
 }
 
 .wrap2 {
