@@ -8,51 +8,47 @@
 
 .bg {
   transition: all 0.5s;
-  clip-path: polygon(
-    30px 6px,
-    228px 6px,
-    228px 44px,
-    207px 67px,
-    6px 67px,
-    6px 32px
-  );
+  clip-path: polygon(30px 6px,
+      228px 6px,
+      228px 44px,
+      207px 67px,
+      6px 67px,
+      6px 32px);
 }
 
 .container:hover .bg {
-    background: linear-gradient(80.8deg, rgba(228, 43, 200, 0.5) 62.78%, rgba(86, 112, 253, 0.5) 116.8%, rgba(29, 206, 244, 0.5) 164.83%);
+  background: linear-gradient(80.8deg, rgba(228, 43, 200, 0.5) 62.78%, rgba(86, 112, 253, 0.5) 116.8%, rgba(29, 206, 244, 0.5) 164.83%);
 }
 
 .wrap1 {
   height: inherit;
   width: inherit;
-  background: center no-repeat url("/icons/button1.svg");
+  background-image: url("/icons/button1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrap2 {
   height: inherit;
   width: inherit;
-  clip-path: polygon(
-    30px 6px,
-    228px 6px,
-    228px 44px,
-    207px 67px,
-    6px 67px,
-    6px 32px
-  );
+  clip-path: polygon(30px 6px,
+      228px 6px,
+      228px 44px,
+      207px 67px,
+      6px 67px,
+      6px 32px);
   background-color: rgba(17, 217, 235, 1);
 }
 
 .wrap3 {
   height: inherit;
   width: inherit;
-  clip-path: polygon(
-    31.5px 7px,
-    227px 7px,
-    227px 43.5px,
-    204.5px 66px,
-    7.2px 66px,
-    7.2px 31.5px
-  );
+  clip-path: polygon(31.5px 7px,
+      227px 7px,
+      227px 43.5px,
+      204.5px 66px,
+      7.2px 66px,
+      7.2px 31.5px);
 
   display: grid;
   align-items: center;
@@ -69,15 +65,13 @@
   /* background: linear-gradient(rgba(228, 43, 200, 0.5)
   rgba(86, 112, 253, 0.5)
   rgba(29, 206, 244, 0.5)); */
-  background: linear-gradient(
-    89.09deg,
-    rgba(228, 43, 200, 0.6) 2.57%,
-    rgba(86, 112, 253, 0.6) 52.89%,
-    rgba(29, 206, 244, 0.6) 97.63%
-  );
+  background: linear-gradient(89.09deg,
+      rgba(228, 43, 200, 0.6) 2.57%,
+      rgba(86, 112, 253, 0.6) 52.89%,
+      rgba(29, 206, 244, 0.6) 97.63%);
 }
 
 .bg2 {
   /* backdrop-filter: blur(8px); */
-  
+
 }
