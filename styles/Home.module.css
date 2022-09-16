@@ -21,8 +21,9 @@
   position: absolute;
   content: '';
   width: 100%;
-  height: 522px;
-  background: linear-gradient(180deg, #080522 60.5%, rgba(12, 7, 42, 0) 70%);
-  bottom: -42px;
+  height: 150px;
+  background: linear-gradient(180deg, #080522 7.5%, rgba(12, 7, 42, 0) 100%);
+  ;
+  bottom: 0px;
   transform: rotateX(180deg);
 }

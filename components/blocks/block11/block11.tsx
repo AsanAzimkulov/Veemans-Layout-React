@@ -10,7 +10,7 @@ interface Props {
 const Block11: FunctionComponent<Props> = ({ }) => {
   return (
     <div className={styles["container"]}>
-    	<img className={styles["imgLine"]} src="/images/block11.svg" />
+
     </div>
   );
 };

@@ -1,0 +1,16 @@
+.border {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  width: calc(100vw - 50px);
+  height: calc(100vh - 30px);
+  background: transparent;
+  box-sizing: border-box;
+
+  clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36px) 55px, 100% 55px, 100% 100%, 69.63% 100%, calc(69.63% - 30px) calc(100% - 50px), calc(33.66% - 30px) calc(100% - 50px), calc(33.66% - 60px) 100%, 0% 100%, 0% 1px, 1px 1px, 1px calc(100% - 1px), calc(33.66% - 61px) calc(100% - 1px), calc(33.66% - 31px) calc(100% - 51px), calc(69.63% - 29px) calc(100% - 51px), calc(69.63% + 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 56px, calc(93.13% + 35px) 56px, calc(93.13% - 1px) 1px, 0% 1px);
+
+  z-index: 10;
+
+  background: linear-gradient(89.09deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
+}

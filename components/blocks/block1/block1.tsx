@@ -7,9 +7,6 @@ const Block1: FunctionComponent = () => {
 
 
   return (
-    <>
-      <div className={styles["border"]}>
-      </div>
       <div className={styles["wrapper"]}>
         <div className={styles["video-bg"]}>
           <video autoPlay={true} muted loop>
@@ -71,7 +68,6 @@ const Block1: FunctionComponent = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

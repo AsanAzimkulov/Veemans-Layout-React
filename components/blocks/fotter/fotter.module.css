@@ -1,60 +1,62 @@
 .container {
-    text-align: center;
-    min-height: 300px;
-    margin: 150px 0px 0px;
-	background-color: #11072e;
+  text-align: center;
+  min-height: 300px;
+  margin: 150px 0px 0px;
+  background-color: #11072e;
+  padding-bottom: 30px;
 }
 
 .wrapper {
-	max-width: 1300px;
-	margin: 0px auto;
+  max-width: 1300px;
+  margin: 0px auto;
 }
 
 .line {
-	width: 100%;
+  width: 100%;
 }
 
 .topArea {
-	padding: 40px;
-	text-align: left;
+  padding: 40px;
+  text-align: left;
 }
+
 .topArea .topAreaButton {
-	float: right;
-	display: inline-block;
-	margin-left: 20px;
+  float: right;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .logo {
-	height: 50px;
+  height: 50px;
 }
 
 .bottomArea {
-	padding: 40px;
-	text-align: left;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+  padding: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bottomCell {
-	color: #CDCDD2;
-	font-weight: bold;
+  color: #CDCDD2;
+  font-weight: bold;
 }
 
 .bottomCellFirst {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .bottomCellMiddle {
-	text-align: center;
+  text-align: center;
 }
 
 .bottomCellLast {
-	text-align: right;
-	flex-grow: 1;
+  text-align: right;
+  flex-grow: 1;
 }
 
 .bottomCellLast a {
-	padding: 0px 10px;
+  padding: 0px 10px;
 }

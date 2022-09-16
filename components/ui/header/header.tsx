@@ -6,11 +6,16 @@ import BurgerMenu from "../burger-menu/burger-menu";
 
 import styles from "./header.module.css";
 
-// interface Props {
-//   children: JSX.Element | JSX.Element[];
-// }
+type PropsType = {
+  cb?: (flag: boolean) => void
+}
 
-const Header: FunctionComponent = () => {
+const Header: FunctionComponent<PropsType> = ({ cb }) => {
+  const onOpenMenu = (flag: boolean) => {
+    if (cb) {
+      cb(flag)
+    }
+  }
   return (
     <header className={styles.container}>
       <Logo></Logo>
@@ -21,8 +26,8 @@ const Header: FunctionComponent = () => {
         <Link href="">PVP competition</Link>
         <Link href="">Road Map</Link>
       </nav>
-      <BurgerMenu></BurgerMenu>
-    </header>
+      <BurgerMenu cb={onOpenMenu}></BurgerMenu>
+    </header >
   );
 };
 

@@ -18,9 +18,16 @@ import BlockFAQ from "../components/blocks/blockFAQ/blockFAQ";
 import Fotter from "../components/blocks/fotter/fotter";
 import Button1 from "../components/ui/button1/button1";
 import Header from "../components/ui/header/header";
+import Border from '../components/ui/border/border';
 import styles from "../styles/Home.module.css";
+import { useState } from "react";
 
 const Home: NextPage = () => {
+  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
+
+  const onToggleMenu = (flag: boolean) => {
+    setIsMenuOpened(flag);
+  }
   return (
     <div className={styles.page}>
       <Head>
@@ -28,8 +35,9 @@ const Home: NextPage = () => {
         <meta name="description" content="Veemans" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header></Header>
+      <Header cb={onToggleMenu}></Header>
       <main className={styles.main}>
+        <Border visibility={!isMenuOpened} />
         <Block1></Block1>
 
         <div className={styles.mainBg}>

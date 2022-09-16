@@ -3,14 +3,24 @@ import { FunctionComponent, useState } from "react";
 import OutsideAlerter from "../../customs/OutsideAlerter";
 import styles from "./burger-menu.module.css";
 
+type PropsType = {
+  cb?: (flag: boolean) => void
+}
 
-const BurgerMenu: FunctionComponent = () => {
+
+const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
   const [isOpened, setIsOpened] = useState<boolean>(false);
   const onCloseMenu = () => {
     setIsOpened(false);
+    if (cb) {
+      cb(false);
+    }
   }
   const onOpenMenu = () => {
     setIsOpened(true);
+    if (cb) {
+      cb(true);
+    }
   }
 
   return (
