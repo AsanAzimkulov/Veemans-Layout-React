@@ -37,6 +37,24 @@ const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
           <a href="#" className={styles.menuLink}>PVP competition</a>
           <a href="#" className={styles.menuLink}>Road Map</a>
         </div>
+        <div className={styles["first__apps-block"]}>
+          <a href="">
+            <Image
+              src="/icons/to-app-store.svg"
+              width="157"
+              height="46"
+              alt=""
+            ></Image>
+          </a>
+          <a href="">
+            <Image
+              src="/icons/to-google-play.svg"
+              width="157"
+              height="46"
+              alt=""
+            ></Image>
+          </a>
+        </div>
         <div className={styles.socials}>
           <ul className={styles.socialsList}>
             <li className={styles.socialsItem}>

@@ -10,9 +10,8 @@ const Block1: FunctionComponent = () => {
   const [isSmallHeight, setIsSmallHeight] = useState<boolean>(false);
 
   useEffect(() => {
-    if (windowSize.width !== undefined && windowSize.height !== undefined) {
-      setIsSmallHeight(windowSize.width >= 768 && windowSize.height <= 700);
-      console.log(isSmallHeight)
+    if (windowSize.height !== undefined) {
+      setIsSmallHeight(windowSize.height <= 700);
     }
   }, [windowSize])
 

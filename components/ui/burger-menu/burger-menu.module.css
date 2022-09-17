@@ -28,6 +28,7 @@
   display: block;
   margin-bottom: 33px;
   cursor: pointer;
+  z-index: 30;
 }
 
 .socials {
@@ -39,9 +40,11 @@
   padding: 0px 100px;
   display: inherit;
   padding: 0px 100px;
-  padding-right: 34px;
+  padding-right: 60px;
+  padding-top: 15px;
   justify-content: end;
   cursor: pointer;
+  z-index: 20;
 }
 
 .menuIcon img {
@@ -109,6 +112,7 @@
   position: sticky;
   transition: width 0.3s ease;
   width: 300px;
+  min-width: 300px;
   height: 85px;
   background: linear-gradient(140deg,
       rgba(17, 217, 235, 1) 0%,
@@ -118,4 +122,56 @@
   /* position: relative; */
   top: 0px;
   right: 0px;
+}
+
+.first__apps-block {
+  display: none !important;
+}
+
+@media(max-width: 768px) {
+  .containerBorder_opened {
+    width: 100vw !important;
+    position: fixed !important;
+  }
+
+  .container_opened {
+    grid-template-rows: max-content minmax(40px, auto);
+    margin-top: -120px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container_opened .close {
+    margin-right: 22px;
+  }
+
+
+  .container_opened .socials {
+    display: none;
+  }
+
+  .menuLink {
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .containerBorder_opened .first__apps-block {
+    display: grid !important;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 46px;
+
+  }
+
+  .menuIcon {
+    padding-right: 30px;
+    position: fixed;
+    right: 0px;
+  }
 }

@@ -15,8 +15,24 @@
   background: linear-gradient(89.09deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
 }
 
+
+
 @media(max-width: 1300px) {
   .border {
-    clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36px) 55px, 100% 55px, 100% 100%, 69.63% 100%, calc(69.63% - 30px) calc(100% - 50px), calc(33.66% - 30px) calc(100% - 50px), calc(33.66% - 60px) 100%, 0% 100%, 0% 1px, 1px 1px, 1px calc(100% - 1px), calc(33.66% - 61px) calc(100% - 1px), calc(33.66% - 31px) calc(100% - 51px), calc(69.63% - 29px) calc(100% - 51px), calc(69.63% + 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 56px, calc(93.13% + 35px) 56px, calc(93.13% - 1px) 1px, 0% 1px);
+    clip-path: polygon(0% 0px, 85% 0px, calc(85% + 36px) 55px, 100% 55px, 100% 100%, 69.63% 100%, calc(69.63% - 30px) calc(100% - 50px), calc(33.66% - 30px) calc(100% - 50px), calc(33.66% - 60px) 100%, 0% 100%, 0% 1px, 1px 1px, 1px calc(100% - 1px), calc(33.66% - 61px) calc(100% - 1px), calc(33.66% - 31px) calc(100% - 51px), calc(69.63% - 29px) calc(100% - 51px), calc(69.63% + 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 56px, calc(85% + 35px) 56px, calc(85% - 1px) 1px, 0% 1px);
+  }
+}
+
+@media(max-width: 768px) {
+  .border {
+    position: fixed;
+    clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 70px, 100% 70px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 1px,
+
+        1px 1px, 1px calc(100% - 1px), calc(21.77% - 1px) calc(100% - 1px), calc(26.77% - 1px) calc(100% - 39px), calc(73.23% + 1px) calc(100% - 39px), calc(78.23% + 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 71px, calc(100% - 63px) 71px, calc(100% - 104px) 1px, 0% 1px);
+    width: calc(100vw - 18px);
+    height: calc(100vh - 18px);
+    top: 9px;
+    left: 9px;
+    right: 9px;
   }
 }

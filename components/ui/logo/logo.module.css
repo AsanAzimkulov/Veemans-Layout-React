@@ -36,3 +36,21 @@
   position: fixed;
   z-index: 3;
 }
+
+
+@media(max-width: 1150px) {
+  .containerBorder {
+    width: 100vw;
+  }
+}
+
+@media(max-width: 768px) {
+  .containerBorder {
+    z-index: 10;
+  }
+
+  .link {
+    top: 16px;
+    left: 21px;
+  }
+}
