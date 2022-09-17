@@ -46,16 +46,16 @@ a {
   max-width: 1625px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media(max-width: 1600px) {
   .contentWrapper {
-    max-width: 1450px !important;
+    max-width: 1500px !important;
   }
 
   div.contentWrapper {
     max-width: 1450px !important;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }

@@ -97,8 +97,7 @@
 }
 
 .socialsItem svg:hover circle {
-  fill: url(#paint0_linear_ff)
-  ;
+  fill: url(#paint0_linear_ff);
   fill-opacity: 1;
 }
 
@@ -109,7 +108,7 @@
 .containerBorder {
   position: sticky;
   transition: width 0.3s ease;
-  width: 196px;
+  width: 300px;
   height: 85px;
   background: linear-gradient(140deg,
       rgba(17, 217, 235, 1) 0%,

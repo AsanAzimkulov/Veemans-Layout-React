@@ -29,7 +29,6 @@
 
 @media(max-width: 768px) {
   .items {
-    max-width: 290px;
     grid-column-gap: 7.63px;
     grid-row-gap: 15.74px;
     margin: 0 auto;

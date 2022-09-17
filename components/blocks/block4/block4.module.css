@@ -1,57 +1,101 @@
 .container {
-    text-align: center;
-    min-height: 300px;
-    margin: 0px 120px;
+  text-align: center;
+  min-height: 300px;
+  margin: 0px 120px;
 }
 
 .countBox {
-	width: 100px;
-	height: 120px;
-	background: url(/images/group4Box.png) no-repeat;
-    background-size: contain;
-    text-align: center;
-	display:flex;
-	align-items:center;
+  width: 100px;
+  height: 120px;
+  background: url(/images/group4Box.png) no-repeat;
+  background-size: contain;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .countBox span {
-	width: 100%;
-	vertical-align: middle;
-	font-weight: bold;
-	font-size: 23px;
+  width: 100%;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 23px;
 }
 
-.blockRow {
-}
+.blockRow {}
 
 .blockRow .blockItem {
-	display: inline-block;
-	min-width: 180px;
-	max-width: 250px;
-	vertical-align: top;
+  display: inline-block;
+  min-width: 180px;
+  max-width: 250px;
+  vertical-align: top;
 }
+
 .blockRow .blockItem .blockCount {
-	display: inline-block;
+  display: inline-block;
 }
+
 .blockRow .blockItem .blockTitle {
-	margin-top: 20px;
+  margin-top: 20px;
 }
+
 .blockRow .blockItem .blockTitle h4 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .blockRow .blockItem .blockDesc {
-	margin-top: 20px;
-	font-size: 18px;
-	line-height: 25px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .blockRow .blockItem .blockItemConnect {
-	display: flex;
-	align-items: center;
-	height: 120px;
-	width: 100%;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  width: 100%;
 }
+
 .blockRow .blockItem .blockItemConnect img {
-	width: 100%;
+  width: 100%;
+}
+
+.blockRow:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr 200px 1fr;
+  justify-items: center;
+}
+
+.blockRow:last-of-type {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  justify-items: center;
+}
+
+/* @media(max-width: 1600px) {
+  .blockRow:nth-child(1) {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr 200px 1fr;
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+}*/
+
+@media(max-width: 1150px) {
+
+  .blockRow:first-of-type {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr !important;
+    grid-row-gap: 60px;
+    justify-items: center;
+  }
+
+  .blockRow:first-of-type>.blockItem:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .blockRow:first-of-type>.blockItem:nth-child(4) {
+    display: none;
+  }
 }

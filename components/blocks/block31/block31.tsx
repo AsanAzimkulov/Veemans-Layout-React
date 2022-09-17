@@ -49,7 +49,7 @@ const Block31: FunctionComponent = () => {
             </p>
           </Cart2>
         </div>
-        <div style={{'textAlign': 'center'}}>
+        <div style={{'textAlign': 'center'}} className={styles.orderPrefer}>
           <img src="/images/block31_img2.png" style={{'width': '200px', 'marginTop': '50px'}}/>
         </div>
       </div>
@@ -75,7 +75,7 @@ const Block31: FunctionComponent = () => {
             </p>
           </Cart2>
         </div>
-        <div style={{'textAlign': 'center'}}>
+        <div style={{'textAlign': 'center'}} className={styles.orderPrefer}>
           <img src="/images/block31_img4.png" style={{'width': '500px', 'marginTop': '50px'}}/>
         </div>
       </div>
