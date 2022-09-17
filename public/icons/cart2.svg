@@ -1,19 +1,19 @@
 <svg width="732" height="413" viewBox="0 0 732 413" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M727 122.74V255.17L651.784 396H132.431M592.44 17H82.7568L1 170.076V262.549"
     stroke="url(#paint0_linear_446_951)" />
-  <g filter="url(#filter0_b_446_951)">
+
     <path d="M0 352.101L59.9233 412.024H0V352.101Z" fill="url(#paint1_linear_446_951)" fill-opacity="0.3" />
-  </g>
-  <g filter="url(#filter1_b_446_951)">
+  
+
     <path d="M731.695 59.9233L671.772 7.15256e-06H731.695V59.9233Z" fill="url(#paint2_linear_446_951)"
       fill-opacity="0.3" />
-  </g>
-  <g filter="url(#filter2_b_446_951)">
+ 
+ 
     <path d="M93.9543 28.9996H716.114V249.303L643.476 382.645H15V173.936L93.9543 28.9996Z"
       fill="url(#paint3_linear_446_951)" fill-opacity="0.15" />
     <path d="M15.5 174.064L94.2513 29.4996H715.614V249.176L643.179 382.145H15.5V174.064Z"
       stroke="url(#paint4_linear_446_951)" />
-  </g>
+ 
   <defs>
     <filter id="filter0_b_446_951" x="-46.3291" y="305.772" width="152.582" height="152.582"
       filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
