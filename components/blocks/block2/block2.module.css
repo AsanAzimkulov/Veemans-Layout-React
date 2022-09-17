@@ -91,7 +91,7 @@
   /* aspect-ratio: 1.7778/1; */
   /* border: 1px solid var(--color-aqua); */
   box-sizing: content-box;
-  background: center no-repeat url("/icons/video-border1.svg");
+  background: url("/icons/video-border1.svg") center no-repeat;
   background-size: contain;
   position: relative;
   max-width: 700px;
