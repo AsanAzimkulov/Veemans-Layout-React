@@ -4,7 +4,13 @@
 
 .title {
   font-family: "Tomorrow";
-  font-size: 50px !important;
+  font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 0px 25px var(--color-aqua);
+}
+
+@media(max-width: 768px) {
+  .title {
+    font-size: 26px !important;
+  }
 }

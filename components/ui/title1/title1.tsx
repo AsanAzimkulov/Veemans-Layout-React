@@ -10,7 +10,7 @@ interface Props {
 const Title1: FunctionComponent<Props> = ({
   children,
   type = "h1",
-  size = "45px",
+  size = "50px",
 }) => {
   // children.props.className =  styles.title
 

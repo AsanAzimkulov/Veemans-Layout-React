@@ -37,7 +37,7 @@ const Home: NextPage = () => {
       </Head>
       <Header cb={onToggleMenu}></Header>
       <main className={styles.main}>
-        <Border visibility={!isMenuOpened} />
+        <Border visibility={true} />
         <Block1></Block1>
 
         <div className={styles.mainBg}>

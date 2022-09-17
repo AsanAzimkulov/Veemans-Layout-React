@@ -39,6 +39,11 @@
   width: max-content;
 }
 
+.socialsItem svg:hover circle {
+  fill: url(#paint0_linear_1098_hhh);
+  fill-opacity: 1;
+}
+
 .teamItem .title {
   font-size: 16px;
   margin-bottom: 10px;

@@ -2,25 +2,14 @@
   background: center no-repeat url("/icons/cart1.svg");
   background-size: contain;
   aspect-ratio: 1.12/1;
+  height: 407px;
   margin-top: 30px;
   display: grid;
   position: relative;
 }
 
 
-@supports not (aspect-ratio: 1.12/1) {
-  .container::before {
-    float: left;
-    padding-top: 112%;
-    content: "";
-  }
 
-  .container::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
-}
 
 .icon {
   position: absolute;

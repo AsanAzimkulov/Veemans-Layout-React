@@ -30,3 +30,9 @@
 .topCenterMenu a:hover {
   color: #11D9EB;
 }
+
+@media(max-width: 1150px) {
+  .topCenterMenu {
+    display: none;
+  }
+}

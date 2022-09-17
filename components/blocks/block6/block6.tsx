@@ -9,10 +9,15 @@ interface Props {
 
 const Block6: FunctionComponent<Props> = ({ }) => {
   return (
-    <div className={styles["container"]}>
-        <Title1>The Motion Roller is looped</Title1>
-
-        <img className={styles["imgLine"]} src="/images/block6.svg"/>
+    <div className={styles["container"] + ' contentWrapper'}>
+      <Title1>The Motion Roller is looped</Title1>
+      <div className={styles.items}>
+        {
+          [1, 2, 3, 4, 5, 6].map(i => {
+            return <img src={`/icons/bb${i}.png`} alt="Transport" key={i} className={styles.item} />
+          })
+        }
+      </div>
     </div>
   );
 };

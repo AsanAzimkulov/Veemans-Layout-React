@@ -1,11 +1,127 @@
 .container {
-    text-align: center;
-    min-height: 300px;
-    margin: 120px 90px 0px;
+  text-align: center;
+  min-height: 300px;
+  margin: 240px 0;
 }
 
 .container .imgLine {
-	width: 100%;
-	max-width: 1300px;
-	margin-top: 100px;
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 100px;
+}
+
+
+.main {
+  background-image: url('/images/block-8-bgg.svg');
+  width: 1623px;
+  height: 1254.97px;
+  padding: 150px 90px 120px;
+  max-width: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+}
+
+.markedList {
+  margin-top: 100px;
+  margin-bottom: 111px;
+  list-style: none;
+  padding: 0px;
+  display: grid;
+  grid-column-gap: 50px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.markedListItem {
+  padding-left: 100px;
+  position: relative;
+  text-align: left;
+}
+
+.markedListItem::before {
+  content: '';
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  display: block;
+  top: 0px;
+  left: 0px;
+  background-image: url(/icons/markedListb.svg);
+}
+
+.markedListItemTitle {
+  font-family: 'Ruberoid';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 160%;
+  /* or 34px */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #EAEAEA;
+  margin-bottom: 13px;
+}
+
+
+.cardList {
+  margin-top: 74px;
+  list-style: none;
+  padding: 0px;
+  display: grid;
+  grid-column-gap: 63px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cardListItem {
+  background-image: url('/images/block-8-bgg.svg');
+  width: 439px;
+  height: 382px;
+  background-repeat: no-repeat;
+  padding: 54px 55px 80px;
+  background-size: 100% auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.cardListItemImage {
+  max-width: 180px;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.cardListItemTitle {
+  font-family: 'Ruberoid';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+  /* identical to box height, or 40px */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #EAEAEA;
+  margin-bottom: 6px;
+}
+
+.cardListItemDesc {
+
+  font-family: 'Ruberoid';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 160%;
+  /* identical to box height, or 34px */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #EAEAEA;
 }

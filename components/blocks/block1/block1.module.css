@@ -206,3 +206,7 @@
   text-align: center;
   z-index: 2;
 }
+
+.wrapper_smallHeight .first__solana {
+  bottom: 15px;
+}

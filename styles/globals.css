@@ -44,6 +44,18 @@ a {
 
 .contentWrapper {
   max-width: 1625px !important;
-  margin: 0px auto !important;
-  /* padding: 0px 100px; */
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media(max-width: 1600px) {
+  .contentWrapper {
+    max-width: 1450px !important;
+  }
+
+  div.contentWrapper {
+    max-width: 1450px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
