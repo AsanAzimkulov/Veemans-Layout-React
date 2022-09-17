@@ -97,8 +97,6 @@
   max-width: 700px;
 
   height: 391px;
-  padding: 1px;
-  padding-right: 1.5px;
   width: 701px;
 }
 
@@ -106,8 +104,7 @@
   min-height: 390px;
   z-index: -1;
   width: 698px;
-  -webkit-clip-path: polygon(0% 7.5%, 0% 92.5%, 4.5% 100%, 95.5% 100%, 100% 92.5%, 100% 7.5%, 95.5% 0, 4.5% 0);
-  clip-path: polygon(0% 7.5%, 0% 92.5%, 4.5% 100%, 95.5% 100%, 100% 92.5%, 100% 7.5%, 95.5% 0, 4.5% 0);
+  clip-path: polygon(2px 7.5%, 2px calc(92.5% - 2px), 4.5% calc(100% - 2px), calc(95.5% + 1px) calc(100% - 2px), calc(100% - 2px) calc(92.5% - 1px), calc(100% - 2px) 7.5%, calc(95.5% + 2px) 2px, 4.5% 1px);
   z-index: -1;
   -o-object-fit: cover;
   object-fit: cover;
