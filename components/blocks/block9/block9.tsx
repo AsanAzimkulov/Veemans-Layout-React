@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRef } from "react";
-import { FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
 import { useIsVisible } from 'react-is-visible';
 import classNames from "../../customs/classNames";
 import { Keyframes } from "../../customs/keyframes";
@@ -83,10 +83,10 @@ const Block9: FunctionComponent<Props> = ({ }) => {
             <g className={styles.units}>
               {
                 units.map((unit, i) => (
-                  <>
-                    <circle cx={284} cy={286} r="184.5" stroke={unit.color} strokeWidth={53} className={styles.chartUnit} style={isChartVisible ? getAnimationFrame(unit, i) : {}} key={unit.color} />
+                  <React.Fragment key={unit.color}>
+                    <circle cx={284} cy={286} r="184.5" stroke={unit.color} strokeWidth={53} className={styles.chartUnit} style={isChartVisible ? getAnimationFrame(unit, i) : {}} />
                     <Keyframes name={`circleChartExpand${i}`} _0={{ strokeDasharray: '0 10000' }} _100={getAnimationFrame(unit, i).strokeDasharray} />
-                  </>
+                  </React.Fragment>
                 ))
               }
             </g>
