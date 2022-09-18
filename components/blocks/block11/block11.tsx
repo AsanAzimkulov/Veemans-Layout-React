@@ -26,8 +26,6 @@ const Block11: FunctionComponent<Props> = ({ }) => {
         <li className={styles.item}>
           <img src="/images/partner5.svg" className={styles.itemImage} />
         </li>
-
-
       </ul>
     </div>
   );

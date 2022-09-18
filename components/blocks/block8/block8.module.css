@@ -14,7 +14,7 @@
 .main {
   background-image: url('/images/block-8-bgg.png');
   width: 1623px;
-  height: 1254.97px;
+  min-height: 1254.97px;
   padding: 150px 90px 120px;
   max-width: 100%;
   background-size: 100% 100%;
@@ -101,12 +101,12 @@
 }
 
 .cardListItem {
-  background-image: url('/images/block-8-bgg.svg');
+  background-image: url('/images/block-8-bggg.png');
   max-width: 439px;
   max-height: 382px;
   background-repeat: no-repeat;
   padding: 54px 55px 80px;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   display: grid;
   grid-template-rows: auto auto;
   justify-items: center;
@@ -152,18 +152,7 @@
 }
 
 
-@media(max-width: 1600px) {
 
-  /* .main,
-  .main>* {
-    transform: scale(0.9);
-  }
-
-  .cardList {
-    transform: scale(1);
-  } */
-
-}
 
 
 @media(max-width: 1300px) {
@@ -182,10 +171,45 @@
 }
 
 
-@media(max-width: 1450px) {
 
-  .main,
-  .main>* {
-    transform: none !important;
+@media(max-width: 1200px) {
+
+  .main::before,
+  .main::after {
+    transform: scale(0.7);
+  }
+
+  .main::before {
+    left: 1.88%;
+  }
+
+  .main::after {
+    right: 1.88%;
+  }
+
+  .cardList {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+
+  .cardListItem {
+    max-height: 367px;
+  }
+
+  .cardListItem:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+  }
+
+  .main {
+    padding-bottom: 30px;
+  }
+
+  .markedList {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
   }
 }
