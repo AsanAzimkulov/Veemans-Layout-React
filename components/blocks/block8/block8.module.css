@@ -12,14 +12,38 @@
 
 
 .main {
-  background-image: url('/images/block-8-bgg.svg');
+  background-image: url('/images/block-8-bgg.png');
   width: 1623px;
   height: 1254.97px;
   padding: 150px 90px 120px;
   max-width: 100%;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  position: relative;
+}
 
+.main::before {
+  position: absolute;
+  content: '';
+  background-image: url(/icons/b8-circles.svg);
+  width: 86px;
+  background-repeat: no-repeat;
+  height: 14px;
+  left: 3.88%;
+  top: 1.6%;
+  display: block;
+}
+
+.main::after {
+  position: absolute;
+  content: '';
+  background-image: url(/icons/b8-circles.svg);
+  width: 86px;
+  background-repeat: no-repeat;
+  height: 14px;
+  right: 3.88%;
+  top: 1.6%;
+  display: block;
 }
 
 .markedList {
@@ -139,6 +163,22 @@
     transform: scale(1);
   } */
 
+}
+
+
+@media(max-width: 1300px) {
+  .main::before {
+    left: 2.88%
+  }
+
+  .main::after {
+    right: 2.88%;
+  }
+
+  .main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 

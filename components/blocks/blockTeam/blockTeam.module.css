@@ -53,3 +53,9 @@
   font-size: 11px;
   margin-bottom: 33px;
 }
+
+@media(max-width: 953px) {
+  .teamItem {
+    margin-bottom: 20px;
+  }
+}

@@ -9,8 +9,26 @@ interface Props {
 
 const Block11: FunctionComponent<Props> = ({ }) => {
   return (
-    <div className={styles["container"]}>
+    <div className={styles["container"] + " contentWrapper"}>
+      <ul className={styles.list}>
+        <li className={styles.item}>
+          <img src="/images/partner1.svg" className={styles.itemImage} />
+        </li>
+        <li className={styles.item}>
+          <img src="/images/partner2.svg" className={styles.itemImage} />
+        </li>
+        <li className={styles.item}>
+          <img src="/images/partner3.svg" className={styles.itemImage} />
+        </li>
+        <li className={styles.item}>
+          <img src="/images/partner4.svg" className={styles.itemImage} />
+        </li>
+        <li className={styles.item}>
+          <img src="/images/partner5.svg" className={styles.itemImage} />
+        </li>
 
+
+      </ul>
     </div>
   );
 };

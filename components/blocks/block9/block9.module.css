@@ -175,6 +175,22 @@
   display: none;
 }
 
+.chartUnit {
+  transform: rotate(274deg);
+  transform-origin: center;
+  stroke-linecap: round;
+
+}
+
+.chartUnit_noactive {
+  stroke-dasharray: 0 10000 !important;
+}
+
+
+
+
+
+
 @media(max-width: 1100px) {
   .mobileButton {
     grid-template-columns: 1fr;

@@ -1,10 +1,124 @@
 .container {
-    text-align: center;
-    min-height: 300px;
-    margin: 120px 10px 0px;
+  text-align: center;
+  min-height: 300px;
+  margin: 120px 10px 0px;
 }
 
 .container .imgLine {
-	width: 100%;
-	margin-top: 100px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.block {
+  background-image: url(/images/b-7-bg.png);
+  background-size: 100% 100%;
+  padding: 177px 57px;
+  position: relative;
+  min-height: 1313px;
+}
+
+.content {
+  margin-top: 85px;
+  height: 100%;
+}
+
+.picture {
+  position: absolute;
+  top: 315px;
+  left: calc(50% - 280px);
+}
+
+.list {
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 430px 430px;
+  justify-content: space-between;
+  list-style: none;
+  list-style: none;
+  counter-reset: items;
+  grid-row-gap: 82px;
+}
+
+.listItem {
+  padding-left: 78px;
+  text-align: left;
+  position: relative;
+}
+
+.listItem::before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  counter-increment: items;
+  content: counter(items, decimal-leading-zero);
+  background: linear-gradient(138.22deg, #E42BC8 7.01%, #5670FD 75.05%);
+  background-clip: text;
+  color: transparent;
+  font-family: 'Tomorrow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 140%;
+}
+
+.listItemTitle {
+  font-family: 'Tomorrow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 160%;
+  margin-bottom: 15px;
+}
+
+.listItemDesc {
+  font-family: 'Ruberoid';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 170%;
+  /* or 32px */
+
+  letter-spacing: -0.02em;
+
+  color: #EAEAEA;
+}
+
+@media(max-width: 1500px) {
+  .list {
+    grid-template-columns: 330px 330px;
+  }
+
+  .car {
+    width: 400px;
+  }
+
+  .picture {
+    top: 415px;
+    left: calc(50% - 200px);
+  }
+}
+
+@media(max-width: 1150px) {
+  .list {
+    grid-template-columns: 30% 30%;
+  }
+}
+
+@media(max-width: 940px) {
+  .content {
+    display: grid;
+  }
+
+  .picture {
+    position: relative;
+    order: -1px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .list {
+    grid-template-columns: 45% 45%;
+  }
+
 }
