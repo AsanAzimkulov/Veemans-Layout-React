@@ -1,3 +1,4 @@
+// @ts-ignore
 import Image from "next/image";
 import { useRef } from "react";
 import React, { FunctionComponent } from "react";
