@@ -3,7 +3,7 @@
   top: 15px;
   left: 15px;
   right: 15px;
-  width: calc(100vw - 47px);
+  width: calc(100vw - (100vw - calc(100% - 30px)));
   height: calc(100vh - 30px);
   background: transparent;
   box-sizing: border-box;
