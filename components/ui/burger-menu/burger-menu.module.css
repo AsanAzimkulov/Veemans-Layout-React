@@ -15,6 +15,7 @@
 .container_opened {
   padding-left: 57px;
   grid-template-rows: 1fr 40px;
+  align-content: stretch;
   align-items: start;
   padding-top: 6px;
   padding-bottom: 40px;
@@ -88,6 +89,7 @@
 
 .containerBorder_opened .socials {
   display: block;
+  align-self: end;
 }
 
 .socialsList {
