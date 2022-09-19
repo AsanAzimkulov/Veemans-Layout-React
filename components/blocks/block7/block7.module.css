@@ -17,6 +17,19 @@
   min-height: 1313px;
 }
 
+.block::before {
+  content: '';
+  height: 30%;
+  top: 35%;
+  width: calc(100% + 60px);
+  left: -30px;
+  background-size: auto auto;
+  background-position: center;
+  background-image: url(/icons/thunder.svg);
+  position: absolute;
+  display: block;
+}
+
 .content {
   margin-top: 85px;
   height: 100%;
