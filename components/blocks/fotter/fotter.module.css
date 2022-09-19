@@ -45,7 +45,20 @@
 }
 
 .bottomCellFirst {
-  flex-grow: 1;
+  flex-grow: 2;
+  opacity: 0.7;
+}
+
+.bottomCellMiddle .block {
+  background: linear-gradient(180deg, rgba(86, 123, 255, 0.05) 0%, rgba(85, 120, 248, 0) 100%);
+  border: 1.3px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 34px;
+  border-radius: 32.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-column-gap: 25px;
+  align-items: center;
 }
 
 .bottomCellMiddle {
@@ -55,8 +68,55 @@
 .bottomCellLast {
   text-align: right;
   flex-grow: 1;
+  opacity: 0.7;
 }
 
 .bottomCellLast a {
   padding: 0px 10px;
+}
+
+.bottomCellLast a:hover {
+  color: #11D9EB;
+}
+
+.discordButton {
+  position: relative;
+}
+
+.discordButton div div div {
+  padding-left: 30px;
+}
+
+.discordButton::before {
+  pointer-events: none;
+
+  content: '';
+  position: absolute;
+  left: 40px;
+  width: 22px;
+  height: 17px;
+  z-index: 5;
+  top: 28px;
+  background-image: url(/icons/fdiscord.svg);
+}
+
+.twitterButton {
+  position: relative;
+}
+
+.twitterButton div div div {
+  padding-left: 30px;
+}
+
+.twitterButton::before {
+  pointer-events: none;
+
+  content: '';
+  position: absolute;
+  left: 45px;
+  width: 20.91px;
+  height: 17px;
+  z-index: 5;
+  top: 28px;
+  background-image: url(/icons/ftwitter.svg);
 }

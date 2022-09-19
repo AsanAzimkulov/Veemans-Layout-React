@@ -19,9 +19,9 @@
   margin: auto;
   height: 110px;
   width: 100px;
-  height: calc(100%/3);
-  width: calc(100%/3);
-  padding-bottom: calc(100%/3);
+  width: 33.3%;
+  height: 33.3%;
+  padding-bottom: 33.3%;
   display: grid;
   align-items: center;
   align-content: center;

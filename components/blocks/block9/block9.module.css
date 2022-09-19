@@ -179,7 +179,7 @@
   transform: rotate(274deg);
   transform-origin: center;
   stroke-linecap: round;
-
+  filter: drop-shadow(0px 6.19419px 6.19419px rgba(91, 147, 255, 0.05));
 }
 
 .chartUnit_noactive {
