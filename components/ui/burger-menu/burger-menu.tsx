@@ -87,6 +87,10 @@ const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
                       <stop offset="0.472448" stopColor="#4663FE" />
                       <stop offset="1" stopColor="#1DCEF4" />
                     </linearGradient>
+                    <linearGradient xmlns="http://www.w3.org/2000/svg" id="paint0_linear_ff" x1="14.5072" y1="0" x2="14.5072" y2="27.0496" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#85208B" />
+                      <stop offset="1" stopColor="#5B359C" />
+                    </linearGradient>
                   </defs>
                 </svg>
               </a>
