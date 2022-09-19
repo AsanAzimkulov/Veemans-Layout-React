@@ -1,43 +1,46 @@
 .container {
-    text-align: center;
-    min-height: 300px;
-    margin: 200px 120px 0px;
+  text-align: center;
+  min-height: 300px;
+  margin: 200px 120px 0px;
 }
 
 .faqWrapper {
-	max-width: 700px;
-	margin: 70px auto 0px;
+  max-width: 700px;
+  margin: 70px auto 0px;
 }
 
 .faqItem {
-	background-color: #ddd;
-	text-align: left;
-	background-color: #160e32;
-	border: 0.5px solid #26252C;
-	border-radius: 10px;
-	padding: 0px 20px;
-	margin-bottom: 10px;
+  background-color: #ddd;
+  text-align: left;
+  background-color: #160e32;
+  border: 0.5px solid #26252C;
+  border-radius: 10px;
+  padding: 0px 20px;
+  margin-bottom: 10px;
 }
 
 .faqItem .title {
-	font-weight: bold;
-	padding: 15px 0px;
-	cursor: pointer;
+  font-weight: bold;
+  padding: 15px 0px;
+  cursor: pointer;
 }
 
 .faqItem .desc {
-	display: none;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.2s ease-out;
 }
 
 .visible .desc {
-	display: block;
-	padding-bottom: 20px;
+  height: auto;
+  transition: 0.2s ease-out;
+  padding-bottom: 20px;
 }
 
 .faqItem .toggleButton {
-	float: right;
-	vertical-align: top;
-	margin-top: 10px;
-	height: 33px;
-	cursor: pointer;
+  float: right;
+  vertical-align: top;
+  margin-top: 10px;
+  height: 33px;
+  cursor: pointer;
 }

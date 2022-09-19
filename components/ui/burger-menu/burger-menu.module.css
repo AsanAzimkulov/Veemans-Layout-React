@@ -109,7 +109,7 @@
 }
 
 .containerBorder {
-  position: sticky;
+  position: fixed;
   transition: width 0.3s ease;
   width: 300px;
   min-width: 300px;
@@ -118,8 +118,6 @@
       rgba(17, 217, 235, 1) 0%,
       rgba(228, 43, 200, 1) 40%);
   background: transparent;
-  position: absolute;
-  /* position: relative; */
   top: 0px;
   right: 0px;
 }
