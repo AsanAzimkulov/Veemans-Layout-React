@@ -15,6 +15,8 @@ interface Props {
 
 const Block9: FunctionComponent<Props> = ({ }) => {
 
+  const isAnimated = useRef<boolean>(false);
+
   const chartRef = useRef<HTMLDivElement>(null);
 
   const isChartVisible = useIsVisible(chartRef);
@@ -41,6 +43,10 @@ const Block9: FunctionComponent<Props> = ({ }) => {
   ].reverse();
 
   function getAnimationFrame(unit: TUnit, index: number) {
+    if (isChartVisible) {
+      setTimeout(() => isAnimated.current = true, (200 * units.length - 50 * index))
+    }
+
     return {
       strokeDasharray: 1100 * unit.percentage + " 10000",
       animation: `circleChartExpand${index} ${200 * units.length - 50 * index}ms cubic-bezier(.43,.32,.21,1) 0ms forwards`,
@@ -86,7 +92,12 @@ const Block9: FunctionComponent<Props> = ({ }) => {
                 units.map((unit, i) => (
                   <React.Fragment key={unit.color}>
                     <circle cx={284} cy={286} r="184.5" stroke={unit.color} strokeWidth={53} className={styles.chartUnit} style={isChartVisible ? getAnimationFrame(unit, i) : {}} />
-                    <Keyframes name={`circleChartExpand${i}`} _0={{ strokeDasharray: '0 10000' }} _100={getAnimationFrame(unit, i).strokeDasharray} />
+                    {
+                      !isAnimated.current ?
+                        <Keyframes name={`circleChartExpand${i}`} _0={{ strokeDasharray: '0 10000' }} _100={getAnimationFrame(unit, i).strokeDasharray} />
+                        :
+                        <></>
+                    }
                   </React.Fragment>
                 ))
               }
