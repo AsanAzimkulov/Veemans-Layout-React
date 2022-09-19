@@ -14,7 +14,7 @@
 
 .container_opened {
   padding-left: 57px;
-  grid-template-rows: 1fr minmax(40px, auto);
+  grid-template-rows: 1fr 40px;
   align-items: start;
   padding-top: 6px;
   padding-bottom: 40px;
