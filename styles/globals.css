@@ -46,9 +46,9 @@ a {
   max-width: 1625px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 30px;
-  padding-right: 30px;
 }
+
+
 
 @media(max-width: 1600px) {
   .contentWrapper {
@@ -57,5 +57,25 @@ a {
 
   div.contentWrapper {
     max-width: 1450px !important;
+  }
+}
+
+@media(min-width: 1550px) {
+  div.contentWrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media(max-width: 1550px) {
+  div.contentWrapper {
+    max-width: 1300px !important;
+  }
+}
+
+@media(max-width: 1400px) {
+  div.contentWrapper {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

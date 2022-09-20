@@ -18,7 +18,11 @@
   width: 100%;
   vertical-align: middle;
   font-weight: bold;
-  font-size: 23px;
+  font-family: 'Tomorrow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
 }
 
 .blockRow {}

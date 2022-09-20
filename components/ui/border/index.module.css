@@ -8,7 +8,7 @@
   background: transparent;
   box-sizing: border-box;
 
-  clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36px) 55px, 100% 55px, 100% 100%, 0% 100%, 0% 1px, 1px 1px, 1px calc(100% - 1px), calc(33.66% - 61px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 56px, calc(93.13% + 35px) 56px, calc(93.13% - 1px) 1px, 0% 1px);
+  clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36px) 55px, 100% 55px, 100% 100%, 0% 100%, 0% 0.5px, 0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(33.66% - 61px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 54.5px, calc(93.13% + 35.5px) 54.5px, calc(93.13% - 0.5px) 0.5px, 0% 0.5px);
 
   z-index: 1;
 
@@ -19,7 +19,7 @@
 
 @media(max-width: 1300px) {
   .border {
-    clip-path: polygon(0% 0px, 85% 0px, calc(85% + 36px) 55px, 100% 55px, 100% 100%, 0% 100%, 0% 1px, 1px 1px, 1px calc(100% - 1px), calc(33.66% - 61px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 56px, calc(85% + 35px) 56px, calc(85% - 1px) 1px, 0% 1px);
+    clip-path: polygon(0% 0px, 85% 0px, calc(85% + 36px) 55px, 100% 55px, 100% 100%, 0% 100%, 0% 0.5px, 0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(33.66% - 61px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 55.5px, calc(85% + 35.5px) 55.5px, calc(85% - 0.5px) 0.5px, 0% 0.5px);
   }
 }
 

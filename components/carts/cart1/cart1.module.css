@@ -1,5 +1,5 @@
 .container {
-  background: center no-repeat url("/icons/cart1.svg");
+  background: center no-repeat url("/icons/cart1.png");
   background-size: contain;
   aspect-ratio: 1.12/1;
   height: 407px;
@@ -13,14 +13,12 @@
 
 .icon {
   position: absolute;
-  top: 0px;
+  top: -27px;
   left: 0px;
   right: 0px;
   margin: auto;
   height: 110px;
-  width: 100px;
-  width: 33.3%;
-  height: 33.3%;
+  width: 151px;
   padding-bottom: 33.3%;
   display: grid;
   align-items: center;
@@ -56,4 +54,54 @@
   height: calc(100% - 16%);
   font-size: 20px;
   line-height: 160%;
+}
+
+@media(max-width: 1550px) {
+  .text {
+    font-size: 100%;
+  }
+
+  .container {
+    height: 350px;
+  }
+
+  .icon {
+    height: 166px;
+    width: 165px;
+  }
+}
+
+@media(max-width: 1400px) {
+
+  .icon {
+    height: 142px;
+    width: 140px;
+    top: -15px;
+  }
+
+  .container {
+    width: 340px;
+  }
+
+  .text {
+    font-size: 90%;
+  }
+
+
+}
+
+@media(max-width: 1150px) {
+  .container {
+    width: 288px;
+  }
+
+  .icon {
+    height: 121px;
+    width: 120px;
+    top: 10px;
+  }
+
+  .text {
+    font-size: 80%;
+  }
 }
