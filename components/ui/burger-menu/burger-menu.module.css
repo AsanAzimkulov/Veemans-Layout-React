@@ -181,3 +181,15 @@
     right: 0px;
   }
 }
+
+@media(max-width: 1550px) {
+  .menuIcon {
+    padding-right: 33px;
+  }
+}
+
+@media(max-width: 1300px) {
+  .menuIcon {
+    padding-right: 50px;
+  }
+}

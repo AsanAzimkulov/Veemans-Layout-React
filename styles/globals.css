@@ -50,7 +50,7 @@ a {
 
 
 
-@media(max-width: 1600px) {
+@media(max-width: 1650px) {
   .contentWrapper {
     max-width: 1500px !important;
   }

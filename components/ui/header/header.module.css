@@ -37,3 +37,13 @@
   }
 }
 
+
+@media(max-width: 1550px) {
+  .topCenterMenu {
+    grid-column-gap: 30px;
+    font-size: 16px;
+    margin-left: calc(50vw - 285.5px);
+  }
+
+  
+}

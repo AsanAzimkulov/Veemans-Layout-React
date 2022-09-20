@@ -38,7 +38,11 @@
 .picture {
   position: absolute;
   top: 315px;
-  left: calc(50% - 280px);
+  left: calc(50% - 350px);
+}
+
+.car {
+  width: 700px;
 }
 
 .list {
@@ -50,6 +54,8 @@
   list-style: none;
   counter-reset: items;
   grid-row-gap: 82px;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .listItem {
@@ -96,42 +102,75 @@
   color: #EAEAEA;
 }
 
-@media(max-width: 1500px) {
+
+
+
+
+
+@media(max-width: 1650px) {
+  .block {
+    padding: 127px 57px;
+    padding-top: 160px;
+    min-height: 0px;
+  }
+
   .list {
-    grid-template-columns: 330px 330px;
+    grid-row-gap: 50px;
+    grid-template-columns: 30% 30%;
+  }
+
+  .listItemDesc {
+    font-size: 15px;
+  }
+
+  .listItemTitle {
+    font-size: 23px;
+  }
+
+  .listItem {
+    padding-left: 64px;
+  }
+
+  .listItem::before {
+    font-size: 30px;
   }
 
   .car {
-    width: 400px;
+    width: 480px;
   }
 
   .picture {
-    top: 415px;
-    left: calc(50% - 200px);
+    left: calc(50% - 240px);
   }
 }
 
-@media(max-width: 1150px) {
+@media(max-width: 1400px) {
+  .block {
+    padding: 127px 57px;
+    padding-top: 160px;
+    min-height: 0px;
+  }
+
   .list {
+    grid-row-gap: 30px;
     grid-template-columns: 30% 30%;
   }
-}
 
-@media(max-width: 940px) {
-  .content {
-    display: grid;
+  .listItemDesc {
+    font-size: 15px;
   }
 
-  .picture {
-    position: relative;
-    order: -1px;
-    margin: 0px;
-    top: 0px;
-    left: 0px;
+  .listItemTitle {
+    font-size: 21px;
   }
 
-  .list {
-    grid-template-columns: 45% 45%;
+  .listItem {
+    padding-left: 60px;
   }
+
+  .listItem::before {
+    font-size: 28px;
+  }
+
 
 }

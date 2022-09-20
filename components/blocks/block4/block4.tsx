@@ -19,11 +19,10 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Choose your NFT Veeman from the NFT</h4>
+            <h4>Choose your NFT Veeman car from the NFT store</h4>
           </div>
           <div className={styles["blockDesc"]}>
-            Veemans is a Drive 2 EARN NFT application, a
-            community of people who use not only cars, but any other transport with a speed from 10 to 60 km/h.
+          There is 5 different types of car with uniq characteristics 
           </div>
         </div>
 
@@ -40,11 +39,10 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Drive any type of transport, spending</h4>
+            <h4>Drive any type of transport</h4>
           </div>
           <div className={styles["blockDesc"]}>
-            Veemans is a Drive 2 EARN NFT application, a
-            community of people who use not only cars, but any other transport with a speed from 10 to 60 km/h.
+          With speed from 10 to 60 km.
           </div>
         </div>
 
@@ -64,8 +62,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             <h4>Get a reward by driving</h4>
           </div>
           <div className={styles["blockDesc"]}>
-            Veemans is a Drive 2 EARN NFT application,
-            a community of people who use not only cars, but any other transport with a speed from 10 to 60 km/h.
+          Earn tokens and mysterious boxes during the trip
           </div>
         </div>
       </div>
@@ -75,13 +72,13 @@ const Block4: FunctionComponent<Props> = ({ }) => {
           <div className={styles["blockCount"]}>
             <div className={styles["countBox"]}>
               <span>04</span>
-            </div>
+                </div>
           </div>
           <div className={styles["blockTitle"]}>
             <h4>Upgrade your NFT Veeman</h4>
           </div>
           <div className={styles["blockDesc"]}>
-            Buy the details, change and upgrade your car appearance, improve performance and characteristics by leveling up to get more rewards.
+          Buy the details, upgrade your car, improve performance and characteristics by leveling up to get more rewards.
           </div>
         </div>
 
@@ -98,10 +95,10 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Alliances</h4>
+            <h4>Form alliances and capture streetss</h4>
           </div>
           <div className={styles["blockDesc"]}>
-            Form alliances, capture streets and territories, collect rent from other players.
+          Make other players pay for driving through your streets
           </div>
         </div>
       </div>

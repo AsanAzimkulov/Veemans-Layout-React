@@ -17,15 +17,10 @@
   grid-template-columns: repeat(6, 1fr);
   grid-row-gap: 60px;
   grid-auto-flow: column;
+  justify-items: center;
 }
 
-@media(max-width: 1535px) {
-  .items {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-  }
-}
+
 
 @media(max-width: 768px) {
   .items {
@@ -39,5 +34,26 @@
     width: 91.58px;
     height: 97.97px;
 
+  }
+}
+
+@media(max-width: 1550px) {
+  .item {
+    width: 170px;
+    height: 181px;
+  }
+}
+
+@media(max-width: 1300px) {
+  .item {
+    width: 150px;
+    height: 159.78px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .item {
+    width: 130px;
+    height: 138.476px;
   }
 }

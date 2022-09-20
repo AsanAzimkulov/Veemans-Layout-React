@@ -54,3 +54,10 @@
     left: 21px;
   }
 }
+
+@media(max-width: 1550px) {
+  .link img {
+    width: 130px;
+    height: auto;
+  }
+}

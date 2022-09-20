@@ -36,7 +36,7 @@ const Block8: FunctionComponent<Props> = ({ }) => {
             </p>
           </li>
         </ul>
-        <Title1 type="h3" size="35px">Game Types</Title1>
+        <Title1 type="h3" size="35px">Game Types:</Title1>
         <ul className={styles.cardList}>
           <li className={styles.cardListItem}>
             <img src="/images/cardList1.png" className={styles.cardListItemImage} />

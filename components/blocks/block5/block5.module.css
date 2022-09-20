@@ -1,9 +1,28 @@
 .container {
-    text-align: center;
-    min-height: 300px;
-    margin: 120px 120px 0px;
+  text-align: center;
+  min-height: 300px;
+  margin: 120px 120px 0px;
 }
 
 .container .imgLine {
-	max-width: 100%;
+  max-width: 100%;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+  width: 80%;
+}
+
+.listItem {
+  margin-top: -25px;
+}
+
+.listItem:nth-child(n+3) {
+  margin-top: -60px;
 }

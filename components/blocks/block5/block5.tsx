@@ -10,10 +10,16 @@ interface Props {
 const Block5: FunctionComponent<Props> = ({ }) => {
   return (
     <div className={styles["container"] + ' contentWrapper'}>
-        <Title1>Сlasses of NFT Veemans</Title1>
-
-        <img className={styles["imgLine"]} src="/images/block5_1.png"/>
-        <img className={styles["imgLine"]} src="/images/block5_2.png"/>
+      <Title1>Сlasses of NFT Veemans</Title1>
+      <ul className={styles.list}>
+        {
+          [1, 2, 3, 4, 5, 6].map(index => (
+            <li key={index} className={styles.listItem}>
+              <img src={`/images/b5-${index}.png`} className={styles.item} />
+            </li>
+          ))
+        }
+      </ul>
     </div>
   );
 };
