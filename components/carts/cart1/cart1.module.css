@@ -1,7 +1,8 @@
 .container {
   background: center no-repeat url("/icons/cart1.png");
   background-size: contain;
-  aspect-ratio: 1.12/1;
+  /* aspect-ratio: 1.12/1; */
+  width: 455px;
   height: 407px;
   margin-top: 30px;
   display: grid;
@@ -63,6 +64,7 @@
 
   .container {
     height: 350px;
+    width: 392px;
   }
 
   .icon {
@@ -80,7 +82,8 @@
   }
 
   .container {
-    width: 340px;
+    width: 392px;
+    height: 350px;
   }
 
   .text {
@@ -93,6 +96,7 @@
 @media(max-width: 1150px) {
   .container {
     width: 288px;
+    height: 350px;
   }
 
   .icon {
