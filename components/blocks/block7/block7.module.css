@@ -73,6 +73,7 @@
   background: linear-gradient(138.22deg, #E42BC8 7.01%, #5670FD 75.05%);
   background-clip: text;
   color: transparent;
+  -webkit-text-fill-color: transparent;
   font-family: 'Tomorrow';
   font-style: normal;
   font-weight: 700;
