@@ -7,9 +7,9 @@ import Cart1 from "../../carts/cart1/cart1";
 
 const Block2: FunctionComponent = () => {
   return (
-    <div className={styles["container"]}>
+    <div className={styles["container"] + ' contentWrapper'}>
       <div className={styles["top-border"]}></div>
-      <div className={styles.content + ' contentWrapper'}>
+      <div className={styles.content}>
         <Title1>What is Veemans ?</Title1>
         <div className={styles["columns1"]}>
           <div className={styles["video-block"]}>
@@ -70,10 +70,10 @@ const Block2: FunctionComponent = () => {
         <div className={styles["columns3"]}>
           <Button1 variant="1">Join The Community</Button1>
           <div className={styles.whitePaperIcon}>
-                <Button1 variant="2"> Paper</Button1>
-              </div>
+            <Button1 variant="2"> Paper</Button1>
+          </div>
         </div>
-        
+
       </div>
     </div>
   );

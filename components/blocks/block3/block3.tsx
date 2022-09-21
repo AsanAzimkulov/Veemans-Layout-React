@@ -10,7 +10,7 @@ interface Props {
 
 const Block3: FunctionComponent<Props> = ({ children }) => {
   return (
-    <div className={styles["container"]}>
+    <div className={styles["container"] + ' contentWrapper'}>
       <div className={styles["top-border"]}></div>
       {children}
     </div>

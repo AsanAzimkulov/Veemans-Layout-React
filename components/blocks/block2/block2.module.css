@@ -10,6 +10,7 @@
   width: 100%;
   height: 150%;
   top: -74px;
+  transform: scaleX(2);
   left: 0px;
 }
 
@@ -260,4 +261,15 @@
   }
 
 
+}
+
+.video-block video {
+  display: none;
+}
+
+
+@media(max-width: 1600px) and (min-width: 992px) {
+  .content {
+    margin-top: 0;
+  }
 }

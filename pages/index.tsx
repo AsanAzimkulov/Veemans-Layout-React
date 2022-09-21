@@ -81,7 +81,7 @@ const Home: NextPage = () => {
         ]}></BlockTeam>
 
         {/*Team*/}
-        <div style={{ 'marginTop': '70px' }}>
+
           <BlockTeam title="Team" members={[
             { 'title': 'Jane Cooper', 'email': 'debra.holt@example.com' },
             { 'title': 'Leslie Alexander', 'email': 'bill.sanders@example.com' },
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
             { 'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com' },
             { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
           ]}></BlockTeam>
-        </div>
+
 
         {/*FAQ*/}
         <BlockFAQ items={[

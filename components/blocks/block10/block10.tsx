@@ -9,9 +9,9 @@ interface Props {
 
 const Block10: FunctionComponent<Props> = ({ }) => {
   return (
-    <div className={styles["container"]}>
-    	<Title1>Roadmap</Title1>
-        <img className={styles["imgLine"]} src="/images/block10.svg"/>
+    <div className={styles["container"] + ' contentWrapper'}>
+      <Title1>Roadmap</Title1>
+      <img className={styles["imgLine"]} src="/images/block10.svg" />
     </div>
   );
 };

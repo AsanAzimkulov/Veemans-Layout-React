@@ -79,3 +79,15 @@ a {
     padding-right: 30px;
   }
 }
+
+@media(max-width: 1600px) and (min-width: 992px) {
+  .contentWrapper {
+    transform: scale(0.9);
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .mainBg {
+    margin-top: -152px
+  }
+}

@@ -4,6 +4,8 @@
   margin-top: 200px;
   margin-bottom: 200px;
   max-width: 1450px !important;
+  display: grid;
+  align-items: center;
 }
 
 .container .imgLine {

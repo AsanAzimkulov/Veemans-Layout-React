@@ -65,3 +65,10 @@
   background: url('/images/bg3-1.svg');
 } */
 
+
+@media(max-width: 1600px) and (min-width: 992px) {
+  .container {
+    margin-top: -300px !important;
+  }
+
+}

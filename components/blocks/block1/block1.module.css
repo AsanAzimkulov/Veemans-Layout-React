@@ -257,6 +257,13 @@
 
 }
 
-@media(max-width: 1550px){
-  
+@media(max-width: 1550px) {}
+
+
+@media(max-width: 1600px) and (min-width: 992px) {
+  .mainCC {
+    transform: scale(0.85);
+    position: relative;
+    z-index: 1;
+  }
 }

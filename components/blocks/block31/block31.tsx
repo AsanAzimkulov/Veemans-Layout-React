@@ -7,17 +7,17 @@ import styles from "./block31.module.css";
 
 const Block31: FunctionComponent = () => {
   return (
-    <div className={styles["container"] + ' contentWrapper'}>
+    <div className={styles["container"]}>
       <div className={styles["columns1"]}>
-        <div style={{'textAlign': 'center'}}>
+        <div style={{ 'textAlign': 'center' }}>
           <img src="/images/block31_img1.png" />
         </div>
         <div className={styles["info"]}>
           <div>
             <Title1>What is DRIVE 2 EARN?</Title1>
             <p className={styles["info__paragraph"]}>
-               A new concept that suggests the possibility of virtual earnings
-               for the actions that the user performs in the real world.
+              A new concept that suggests the possibility of virtual earnings
+              for the actions that the user performs in the real world.
             </p>
             <p className={styles["info__paragraph"]}>
               To do this, you need to &quot;link&quot; your account with a mobile device.
@@ -49,13 +49,13 @@ const Block31: FunctionComponent = () => {
             </p>
           </Cart2>
         </div>
-        <div style={{'textAlign': 'center'}} className={styles.orderPrefer}>
-          <img src="/images/block31_img2.png" style={{'width': '200px', 'marginTop': '50px'}}/>
+        <div style={{ 'textAlign': 'center' }} className={styles.orderPrefer}>
+          <img src="/images/block31_img2.png" style={{ 'width': '200px', 'marginTop': '50px' }} />
         </div>
       </div>
       <div className={styles["columns1"]}>
-        <div style={{'textAlign': 'center'}}>
-          <img src="/images/block31_img3.png" style={{'width': '450px', 'marginTop': '50px'}}/>
+        <div style={{ 'textAlign': 'center' }}>
+          <img src="/images/block31_img3.png" style={{ 'width': '450px', 'marginTop': '50px' }} />
         </div>
         <div>
           <Cart2>
@@ -75,8 +75,8 @@ const Block31: FunctionComponent = () => {
             </p>
           </Cart2>
         </div>
-        <div style={{'textAlign': 'center'}} className={styles.orderPrefer}>
-          <img src="/images/block31_img4.png" style={{'width': '500px', 'marginTop': '50px'}}/>
+        <div style={{ 'textAlign': 'center' }} className={styles.orderPrefer}>
+          <img src="/images/block31_img4.png" style={{ 'width': '500px', 'marginTop': '50px' }} />
         </div>
       </div>
     </div>

@@ -29,48 +29,50 @@ const Block1: FunctionComponent = () => {
       </div> */}
       <div className={styles.first}>
         <div className={styles.firstWrapper}>
-          <div className={styles.first__top}>
-            <div className={styles.first__title1}>
-              Veemans is a web3.0 APP
+          <div className={styles.mainCC}>
+            <div className={styles.first__top}>
+              <div className={styles.first__title1}>
+                Veemans is a web3.0 APP
+              </div>
+              <div className={styles["first__apps-block"]}>
+                <a href="">
+                  <Image
+                    src="/icons/to-app-store.svg"
+                    width="157"
+                    height="46"
+                    alt=""
+                  ></Image>
+                </a>
+                <a href="">
+                  <Image
+                    src="/icons/to-google-play.svg"
+                    width="157"
+                    height="46"
+                    alt=""
+                  ></Image>
+                </a>
+              </div>
             </div>
-            <div className={styles["first__apps-block"]}>
-              <a href="">
-                <Image
-                  src="/icons/to-app-store.svg"
-                  width="157"
-                  height="46"
-                  alt=""
-                ></Image>
-              </a>
-              <a href="">
-                <Image
-                  src="/icons/to-google-play.svg"
-                  width="157"
-                  height="46"
-                  alt=""
-                ></Image>
-              </a>
+            <img src="/icons/title.png" className={styles.topLogo} alt="" />
+            <div className={styles["first__block2"]}>
+              <div>
+                <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
+                <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
+                <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
+                <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
+                <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
+              </div>
+              <div className={styles["first__text"]}>
+                Make your daily travel profitable
+                <br />
+                with NFT game Veemans
+              </div>
             </div>
-          </div>
-          <img src="/icons/title.png" className={styles.topLogo} alt="" />
-          <div className={styles["first__block2"]}>
-            <div>
-              <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
-              <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
-              <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
-              <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
-              <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
-            </div>
-            <div className={styles["first__text"]}>
-              Make your daily travel profitable
-              <br />
-              with NFT game Veemans
-            </div>
-          </div>
-          <div className={styles["first__block3"]}>
-            <Button1 variant="1">Join The Community</Button1>
-            <div className={styles.whitePaperIcon}>
-              <Button1 variant="2"> Paper</Button1>
+            <div className={styles["first__block3"]}>
+              <Button1 variant="1">Join The Community</Button1>
+              <div className={styles.whitePaperIcon}>
+                <Button1 variant="2"> Paper</Button1>
+              </div>
             </div>
           </div>
           <div className={styles["first__solana"]}>
