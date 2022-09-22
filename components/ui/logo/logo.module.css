@@ -9,6 +9,7 @@
   align-items: center;
   background: transparent;
   position: fixed;
+  height: 80px;
 }
 
 /* .containerBorder:hover {
