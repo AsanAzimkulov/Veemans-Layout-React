@@ -16,12 +16,13 @@
   display: grid;
   align-self: stretch;
   padding-left: 57px;
-  grid-template-rows: 1fr 40px;
+  grid-template-rows: 3fr 1fr;
   align-content: stretch;
   align-items: start;
   padding-top: 6px;
   padding-bottom: 40px;
   padding-right: 37px;
+  height: 105%;
 }
 
 .close {
