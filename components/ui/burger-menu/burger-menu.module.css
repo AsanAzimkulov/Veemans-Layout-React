@@ -117,7 +117,7 @@
 }
 
 .containerBorder {
-  position: absolute;
+  position: fixed;
   transition: width 0.3s ease;
   width: 300px;
   min-width: 300px;

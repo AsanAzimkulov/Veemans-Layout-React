@@ -25,7 +25,7 @@ const Block31: FunctionComponent = () => {
             </p>
             <div className={styles["info__buttons"]}>
               <Button1 variant="1">Join The Community</Button1>
-              <a className={styles["info__rm"]} href="">
+              {/* <a className={styles["info__rm"]} href="">
                 Read More
                 <Image
                   src="/icons/arrow1.svg"
@@ -33,7 +33,7 @@ const Block31: FunctionComponent = () => {
                   height="14"
                   alt="->"
                 ></Image>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ interface Props {
 const Block5: FunctionComponent<Props> = ({ }) => {
   return (
     <div className={styles["container"] + ' contentWrapper'}>
-      <Title1>Сlasses of NFT Veemans</Title1>
+      <Title1>Classes of NFT Veemans</Title1>
       <ul className={styles.list}>
         {
           [1, 2, 3, 4, 5, 6].map(index => (

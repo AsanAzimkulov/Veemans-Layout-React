@@ -20,13 +20,10 @@ const Block2: FunctionComponent = () => {
           <div className={styles["info"]}>
             <div>
               <p className={styles["info__paragraph"]}>
-                This is a game app, using which you earn tokens for every km of
-                riding any type of transport, at a speed of 10 to 60 km/h.
+                Its a game where you get tokens while you moving with a transport. It&apos;s simple.
               </p>
               <p className={styles["info__paragraph"]}>
-                It is simple: buy a Veeman NFT car, travel by any type of
-                transport and earn VMS tokens. Increase your game fleet, capture
-                territories and increase the number of tokens you get.
+                Win other players in competitions, upgrade your car and capture territories to get more tokens and rewards.
               </p>
             </div>
           </div>
