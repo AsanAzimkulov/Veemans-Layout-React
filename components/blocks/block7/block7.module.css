@@ -66,20 +66,45 @@
 
 .listItem::before {
   position: absolute;
+  content: '';
   left: 0px;
   top: 0px;
-  counter-increment: items;
-  content: counter(items, decimal-leading-zero);
-  background: linear-gradient(138.22deg, #E42BC8 7.01%, #5670FD 75.05%);
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Tomorrow';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 140%;
+  background-image: url(/icons/01.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 50px;
 }
+
+.listItem:nth-child(2)::before {
+  background-image: url(/icons/02.svg);
+}
+
+.listItem:nth-child(3)::before {
+  background-image: url(/icons/03.svg);
+}
+
+.listItem:nth-child(4)::before {
+  background-image: url(/icons/04.svg);
+}
+
+.listItem:nth-child(5)::before {
+  background-image: url(/icons/05.svg);
+}
+
+.listItem:nth-child(6)::before {
+  background-image: url(/icons/06.svg);
+}
+
+.listItem:nth-child(7)::before {
+  background-image: url(/icons/07.svg);
+}
+
+.listItem:nth-child(8)::before {
+  background-image: url(/icons/08.svg);
+}
+
 
 .listItemTitle {
   font-family: 'Tomorrow';
@@ -133,7 +158,8 @@
   }
 
   .listItem::before {
-    font-size: 30px;
+    width: 40px;
+    height: 45px;
   }
 
   .car {
@@ -170,7 +196,8 @@
   }
 
   .listItem::before {
-    font-size: 28px;
+    width: 35px;
+    height: 38px;
   }
 
 
