@@ -60,7 +60,7 @@
 .markedListItem {
   padding-left: 100px;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 
 .markedListItem::before {
