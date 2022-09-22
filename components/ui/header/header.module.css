@@ -23,7 +23,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
-  position: absolute;
+  position: fixed;
   margin-left: calc(50vw - 371px);
 }
 

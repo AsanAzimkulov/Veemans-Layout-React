@@ -50,7 +50,7 @@ const Block31: FunctionComponent = () => {
           </Cart2>
         </div>
         <div style={{ 'textAlign': 'center' }} className={styles.orderPrefer}>
-          <img src="/images/block31_img2.png" style={{ 'width': '200px', 'marginTop': '50px' }} />
+          <img src="/videos/v7.gif" style={{ 'width': '320px', 'height': '320px', 'marginTop': '20px', }} />
         </div>
       </div>
       <div className={styles["columns1"]}>

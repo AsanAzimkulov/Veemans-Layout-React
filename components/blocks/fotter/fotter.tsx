@@ -14,8 +14,8 @@ const Fotter: FunctionComponent<Props> = ({ }) => {
 
         <div className={styles.topArea}>
           <img className={styles.logo} src="/logo.png" alt=""></img>
-          <div className={styles.topAreaButton + " " + styles.twitterButton}>
-            <Button1 variant="2">FOLLOW US</Button1>
+          <div className={styles.whitePaperIcon + " " + styles.topAreaButton}>
+            <Button1 variant="2"> Paper</Button1>
           </div>
           <div className={styles.topAreaButton + " " + styles.discordButton}>
             <Button1 variant="2">JOIN DISCORD</Button1>

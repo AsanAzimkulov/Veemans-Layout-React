@@ -89,7 +89,7 @@
 
 .containerBorder_opened .socials {
   display: block;
-  align-self: flex-end;
+  align-self: self-end;
 }
 
 .socialsList {
@@ -111,7 +111,7 @@
 }
 
 .containerBorder {
-  position: fixed;
+  position: absolute;
   transition: width 0.3s ease;
   width: 300px;
   min-width: 300px;

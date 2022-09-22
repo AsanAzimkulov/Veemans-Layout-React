@@ -100,23 +100,22 @@
   background-image: url(/icons/fdiscord.svg);
 }
 
-.twitterButton {
-  position: relative;
-}
-
-.twitterButton div div div {
+.whitePaperIcon div div div {
   padding-left: 30px;
 }
 
-.twitterButton::before {
-  pointer-events: none;
+.whitePaperIcon {
+  position: relative;
+}
 
+.whitePaperIcon::before {
+  pointer-events: none;
   content: '';
   position: absolute;
-  left: 45px;
-  width: 20.91px;
-  height: 17px;
+  left: 65px;
+  width: 22px;
+  height: 24px;
   z-index: 5;
-  top: 28px;
-  background-image: url(/icons/ftwitter.svg);
+  top: 24px;
+  background-image: url(/images/Npaper.svg);
 }

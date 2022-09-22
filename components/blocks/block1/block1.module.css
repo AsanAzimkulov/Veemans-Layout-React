@@ -208,7 +208,7 @@
 }
 
 .wrapper_smallHeight .first__solana {
-  bottom: 30px;
+  bottom: 60px;
 }
 
 @media(max-width: 768px) {
@@ -246,7 +246,7 @@
   }
 
   .wrapper_smallHeight .first__solana {
-    bottom: 20px;
+    bottom: 40px;
   }
 
   .first__title1 {
