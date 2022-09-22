@@ -88,8 +88,9 @@
 }
 
 .containerBorder_opened .socials {
-  display: block;
-  align-content: stretch;
+  display: grid;
+  align-content: end;
+  height: 100%;
 }
 
 .socialsList {
