@@ -89,7 +89,7 @@
 
 .containerBorder_opened .socials {
   display: block;
-  align-self: self-end;
+  align-content: stretch;
 }
 
 .socialsList {
