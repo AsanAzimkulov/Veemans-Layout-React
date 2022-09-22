@@ -34,7 +34,9 @@ class BlockFAQItem extends React.Component<ItemProps, BlockFAQItemState> {
   render() {
     return (
       <div className={styles["faqItem"] + ' ' + (this.state.visible ? styles.visible : '')}>
-        <img className={styles["toggleButton"]} onClick={this.toggleAction.bind(this)} src="/images/plus.svg" />
+        <button onClick={this.toggleAction.bind(this)} className={styles["toggleButton"] + " " + styles.toggleButtonWrapper}>
+          <img className={styles["toggleButton"]} src="/images/plus.svg" />
+        </button>
         <div className={styles["title"]} onClick={this.toggleAction.bind(this)}>{this.props.item.title}</div>
         <div className={styles["desc"]}>{this.props.item.desc}</div>
       </div>

@@ -44,3 +44,9 @@
   height: 33px;
   cursor: pointer;
 }
+
+.toggleButtonWrapper {
+  margin-top: 0px !important;
+  background: none;
+  border: none !important;
+}

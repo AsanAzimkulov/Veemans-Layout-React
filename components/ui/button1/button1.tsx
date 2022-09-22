@@ -1,4 +1,5 @@
 import { FunctionComponent, useState } from "react";
+import classNames from "../../customs/classNames";
 import styles from "./button1.module.css";
 
 
@@ -12,10 +13,14 @@ const Button1: FunctionComponent<Props> = ({ children, variant }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   const onHover = () => {
     setIsHover(true);
+    console.log(3)
+  }
+  const onLeave = () => {
+    setIsHover(false);
   }
 
   return (
-    <div className={styles.container} onMouseEnter={onHover}>
+    <div className={styles.container + classNames({ className: styles.container_hover, condition: isHover })} onMouseEnter={onHover} onMouseLeave={onLeave}>
       <svg xmlns="http://www.w3.org/2000/svg" width={265} height={70} viewBox="0 0 265 70" fill="none" className={styles.bgsvg}>
         <path d="M1 51.1548L20 69.5203H1V51.1548Z" fill="url(#paint0_linear_1070_549)" fillOpacity="0.3" />
         <path d="M265 19.2566L246 0.891039H265V19.2566Z" fill="url(#paint1_linear_1070_549)" fillOpacity="0.3" />

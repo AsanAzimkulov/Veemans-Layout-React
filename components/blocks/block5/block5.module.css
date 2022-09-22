@@ -3,6 +3,7 @@ div.container {
   min-height: 300px;
   margin: 120px 120px 0px;
   margin-top: 100px !important;
+  margin-bottom: 100px !important;
 }
 
 .container .imgLine {
@@ -14,7 +15,10 @@ div.container {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
 }
+
+
 
 .item {
   width: 80%;
@@ -25,9 +29,9 @@ div.container {
 }
 
 .listItem img {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .container h1 {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
