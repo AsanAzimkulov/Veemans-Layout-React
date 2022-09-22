@@ -42,11 +42,11 @@
   vertical-align: top;
   margin-top: 0px;
   height: 33px;
-  cursor: pointer;
 }
 
 .toggleButtonWrapper {
   margin-top: 10px !important;
   background: none;
   border: none !important;
+  cursor: pointer;
 }
