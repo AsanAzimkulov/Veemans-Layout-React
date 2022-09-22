@@ -73,8 +73,10 @@
 }
 
 .phonne {
+  image-rendering: pixelated;
   image-rendering: -webkit-crisp-edges;
 }
+
 
 @media(max-width: 1550px) {
   .container p {
