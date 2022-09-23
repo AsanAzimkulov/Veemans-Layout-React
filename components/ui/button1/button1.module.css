@@ -84,6 +84,7 @@
   stroke-dasharray: 247 52 263 55;
 }
 
+.container_hover .bgsvg .p,
 .container:hover .bgsvg .p {
   stroke-dasharray: 270 55 273 63;
   stroke-dashoffset: 365;
