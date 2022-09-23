@@ -80,6 +80,8 @@ const Home: NextPage = () => {
           { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
         ]}></BlockTeam>
 
+  <div className={styles.mtSpace}></div>
+  
         {/*Team*/}
 
           <BlockTeam title="Team" members={[

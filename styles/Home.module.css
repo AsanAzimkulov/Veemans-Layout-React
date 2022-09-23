@@ -25,3 +25,9 @@
     margin-top: -152px
   }
 }
+
+@media(min-width: 1600px) {
+  .mtSpace {
+    margin-top: 70px !important;
+  }
+}
