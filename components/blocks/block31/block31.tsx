@@ -10,7 +10,7 @@ const Block31: FunctionComponent = () => {
     <div className={styles["container"]}>
       <div className={styles["columns1"]}>
         <div style={{ 'textAlign': 'center' }}>
-          <img src="/images/block31_img1.png" className={styles.phonne} />
+          <img src="/images/block31_imgg.png" className={styles.phonne} />
         </div>
         <div className={styles["info"]}>
           <div>
