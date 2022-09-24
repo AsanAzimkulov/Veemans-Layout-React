@@ -27,16 +27,20 @@
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 991.5px) {
   .border {
-    position: fixed;
+    position: absolute;
     clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 70px, 100% 70px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 1px,
 
         1px 1px, 1px calc(100% - 1px), calc(21.77% - 1px) calc(100% - 1px), calc(26.77% - 1px) calc(100% - 39px), calc(73.23% + 1px) calc(100% - 39px), calc(78.23% + 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 71px, calc(100% - 63px) 71px, calc(100% - 104px) 1px, 0% 1px);
     width: calc(100vw - 18px);
-    height: calc(100vh - 18px);
+    height: 772px;
     top: 9px;
     left: 9px;
     right: 9px;
+  }
+
+  .wrapper {
+    margin-bottom: 221px;
   }
 }

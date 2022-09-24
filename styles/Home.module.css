@@ -31,3 +31,9 @@
     margin-top: 70px !important;
   }
 }
+
+@media(max-width: 991.5px) {
+  .mainBg {
+    background-position: center -646px;
+  }
+}

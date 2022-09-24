@@ -199,3 +199,13 @@
     padding-right: 50px;
   }
 }
+
+@media(max-width: 991.5px) {
+  .menuIcon {
+    padding: 0px;
+  }
+
+  .menuArea {
+    margin-top: 125px !important;
+  }
+}

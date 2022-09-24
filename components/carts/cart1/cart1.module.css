@@ -93,7 +93,7 @@
 
 }
 
-@media(max-width: 1150px) {
+@media(max-width: 1300px) {
   .container {
     width: 288px;
     height: 350px;
@@ -110,3 +110,27 @@
   }
 }
 
+@media (max-width: 991.5px) {
+  .container {
+    background: center no-repeat url("/icons/cart1-mobile.png");
+    background-size: contain;
+    width: 350px;
+    height: 184px;
+    margin-top: 30px;
+    display: grid;
+    position: relative;
+  }
+
+  .icon {
+    width: 101px;
+    height: 112px;
+    top: -56px;
+    background: url(/icons/cart1_icon-mobile.svg) no-repeat;
+  }
+
+  .text {
+    margin-top: 40px;
+  }
+
+
+}

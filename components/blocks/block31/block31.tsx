@@ -9,12 +9,15 @@ const Block31: FunctionComponent = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["columns1"]}>
-        <div style={{ 'textAlign': 'center' }}>
+        <div style={{ 'textAlign': 'center' }} className={styles.columns1__picture_desctop}>
           <img src="/images/block31_img1.png" className={styles.phonne} />
         </div>
         <div className={styles["info"]}>
           <div>
             <Title1>What is DRIVE 2 EARN?</Title1>
+            <div style={{ 'textAlign': 'center' }} className={styles.columns1__picture_mobile}>
+              <img src="/images/block31_img1.png" className={styles.phonne} />
+            </div>
             <p className={styles["info__paragraph"]}>
               A new concept that suggests the possibility of virtual earnings
               for the actions that the user performs in the real world.

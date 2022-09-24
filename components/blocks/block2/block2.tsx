@@ -32,34 +32,55 @@ const Block2: FunctionComponent = () => {
         <div className={styles["columns2"]}>
           <Cart1>
             <div>
-              <img src="/images/icon1.svg" alt="X" />
+              <img src="/images/icon1.svg" alt="X" className={styles.columns2__cartIcon} />
+              <img src="/icons/cart1-icon1-mobile.svg" alt="X" className={styles.columns2__cartIcon_mobile} />
             </div>
-            <p>
+            <p className={styles.columns2__cartContent}>
               Activate your GPS tracker in the <br />
               app before starting your trip and
               <br />
               move at a speed of 10 to 60 km/h.{" "}
             </p>
+
+            <p className={styles.columns2__cartContentMobile}>
+              <strong>Activate your GPS tracker in the
+                app</strong> <br />before starting your trip and
+              move at <br /> a speed of 10 to 60 km/h.{" "}
+            </p>
           </Cart1>
           <Cart1>
             <div>
-              <img src="/images/icon2.svg" alt="X" />
+              <img src="/images/icon2.svg" alt="X" className={styles.columns2__cartIcon} />
+              <img src="/icons/cart1-icon2-mobile.svg" alt="X" className={styles.columns2__cartIcon_mobile} />
             </div>
-            <p>
-              For every km you get VMS/VMN <br />
+            <p className={styles.columns2__cartContent}>
+              For every km you get VMS/VMN<br />
               tokens, which you can use both for <br />
               in-game purchases and for <br />
+              exchange for real money.
+            </p>
+            <p className={styles.columns2__cartContentMobile}>
+              <strong>For every km you get VMS/VMN
+                tokens,<br /> which you can use</strong> both for
+              in-game <br /> purchases and for
               exchange for real money.
             </p>
           </Cart1>
           <Cart1>
             <div>
-              <img src="/images/icon3.svg" alt="X" />
+              <img src="/images/icon3.svg" alt="X" className={styles.columns2__cartIcon} />
+              <img src="/icons/cart1-icon3-mobile.svg" alt="X" className={styles.columns2__cartIcon_mobile} />
             </div>
-            <p>
+            <p className={styles.columns2__cartContent}>
               Organize alliances to capture <br />
               territories and to get additional <br />
               rewards for passing through your <br />
+              territories with other players.
+            </p>
+            <p className={styles.columns2__cartContentMobile}>
+              <strong>Organize alliances to capture
+                territories</strong><br /> and to get additional
+              rewards for passing <br /> through your
               territories with other players.
             </p>
           </Cart1>

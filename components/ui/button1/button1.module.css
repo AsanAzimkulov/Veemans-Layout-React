@@ -89,3 +89,25 @@
   stroke-dasharray: 270 55 273 63;
   stroke-dashoffset: 365;
 }
+
+@media(max-width: 991.5px) {
+  .container {
+    width: 264px;
+  }
+
+  .bgsvg {
+    position: absolute;
+    transform: scaleY(1.02) translateY(1px) scaleX(1) translateX(-1px);
+    transform-origin: left;
+  }
+
+  .wrap3 {
+    clip-path: polygon(34.5px 7px,
+        257px 7px,
+        257px 43.5px,
+        234.5px 66px,
+        7.2px 66px,
+        7.2px 31.5px);
+
+  }
+}

@@ -11,6 +11,12 @@
   margin: 145px 0px;
 }
 
+.columns1__picture_mobile {
+  display: none;
+}
+
+
+
 .container h3 {
   text-transform: uppercase;
 }
@@ -152,13 +158,196 @@
 
 @media(max-width: 1150px) {
 
-  .columns1:nth-child(2),
-  .columns1:nth-child(3),
-  .columns1:nth-child(4) {}
-
   .columns1:nth-child(2) p,
   .columns1:nth-child(3) p,
   .columns1:nth-child(4) p {
     font-size: 16px;
   }
+}
+
+@media(max-width: 991.5px) {
+  .container {
+    padding-left: 17px;
+    padding-right: 17px;
+    background-image: url(/images/b3-bg-m.png);
+    background-size: calc(100% - 18px) 100%;
+    background-repeat: no-repeat;
+    background-position: 9px 0;
+    margin-top: 100px;
+    padding-top: 93px;
+    padding-bottom: 90px;
+  }
+
+  .columns1 {
+    margin: 0px;
+  }
+
+  .columns1__picture_mobile {
+    display: block;
+    margin-bottom: -30px;
+    position: relative;
+  }
+
+  .columns1__picture_mobile img {
+    max-height: 550px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .columns1__picture_mobile::before {
+    width: 102.5vw;
+    height: 100%;
+    content: '';
+    background-image: url(/images/b3-thunders.png);
+    background-size: 100% 100%;
+    position: absolute;
+    display: block;
+    bottom: -90px;
+    left: -1vw;
+  }
+
+  .columns1__picture_desctop {
+    display: none;
+  }
+
+  .info {
+    padding-left: 36px;
+    padding-right: 36px;
+    display: block;
+    max-width: calc(100vw - 64px);
+    width: calc(100vw - 64px);
+    margin-left: 7.8vw;
+    box-sizing: content-box;
+  }
+
+  .info__paragraph {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    /* or 24px */
+  }
+
+  .columns1 h1 {
+    text-align: center;
+  }
+
+  .info__buttons {
+    margin-top: 40px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .columns1 {
+    grid-template-columns: 1fr;
+  }
+
+  .columns1>div:nth-child(2) {
+    order: -1;
+  }
+
+  .columns1:nth-child(3)>div:nth-child(1) {
+    order: -1;
+  }
+
+  .columns1:nth-child(2)>div:nth-child(2) img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .columns1:nth-child(3)>div:nth-child(1) img {
+    width: 217px !important;
+    height: 115px !important;
+  }
+
+  .columns1:nth-child(4)>div:nth-child(2) img {
+    width: 239px !important;
+    height: 140px !important;
+  }
+
+
+  .columns1:nth-child(2)>div:nth-child(2) {
+    margin-bottom: -148px;
+    z-index: 2;
+  }
+
+  .columns1:nth-child(3)>div:nth-child(1) {
+    margin-bottom: -72px;
+    z-index: 2;
+  }
+
+  .columns1:nth-child(4)>div:nth-child(2) {
+    z-index: 2;
+    margin-bottom: -108px;
+  }
+
+
+  .columns1:nth-child(2)>div:nth-child(1)>div,
+  .columns1:nth-child(4)>div:nth-child(1)>div {
+    background-image: url(/icons/cart2-bg-big-m.svg);
+    height: 264.6px;
+
+  }
+
+  .columns1:nth-child(3)>div:nth-child(2)>div {
+    background-image: url(/icons/cart2-bg-small-m.svg);
+    height: 184.6px;
+  }
+
+  .columns1:nth-child(2)>div:first-child,
+  .columns1:nth-child(4)>div:first-child,
+  .columns1:nth-child(3)>div:last-child {
+    justify-self: center;
+  }
+
+  .columns1:nth-child(2)>div:first-child p,
+  .columns1:nth-child(4)>div:first-child p,
+  .columns1:nth-child(3)>div:last-child p {
+    padding-left: 33px;
+    padding-right: 33px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    /* or 21px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: rgba(234, 234, 234, 0.6);
+  }
+
+  .columns1:nth-child(2)>div:first-child h3,
+  .columns1:nth-child(4)>div:first-child h3,
+  .columns1:nth-child(3)>div:last-child h3 {
+    font-weight: 700;
+    font-size: 20px !important;
+    line-height: 140%;
+    margin-bottom: -10px;
+  }
+
+  .columns1:nth-child(2)>div:first-child br,
+  .columns1:nth-child(4)>div:first-child br,
+  .columns1:nth-child(3)>div:last-child br {
+    display: none;
+  }
+
+  .columns1:nth-child(2)>div:first-child {
+    padding-top: 52px;
+  }
+
+  .columns1:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .columns1:not(.columns1:first-of-type) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .columns1:first-of-type {
+    margin-bottom: 30px;
+  }
+
 }
