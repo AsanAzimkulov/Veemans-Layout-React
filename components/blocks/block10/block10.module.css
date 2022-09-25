@@ -12,11 +12,21 @@
   margin-top: 40px;
 }
 
-@media(max-width: 991.5px){
-  div.container{
+@media(max-width: 991.5px) {
+  div.container {
     margin-top: 120px !important;
   }
-  .imgLine{
+
+  .imgLine {
     display: none;
+  }
+
+  .container p {
+    background: linear-gradient(89.09deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    color: transparent;
   }
 }
