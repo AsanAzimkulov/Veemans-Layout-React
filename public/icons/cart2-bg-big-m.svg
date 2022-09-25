@@ -1,15 +1,15 @@
 <svg width="332" height="266" viewBox="0 0 332 266" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M330.883 128.25V186.442L295.959 264.832H60.7276M268.195 1.17529H39.3241L1.45117 78.6865V124.907" stroke="url(#paint0_linear_1098_2899)"/>
-<g filter="url(#filter0_b_1098_2899)">
+
 <path d="M1 235.652L28.0259 265.604H1V235.652Z" fill="url(#paint1_linear_1098_2899)" fill-opacity="0.3"/>
-</g>
-<g filter="url(#filter1_b_1098_2899)">
+
+
 <path d="M331 30.9513L303.974 1.0001H331V30.9513Z" fill="url(#paint2_linear_1098_2899)" fill-opacity="0.3"/>
-</g>
-<g filter="url(#filter2_b_1098_2899)">
+
+
 <path d="M43.3746 8.17328H323.973V185.51L291.213 258.157H7.76562V80.6163L43.3746 8.17328Z" fill="url(#paint3_linear_1098_2899)" fill-opacity="0.15"/>
 <path d="M8.26562 80.7325L43.686 8.67328H323.473V185.402L290.89 257.657H8.26562V80.7325Z" stroke="url(#paint4_linear_1098_2899)"/>
-</g>
+
 <defs>
 <filter id="filter0_b_1098_2899" x="-45.3291" y="189.323" width="119.684" height="122.609" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
