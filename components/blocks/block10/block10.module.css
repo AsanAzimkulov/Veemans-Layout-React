@@ -12,6 +12,10 @@
   margin-top: 40px;
 }
 
+.list {
+  display: none;
+}
+
 @media(max-width: 991.5px) {
   div.container {
     margin-top: 120px !important;
@@ -21,12 +25,88 @@
     display: none;
   }
 
-  .container p {
+  .list {
+    display: block;
+  }
+
+  .root_visible .content {
+    max-height: 500px;
+  }
+
+  .root_visible .top__buttonCrosshair {
+    transform: rotate(-45deg);
+  }
+
+  .top__buttonCrosshair {
+    transition: transform 0.3s ease-out;
+    transform-origin: center;
+  }
+
+
+  .content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+  }
+
+  .root {
+    padding: 15px;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+  }
+
+  .date {
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
     background: linear-gradient(89.09deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     color: transparent;
+    width: fit-content;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  .title {
+    text-align: left;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+    /* or 24px */
+
+    letter-spacing: -0.02em;
+
+    /* W */
+
+    color: #FFFFFF;
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 35px;
+  }
+
+  .top__button {
+    background: none;
+    border: none !important;
+  }
+
+  .list {
+    padding: 0px;
+    list-style: none;
+    margin-top: 46px;
+    display: grid;
+    padding-left: 78px;
+    padding-right: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
   }
 }
