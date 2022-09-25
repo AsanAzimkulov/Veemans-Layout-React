@@ -11,6 +11,8 @@ const Block8: FunctionComponent<Props> = ({ }) => {
   return (
     <div className={styles["container"] + ' contentWrapper'}>
       <div className={styles.main}>
+        <div className={styles.m_rightB}></div>
+        <div className={styles.m_rightC}></div>
         <Title1><>Sport PvP competitions<br /> with real users</></Title1>
         <ul className={styles.markedList}>
           <li className={styles.markedListItem}>
@@ -47,13 +49,13 @@ const Block8: FunctionComponent<Props> = ({ }) => {
           </li>
           <li className={styles.cardListItem}>
             <img src="/images/cardList2.png" className={styles.cardListItemImage} />
-            <div>            <h3 className={styles.cardListItemTitle}>drag racing</h3>
+            <div>            <h3 className={styles.cardListItemTitle}>Drag racing</h3>
               <p className={styles.cardListItemDesc}>speed competition</p></div>
           </li>
           <li className={styles.cardListItem}>
             <img src="/images/cardList3.png" className={styles.cardListItemImage} />
             <div>
-              <h3 className={styles.cardListItemTitle}>crash test</h3>
+              <h3 className={styles.cardListItemTitle}>Crash test</h3>
               <p className={styles.cardListItemDesc}>strength competition</p>
             </div>
           </li>

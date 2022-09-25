@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import React, { FunctionComponent } from "react";
-// import { useIsVisible } from 'react-is-visible';
+import { useIsVisible } from 'react-is-visible';
 import classNames from "../../customs/classNames";
 import { Keyframes } from "../../customs/keyframes";
 import Button1 from "../../ui/button1/button1";
@@ -19,8 +19,7 @@ const Block9: FunctionComponent<Props> = ({ }) => {
 
   const chartRef = useRef<HTMLDivElement>(null);
 
-  // const isChartVisible = useIsVisible(chartRef);
-  const isChartVisible = false;
+  const isChartVisible = useIsVisible(chartRef);
 
   // Filling the array from smallest items
 

@@ -203,6 +203,12 @@
 @media(max-width: 991.5px) {
   .menuIcon {
     padding: 0px;
+    right: 23px;
+    top: 15px;
+  }
+  .menuIcon img{
+    width: 30px;
+    height: 23.48px;
   }
 
   .menuArea {

@@ -22,7 +22,7 @@
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 991.5px) {
   .items {
     grid-column-gap: 7.63px;
     grid-row-gap: 15.74px;
@@ -55,5 +55,20 @@
   .item {
     width: 130px;
     height: 138.476px;
+  }
+}
+
+@media(max-width: 991.5px) {
+  .item {
+    width: 91.58px;
+    height: 97.97px;
+  }
+
+  .items {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 7.63px;
+    grid-row-gap: 15.74px;
+    width: max-content;
   }
 }

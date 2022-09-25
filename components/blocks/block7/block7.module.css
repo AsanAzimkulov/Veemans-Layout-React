@@ -199,6 +199,97 @@
     width: 35px;
     height: 38px;
   }
+}
+
+@media(max-width: 991.5px) {
+  .block {
+    background-image: none;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 77px;
+    padding-left: 41px;
+    padding-right: 120px;
+  }
+
+  .block::before {
+    position: absolute;
+    clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 0.5px,
+        0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(21.77% - 0.5px) calc(100% - 0.5px), calc(26.77% - 0.5px) calc(100% - 38.5px), calc(73.23% + 0.5px) calc(100% - 38.5px), calc(78.23% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 40.5px, calc(100% - 62.5px) 40.5px, calc(100% - 103.5px) 0.5px, 0% 0.5px);
+    width: calc(100vw - 18px);
+    height: 100%;
+    top: 0px;
+    left: 9px;
+    right: 9px;
+    background: linear-gradient(270deg, #11D9EB 20.34%, #E42BC8 90.2%);
+    z-index: 1;
+  }
+
+  .block::after {
+    position: absolute;
+    clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%);
+    width: calc(100vw - 18px);
+    height: 100%;
+    top: 0px;
+    left: 9px;
+    right: 9px;
+    content: '';
+    display: block;
+    background: linear-gradient(93.22deg, rgba(206, 67, 255, 0.07) 17.59%, rgba(45, 179, 255, 0.063) 79.62%);
+    backdrop-filter: blur(15px);
+    z-index: 0;
+  }
+
+  .container h1 {
+    z-index: 1;
+    text-align: left;
+    position: relative;
+    width: 130%;
+  }
+
+  .content {
+    z-index: 2;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, max-content);
+    grid-row-gap: 30px;
+  }
+
+  .listItemTitle {
+    font-weight: 600;
+    font-size: 17px !important;
+    line-height: 160% !important;
+    margin-bottom: 7px;
+  }
+
+  .listItemDesc {
+    font-weight: 400;
+    font-size: 13px !important;
+    line-height: 170%;
+    letter-spacing: -0.02em;
+    color: rgba(234, 234, 234, 0.75);
+  }
+
+  .listItem::before {
+    width: 23px;
+    height: 28px;
+  }
+
+  .listItem {
+    padding-left: 32px;
+  }
 
 
+  .car {
+    width: 373px;
+    height: 547px;
+  }
+
+  .picture {
+    top: -40px;
+    left: calc(100% - 70px);
+  }
 }

@@ -24,8 +24,13 @@
   transform: rotate(-180deg);
 }
 
+.topLogo_mobile {
+  display: none;
+}
 
-
+.first__title1_mobile {
+  display: none;
+}
 
 
 
@@ -314,7 +319,7 @@
   }
 
   .first__solana {
-    bottom: -5px !important;
+    bottom: -113px !important;
   }
 
   .wrapper {

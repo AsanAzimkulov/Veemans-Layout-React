@@ -148,3 +148,101 @@
     transform: scale(1);
   }
 }
+
+@media(max-width: 991.5px) {
+  div.container {
+    margin-top: 93px;
+  }
+
+  .blockRow {
+    margin-top: 0 !important;
+    grid-template-columns: 1fr !important;
+    margin-right: 17px !important;
+    margin-left: 17px !important;
+    grid-row-gap: 25px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .blockRow:first-of-type {
+    margin-bottom: 50px !important;
+  }
+
+  .blockItemConnect {
+    display: none !important;
+  }
+
+  .container h1 {
+    margin-bottom: 50px;
+  }
+
+  .blockItem {
+    grid-template-columns: 65px 1fr;
+    display: grid !important;
+    grid-template-rows: max-content max-content;
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-column-gap: 15px;
+  }
+
+  .blockCount {
+    grid-row: 1/-1
+  }
+
+  .blockCount .countBox {
+    width: 65px !important;
+    height: 69.28px !important;
+  }
+
+  .blockCount .countBox span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    width: 57px;
+  }
+
+  .blockTitle {
+    margin: 0;
+    text-align: left;
+    margin-top: 6px !important;
+  }
+
+  .blockTitle h4 {
+    font-size: 16px !important;
+    line-height: 150% !important;
+    margin-bottom: 15px;
+    letter-spacing: -0.02em;
+    width: 90% !important;
+  }
+
+  .blockDesc {
+    text-align: left;
+    font-family: 'Ruberoid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    line-height: 160% !important;
+    margin-top: 0 !important;
+    /* or 21px */
+
+    letter-spacing: -0.02em;
+
+    color: rgba(234, 234, 234, 0.7);
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .container::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 8px;
+    height: calc(100% - 162.72px);
+    background: #361268;
+    left: 41.3px;
+    top: 100px;
+    z-index: 0;
+  }
+}

@@ -10,7 +10,7 @@
 
 
 
-  clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36px) 55px, 100% 55px, 100% 100%, 75px 100%, 0% calc(100% - 75px), 0% 0.5px, 0.5px 0.5px, 0.5px calc(100% - 74px), 74px calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 54.5px, calc(93.13% + 35.5px) 54.5px, calc(93.13% - 0.5px) 0.5px, 0% 0.5px);
+  clip-path: polygon(0% 0px, 93.13% 0px, calc(93.13% + 36.5px) 55px, 100% 55px, 100% 100%, 75px 100%, 0% calc(100% - 75px), 0% 0.5px, 0.5px 0.5px, 0.5px calc(100% - 74px), 74px calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 54.5px, calc(93.13% + 35.5px) 54.5px, calc(93.13% - 0.5px) 0.5px, 0% 0.5px);
 
   z-index: 1;
 
@@ -23,21 +23,22 @@
 
 @media(max-width: 1300px) {
   .border {
-    clip-path: polygon(0% 0px, 85% 0px, calc(85% + 36px) 55px, 100% 55px, 100% 100%, 75px 100%, 0px calc(100% - 75px), 0% 0.5px, 0.5px 0.5px, 0.5px calc(100% - 0.5px), 0.5px calc(100% - 74px), 74px calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 55.5px, calc(85% + 35.5px) 55.5px, calc(85% - 0.5px) 0.5px, 0% 0.5px);
+    clip-path: polygon(0% 0px, 85% 0px, calc(85% + 36.5px) 55px, 100% 55px, 100% 100%, 75px 100%, 0px calc(100% - 75px), 0% 0.5px, 0.5px 0.5px, 0.5px calc(100% - 0.5px), 0.5px calc(100% - 74px), 74px calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 55.5px, calc(85% + 35.5px) 55.5px, calc(85% - 0.5px) 0.5px, 0% 0.5px);
   }
 }
 
 @media(max-width: 991.5px) {
   .border {
     position: absolute;
-    clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 70px, 100% 70px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 1px,
+    clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 0.5px,
 
-        1px 1px, 1px calc(100% - 1px), calc(21.77% - 1px) calc(100% - 1px), calc(26.77% - 1px) calc(100% - 39px), calc(73.23% + 1px) calc(100% - 39px), calc(78.23% + 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 71px, calc(100% - 63px) 71px, calc(100% - 104px) 1px, 0% 1px);
+        0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(21.77% - 0.5px) calc(100% - 0.5px), calc(26.77% - 0.5px) calc(100% - 38.5px), calc(73.23% + 0.5px) calc(100% - 38.5px), calc(78.23% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 40.5px, calc(100% - 62.5px) 40.5px, calc(100% - 103.5px) 0.5px, 0% 0.5px);
     width: calc(100vw - 18px);
     height: 772px;
     top: 9px;
     left: 9px;
     right: 9px;
+    
   }
 
   .wrapper {

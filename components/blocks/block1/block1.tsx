@@ -54,7 +54,7 @@ const Block1: FunctionComponent = () => {
               </div>
             </div>
             <img src="/icons/title.png" className={styles.topLogo} alt="" />
-            <img src="/icons/title-m.png" className={styles.topLogo + ' ' + styles.topLogo_mobile} alt="" />
+            <img src="/icons/title-m.svg" className={styles.topLogo + ' ' + styles.topLogo_mobile} alt="" />
             <div className={styles.first__title1 + ' ' + styles.first__title1_mobile}>
               Veemans is a web3.0 APP
             </div>

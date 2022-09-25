@@ -228,6 +228,7 @@
 }
 
 @media(max-width: 1100px) {
+
   .main {
     padding-left: 30px;
     padding-right: 30px;
@@ -241,5 +242,183 @@
 
   .cardListItemImage {
     max-height: 70px;
+  }
+}
+
+@media(max-width: 1150px) {
+
+  .main::after {
+    right: 20px;
+  }
+
+  .main::before {
+    left: 20px;
+  }
+
+}
+
+.m_rightB,
+.m_rightC {
+  display: none;
+}
+
+@media(max-width: 991.5px) {
+
+  .m_rightB,
+  .m_rightC {
+    position: absolute;
+    display: block;
+  }
+
+  .m_rightC {
+    background-image: url(/icons/b8-circles.svg);
+    width: 45px;
+    background-size: 100% 100%;
+    height: 20px;
+    right: 20px;
+    top: 5px;
+  }
+
+  .m_rightB {
+    position: absolute;
+    background: linear-gradient(180deg, #11D9EB -19.5%, #FF14DA 149.95%);
+    width: 100%;
+    background-size: 100% 100%;
+    height: 44px;
+    right: 9px;
+    top: 0px;
+    clip-path: polygon(calc(100% - 93px) 0, calc(100% - 60px) 32px, 100% 32px, 100% 33px, calc(100% - 60px) 33px, calc(100% - 93px) 1px);
+  }
+
+  div.container {
+    margin-top: 120px !important;
+    margin-bottom: 110px;
+  }
+
+  .main {
+    background: none;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+
+  .main::before {
+    content: '';
+    position: absolute;
+    display: block;
+    clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 0.5px,
+
+        0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(21.77% - 0.5px) calc(100% - 0.5px), calc(26.77% - 0.5px) calc(100% - 38.5px), calc(73.23% + 0.5px) calc(100% - 38.5px), calc(78.23% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 40.5px, calc(100% - 62.5px) 40.5px, calc(100% - 103.5px) 0.5px, 0% 0.5px);
+    width: calc(100vw - 18px);
+    height: 100%;
+    top: 0;
+    left: 9px;
+    right: 9px;
+    background: linear-gradient(167deg, #11D9EB 20.34%, #E42BC8 90.2%);
+  }
+
+  .main::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 9px;
+    right: 9px;
+    background: #11D9EB;
+    clip-path: polygon(8px 10px, calc(100% - 126px) 10px, calc(100% - 126px) 10.5px, 8px 10.5px);
+  }
+
+
+  .main h1 {
+    text-align: left;
+  }
+
+  .markedList {
+    margin-top: 41px;
+    margin-bottom: 63px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+
+  .markedListItemTitle {
+    text-align: left;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 160% !important;
+    text-transform: none;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+  }
+
+  .markedListItemDesc {
+    font-family: 'Ruberoid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    line-height: 170% !important;
+    letter-spacing: -0.02em;
+    color: rgba(234, 234, 234, 0.75);
+    text-align: left;
+  }
+
+  .markedListItem::before {
+    width: 46px;
+    height: 46px;
+    background-size: 46px 46px;
+    top: 10px;
+  }
+
+  .markedListItem {
+    padding-left: 63px;
+  }
+
+  .main h3 {
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 140% !important;
+  }
+
+  .cardList {
+    margin-top: 32px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+    justify-items: center;
+  }
+
+  .cardListItemTitle {
+    font-family: 'Ruberoid' !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 160% !important;
+    text-transform: none;
+    color: white !important;
+  }
+
+  .cardListItemDesc {
+    font-family: 'Ruberoid';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    line-height: 170% !important;
+    /* or 22px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: rgba(234, 234, 234, 0.75);
+  }
+
+  .cardListItem {
+    padding-top: 20px;
+    width: 286px;
+    max-height: 219px;
   }
 }
