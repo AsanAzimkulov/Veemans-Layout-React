@@ -140,7 +140,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 991.5px) {
   .containerBorder_opened {
     width: 100vw !important;
     position: fixed !important;
@@ -206,12 +206,17 @@
     right: 23px;
     top: 15px;
   }
-  .menuIcon img{
+
+  .menuIcon img {
     width: 30px;
     height: 23.48px;
   }
 
   .menuArea {
     margin-top: 125px !important;
+  }
+
+  .containerBorder {
+    height: 30px;
   }
 }

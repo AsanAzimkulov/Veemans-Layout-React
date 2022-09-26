@@ -153,3 +153,82 @@
 }
 
 
+@media(max-width: 991.5px) {
+  .teamLine {
+    margin-top: 35px;
+    grid-column-gap: 14px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+  }
+
+  /* .teamItem:last-child {
+    grid-column: 1/-1;
+    justify-self: center;
+  } */
+
+  div.container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .teamItem:not(.teamItem:nth-child(-n+2)) {
+    margin-top: -80px;
+  }
+
+  .teamItem {
+    max-width: 185px;
+    margin-right: 0;
+    margin-left: 1px;
+  }
+
+  .title {
+    font-family: 'Tomorrow' !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 160% !important;
+    margin-bottom: 4px;
+  }
+
+  .email {
+    font-family: 'Ruberoid' !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    line-height: 160% !important;
+    margin-bottom: 17px !important;
+  }
+
+  .socialsItem:nth-child(2) {
+    display: none;
+  }
+
+
+
+  .socialsItem,
+  .socialsItem svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .socialsItem:nth-child(1) {
+    order: 2;
+  }
+
+  .socialsItem:nth-child(3) {
+    order: 1;
+  }
+
+  .socialsItem:nth-child(2) {
+    order: 3;
+  }
+
+
+
+  .socialsList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

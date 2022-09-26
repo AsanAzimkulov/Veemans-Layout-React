@@ -195,15 +195,15 @@
   }
 
   .columns1__picture_mobile::before {
-    width: 102.5vw;
+    width: 100vw;
     height: 100%;
     content: '';
     background-image: url(/images/b3-thunders.png);
     background-size: 100% 100%;
     position: absolute;
     display: block;
+    left: -18px;
     bottom: -90px;
-    left: -1vw;
   }
 
   .columns1__picture_desctop {
@@ -211,13 +211,11 @@
   }
 
   .info {
-    padding-left: 36px;
-    padding-right: 36px;
-    display: block;
-    max-width: calc(100vw - 64px);
-    width: calc(100vw - 64px);
-    margin-left: 7.8vw;
-    box-sizing: content-box;
+    max-width: 100vw;
+    margin-left: 60px;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 100vw;
   }
 
   .info__paragraph {

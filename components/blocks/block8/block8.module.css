@@ -421,4 +421,24 @@
     width: 286px;
     max-height: 219px;
   }
+
+  div.container {
+    position: relative;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 800px;
+    bottom: 51px;
+    left: 0px;
+    background: url(/images/b8-th.png);
+    background-size: 100% 100%;
+  }
+
+  .main {
+    z-index: 2;
+  }
 }

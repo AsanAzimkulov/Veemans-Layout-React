@@ -172,7 +172,7 @@
 
 .mobileButton,
 .mobileButton {
-  display: none;
+  display: none !important;
 }
 
 .chartUnit {

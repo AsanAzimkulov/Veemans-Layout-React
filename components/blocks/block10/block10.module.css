@@ -30,7 +30,7 @@
   }
 
   .root_visible .content {
-    max-height: 500px;
+    max-height: 400px;
   }
 
   .root_visible .top__buttonCrosshair {
@@ -109,4 +109,103 @@
     grid-template-columns: 1fr;
     grid-row-gap: 25px;
   }
+
+  .itemList {
+    list-style: none;
+    padding: 0px;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+  }
+
+  .itemListItem {
+    font-family: 'Ruberoid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.5px;
+    line-height: 150%;
+    color: rgba(236, 236, 236, 0.7);
+    text-align: left;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .itemListItem::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color);
+    left: 0px;
+    top: 6px;
+  }
+
+  .list {
+    position: relative;
+
+  }
+
+  .list::before {
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 90%;
+    border: 2px solid;
+    background: linear-gradient(180deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
+    content: '';
+    top: 2.5%;
+    left: 39px;
+    border: none;
+  }
+
+  .root {
+    position: relative;
+  }
+
+  .root::before {
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    left: -59px;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color);
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 170%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #110731;
+  }
+
+  .root::after {
+    display: block;
+    position: absolute;
+    content: '';
+    left: -30px;
+    top: 23px;
+    width: 30px;
+    height: 0.7px;
+    background: var(--color);
+  }
+
+  .list {
+    list-style-type: none;
+    counter-reset: li;
+  }
+
 }

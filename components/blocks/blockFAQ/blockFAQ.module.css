@@ -50,3 +50,57 @@
   border: none !important;
   cursor: pointer;
 }
+
+@media(max-width: 991.5px) {
+  div.container {
+    margin-top: 30px !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+  }
+
+  .container::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100vw;
+    left: 0px;
+    top: -384px;
+    height: 845px;
+    background: url(/images/faq-th.png);
+    background-size: 100% 100%;
+  }
+
+  .faqWrapper {
+    margin-top: 40px;
+  }
+
+  .faqItem {
+    background: rgba(130, 141, 238, 0.07);
+    border: 0.5px solid #26252C;
+    backdrop-filter: blur(5px);
+  }
+
+  .title {
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+  }
+
+  .toggleButton,
+  .toggleButtonWrapper {
+    height: 35px !important;
+  }
+
+  .desc {
+    font-family: 'Ruberoid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    /* or 21px */
+
+
+    color: #ECECEC;
+  }
+}
