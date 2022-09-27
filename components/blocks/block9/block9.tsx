@@ -53,7 +53,7 @@ const Block9: FunctionComponent<Props> = ({ }) => {
   ].reverse();
 
   function getAnimationFrame(unit: TUnit, index: number) {
-    const delay = isMobile ? 1000 : 200 * units.length - 50 * index;
+    const delay = isMobile ? 0 : 200 * units.length - 50 * index;
     if (isChartVisible) {
       setTimeout(() => isAnimated.current = true, delay)
     }
