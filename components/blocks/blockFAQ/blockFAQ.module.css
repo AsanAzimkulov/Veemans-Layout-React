@@ -33,7 +33,6 @@
 
 .visible .desc {
   height: auto;
-  transition: 0.2s ease-out;
   padding-bottom: 20px;
 }
 

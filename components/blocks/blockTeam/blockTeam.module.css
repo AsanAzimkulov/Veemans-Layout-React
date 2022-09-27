@@ -181,7 +181,7 @@
   .teamItem {
     max-width: 185px;
     margin-right: 0;
-    margin-left: 1px;
+    margin-left: 0px;
   }
 
   .title {
@@ -231,4 +231,13 @@
   .socialsList {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+@media(max-width: 420px){
+  .teamLine{
+    grid-template-columns: 1fr;
+  }
+  .teamItem:nth-child(2){
+    margin-top: -80px;
+}
 }

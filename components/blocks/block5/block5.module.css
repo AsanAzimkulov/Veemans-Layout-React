@@ -49,8 +49,7 @@ div.container {
     margin-right: 29px;
     margin-left: 29px;
     grid-template-columns: 1fr;
-    background: url(/images/b5-bg-m.png);
-    background-size: 100% 100%;
+    position: relative;
     padding-top: 68px;
     padding-bottom: 77px;
     grid-row-gap: 50px !important;
@@ -58,6 +57,19 @@ div.container {
     padding-right: 14px;
     justify-items: center;
     /* max-width: 540px; */
+  }
+
+  .list::before {
+    clip-path: polygon(0px 0px, 23.87% 0px, 29.49% 1.556%, 70.51% 1.556%, 76.13% 0px, 100% 0px, 100% 100%, 76.13% 100%, 70.51% calc(100% - 1.556%), 29.49% calc(100% - 1.556%), 23.87% 100%, 0px 100%,
+        0px 0.5px, 0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(23.87% - 0.5px) calc(100% - 0.5px), calc(29.49% - 0.5px) calc(100% - 1.587%), calc(70.51% + 0.5px) calc(100% - 1.587%), calc(76.13% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 0.5px, calc(76.13% + 0.5px) 0.5px, calc(70.51% + 0.5px) 1.587%, calc(29.49% - 0.5px) 1.587%, calc(23.87% - 0.5px) 0.5px, 0px 0.5px);
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #11D9EB 20.34%, #E42BC8 90.2%);
   }
 
   .listItem img {

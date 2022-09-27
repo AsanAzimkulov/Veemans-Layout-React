@@ -361,3 +361,15 @@
     justify-items: center;
   }
 }
+
+@media(max-width: 420px){
+  .video-block{
+    width: 320px
+  }
+}
+
+@media(max-width: 350px){
+  .video-block{
+    width: 290px
+  }
+}

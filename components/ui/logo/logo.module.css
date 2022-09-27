@@ -45,7 +45,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 991.5px) {
   .containerBorder {
     z-index: 10;
   }

@@ -216,7 +216,7 @@
   bottom: 60px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 991.5px) {
   .first__apps-block {
     display: none;
   }
@@ -282,6 +282,8 @@
     display: block;
     text-align: center;
     text-shadow: none;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .topLogo {
@@ -296,9 +298,10 @@
   .firstWrapper {
     padding-left: 0;
     padding-right: 0;
-    margin-top: -40px;
+    margin-top: -270px;
     padding-top: 413px;
     height: 160%;
+    height: 794px;
   }
 
   .first__text {
@@ -319,11 +322,17 @@
   }
 
   .first__solana {
-    bottom: -113px !important;
+    bottom: -153px !important;
   }
 
   .wrapper {
     height: 810px;
   }
 
+}
+
+@media(min-width: 650px) and (max-width: 991.5px) {
+  .firstWrapper {
+    height: 864px;
+  }
 }

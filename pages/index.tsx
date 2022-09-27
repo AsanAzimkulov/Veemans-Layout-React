@@ -69,7 +69,7 @@ const Home: NextPage = () => {
         </div>
 
         {/*Partners*/}
-        <Block11></Block11>
+        <div className={styles.partnersDesctop}><Block11></Block11></div>
 
         {/*Project Partners*/}
         <BlockTeam title="Project Partners" members={[

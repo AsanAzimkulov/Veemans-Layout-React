@@ -38,7 +38,7 @@
   }
 
   .top__buttonCrosshair {
-    transition: transform 0.3s ease-out;
+    transition: transform 0.5s ease-out;
     transform-origin: center;
   }
 
@@ -46,7 +46,7 @@
   .content {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.6s ease-out;
+    transition: max-height 0.5s ease-out;
   }
 
   .root {
@@ -91,6 +91,25 @@
   .top {
     display: grid;
     grid-template-columns: 1fr 35px;
+  }
+  .rootWrapper{
+    position: relative;
+  }
+  .rootWrapper::before{
+    display: block;
+    position: absolute;
+    width: 1.5px;
+    height: calc(100% + 25px);
+    border: 2px solid;
+    background: var(--color);
+    content: '';
+    top: 10px;
+    left: -38px;
+    border: none;
+  }
+
+  .rootWrapper:last-child::before{
+    content: normal;
   }
 
   .top__button {
@@ -149,16 +168,7 @@
   }
 
   .list::before {
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 90%;
-    border: 2px solid;
-    background: linear-gradient(180deg, #E42BC8 2.57%, #5670FD 52.89%, #1DCEF4 97.63%);
-    content: '';
-    top: 2.5%;
-    left: 39px;
-    border: none;
+
   }
 
   .root {
