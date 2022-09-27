@@ -233,11 +233,27 @@
   }
 }
 
-@media(max-width: 420px){
-  .teamLine{
+@media(max-width: 370px) {
+  .teamLine {
     grid-template-columns: 1fr;
   }
-  .teamItem:nth-child(2){
+
+  .teamItem:nth-child(2) {
     margin-top: -80px;
+  }
 }
+
+@media(min-width: 370px) and (max-width: 420px) {
+  .teamLine {
+    grid-column-gap: 7px;
+  }
+
+  .teamItem {
+    max-width: 166px;
+    padding-top: 80px;
+  }
+
+  .title {
+    margin-bottom: 1px !important;
+  }
 }
