@@ -257,7 +257,7 @@
     margin-bottom: 1px !important;
   }
 
-  .teamItem:not(.blockTeam_teamItem__BCoOR:nth-child(-n+2)) {
+  .teamItem:not(.teamItem:nth-child(-n+2)) {
     margin-top: -100px;
   }
 }
