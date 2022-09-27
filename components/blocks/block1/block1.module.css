@@ -274,6 +274,10 @@
 }
 
 @media(max-width: 991.5px) {
+  .first {
+    height: auto;
+  }
+
   .first__title1 {
     display: none;
   }
@@ -322,13 +326,12 @@
   }
 
   .first__solana {
-    bottom: -153px !important;
+    bottom: -201px !important;
   }
 
   .wrapper {
     height: 810px;
   }
-
 }
 
 @media(min-width: 650px) and (max-width: 991.5px) {
