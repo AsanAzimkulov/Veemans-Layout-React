@@ -356,6 +356,12 @@
   .mobileButton {
     display: block;
   }
+
+
+  .chartUnit {
+    animation: none;
+  }
+
 }
 
 @media(max-width: 430px) {

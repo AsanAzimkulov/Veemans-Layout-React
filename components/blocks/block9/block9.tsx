@@ -1,12 +1,13 @@
 // @ts-ignore
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import React, { FunctionComponent } from "react";
 import { useIsVisible } from 'react-is-visible';
 import classNames from "../../customs/classNames";
 import { Keyframes } from "../../customs/keyframes";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
+import { useWindowSize } from "../../customs/useWindowDimensions";
 import styles from "./block9.module.css";
 
 interface Props {
@@ -14,6 +15,15 @@ interface Props {
 
 
 const Block9: FunctionComponent<Props> = ({ }) => {
+
+  const windowSize = useWindowSize();
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (windowSize.width !== undefined) {
+      setIsMobile(windowSize.width <= 991);
+    }
+  }, [windowSize])
 
   const isAnimated = useRef<boolean>(false);
 
@@ -43,13 +53,14 @@ const Block9: FunctionComponent<Props> = ({ }) => {
   ].reverse();
 
   function getAnimationFrame(unit: TUnit, index: number) {
+    const delay = isMobile ? 1000 : 200 * units.length - 50 * index;
     if (isChartVisible) {
-      setTimeout(() => isAnimated.current = true, (200 * units.length - 50 * index))
+      setTimeout(() => isAnimated.current = true, delay)
     }
 
     return {
       strokeDasharray: 1100 * unit.percentage + " 10000",
-      animation: `circleChartExpand${index} ${200 * units.length - 50 * index}ms cubic-bezier(.43,.32,.21,1) 0ms forwards`,
+      animation: `circleChartExpand${index} ${delay}ms cubic-bezier(.43,.32,.21,1) 0ms forwards`,
     }
   }
   return (
@@ -98,6 +109,9 @@ const Block9: FunctionComponent<Props> = ({ }) => {
                         :
                         <></>
                     }
+                    {<style>
+
+                    </style>}
                   </React.Fragment>
                 ))
               }
