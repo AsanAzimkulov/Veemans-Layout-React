@@ -221,7 +221,7 @@
     left: 9px;
     right: 9px;
     background: linear-gradient(270deg, #11D9EB 20.34%, #E42BC8 90.2%);
-    z-index: 1;
+    z-index: 4;
   }
 
   .block::after {
@@ -231,7 +231,7 @@
     clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 0.5px,
 
         0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(21.77% - 0.5px) calc(100% - 0.5px), calc(26.77% - 0.5px) calc(100% - 38.5px), calc(73.23% + 0.5px) calc(100% - 38.5px), calc(78.23% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 40.5px, calc(100% - 62.5px) 40.5px, calc(100% - 103.5px) 0.5px, 0% 0.5px);
-        
+
     width: calc(100vw - 18px);
     height: 100%;
     top: 0px;
@@ -252,15 +252,70 @@
   }
 
   .content {
-    z-index: 2;
     position: relative;
     margin-top: 40px;
+    position: relative;
+  }
+
+  .car {
+    position: relative;
+    z-index: 5;
   }
 
   .list {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 30px;
+    height: 506px;
+    overflow: scroll;
+  }
+
+  .listItem:first-child,
+  .listItem:last-child {
+    z-index: 3;
+  }
+
+  .container h1 {
+    z-index: 3;
+  }
+
+  .list::before {
+    content: '';
+    width: 100%;
+    top: -7px;
+    left: 0px;
+    position: absolute;
+    height: 131px;
+    display: block;
+    background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
+    z-index: 1;
+  }
+
+  .list::after {
+    content: '';
+    width: 110vw;
+    bottom: -7px;
+    left: -10vw;
+    position: absolute;
+    height: 131px;
+    display: block;
+    background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
+    transform: rotate(-180deg);
+  }
+
+  div.container {
+    position: relative;
+  }
+
+  .container::after {
+    display: block;
+    content: '';
+    bottom: -70px;
+    left: 0px;
+    position: absolute;
+    width: 100vw;
+    height: 150px;
+    background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
   }
 
   .listItemTitle {
@@ -297,6 +352,7 @@
     top: -40px;
     left: calc(100% - 70px);
   }
+
 }
 
 @media(min-width: 768px) and (max-width: 991.5px) {
