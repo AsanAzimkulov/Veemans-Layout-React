@@ -255,6 +255,7 @@
     position: relative;
     margin-top: 40px;
     position: relative;
+    height: 506px;
   }
 
   .car {
@@ -267,7 +268,7 @@
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 30px;
     height: 506px;
-    overflow-y: auto;
+    overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
 
