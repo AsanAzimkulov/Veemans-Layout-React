@@ -13,45 +13,47 @@ const Block7: FunctionComponent<Props> = ({ }) => {
       <div className={styles.block}>
         <Title1>Elements of the Veemans Ecosystem </Title1>
         <div className={styles.content}>
-          <ol className={styles.list}>
-            <li className={styles.listItem}>
-              <h3 className={styles.listItemTitle}>Alliances</h3>
-              <p className={styles.listItemDesc}>Create your own alliances in your city, capture the streets of the territory and charge other players for travel.</p>
-            </li>
-            <li className={styles.listItem}>
-              <h3 className={styles.listItemTitle}>Car Dealers</h3>
-              <p className={styles.listItemDesc}>Become a car dealer and sell NFT cars to other users on our marketplace.</p>
-            </li>
-            <li className={styles.listItem}>
-              <h3 className={styles.listItemTitle}>Augmented reality</h3>
-              <p className={styles.listItemDesc}>Enjoy your amazing car through your phone.</p>
-            </li>
-            <li className={styles.listItem}>
-              <h3 className={styles.listItemTitle}>Garage</h3>
-            <p className={styles.listItemDesc}>Upgrade your veeman in your personal personal garage to raise more tokens from travelling.</p>
-          </li>
-          <li className={styles.listItem}>
-            <h3 className={styles.listItemTitle}>Quests</h3>
-            <p className={styles.listItemDesc}>Find tasks on the map and complete quests in augmented reality.</p>
-          </li>
-          <li className={styles.listItem}>
-            <h3 className={styles.listItemTitle}>Car Sharing</h3>
-            <p className={styles.listItemDesc}>You don&rsquo;t have your own car or you don&rsquo;t travel much? No problem, just buy NFT Veeman, rent it out and earn income.</p>
-          </li>
-          <li className={styles.listItem}>
-            <h3 className={styles.listItemTitle}>PvP - Competitions</h3>
-            <p className={styles.listItemDesc}>Take part in tourmament races and get prizes and bonuses.</p>
-          </li>
-          <li className={styles.listItem}>
-            <h3 className={styles.listItemTitle}>Marketplace</h3>
-            <p className={styles.listItemDesc}>The marketplace and wallet built into the application allow you to buy and sell NFTs.</p>
-          </li>
-        </ol>
-        <div className={styles.picture}>
-          <img src="/images/revolution-car.png" alt="Красивая тесла с зеленой подсветкой " className={styles.car} />
+          <div className={styles.listWrap}>
+            <ol className={styles.list}>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>Alliances</h3>
+                <p className={styles.listItemDesc}>Create your own alliances in your city, capture the streets of the territory and charge other players for travel.</p>
+              </li>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>Car Dealers</h3>
+                <p className={styles.listItemDesc}>Become a car dealer and sell NFT cars to other users on our marketplace.</p>
+              </li>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>Augmented reality</h3>
+                <p className={styles.listItemDesc}>Enjoy your amazing car through your phone.</p>
+              </li>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>Garage</h3>
+                <p className={styles.listItemDesc}>Upgrade your veeman in your personal personal garage to raise more tokens from travelling.</p>
+              </li>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>Quests</h3>
+                <p className={styles.listItemDesc}>Find tasks on the map and complete quests in augmented reality.</p>
+              </li>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>Car Sharing</h3>
+                <p className={styles.listItemDesc}>You don&rsquo;t have your own car or you don&rsquo;t travel much? No problem, just buy NFT Veeman, rent it out and earn income.</p>
+              </li>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>PvP - Competitions</h3>
+                <p className={styles.listItemDesc}>Take part in tourmament races and get prizes and bonuses.</p>
+              </li>
+              <li className={styles.listItem}>
+                <h3 className={styles.listItemTitle}>Marketplace</h3>
+                <p className={styles.listItemDesc}>The marketplace and wallet built into the application allow you to buy and sell NFTs.</p>
+              </li>
+            </ol>
+          </div>
+          <div className={styles.picture}>
+            <img src="/images/revolution-car.png" alt="Красивая тесла с зеленой подсветкой " className={styles.car} />
+          </div>
         </div>
       </div>
-    </div>
     </div >
   );
 };

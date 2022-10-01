@@ -267,11 +267,13 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 30px;
-    height: 506px;
-    overflow-x: visible;
-    overflow-y: scroll;
+  }
+
+  .listWrap {
+    overflow: scroll;
     -webkit-overflow-scrolling: touch;
     pointer-events: all;
+    height: 506px;
   }
 
   .listItem:first-child,
@@ -285,7 +287,7 @@
 
   .list::before {
     content: '';
-    width: 100%;
+    width: 100vw;
     top: -7px;
     left: 0px;
     position: absolute;
