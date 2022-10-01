@@ -267,10 +267,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 30px;
+    height: fit-content;
   }
 
   .listWrap {
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     pointer-events: all;
     height: 506px;
