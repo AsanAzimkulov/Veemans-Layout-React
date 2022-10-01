@@ -270,6 +270,7 @@
     height: 506px;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+    pointer-events: all;
   }
 
   .listItem:first-child,
