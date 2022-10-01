@@ -271,7 +271,6 @@
   }
 
   .listWrap {
-
     overflow: auto;
     overflow-y: auto;
     overflow-x: hidden;
@@ -291,7 +290,7 @@
     z-index: 3;
   }
 
-  .list::before {
+  .content::before {
     content: '';
     width: 100vw;
     top: -7px;
@@ -303,7 +302,7 @@
     z-index: 1;
   }
 
-  .list::after {
+  .content::after {
     content: '';
     width: 110vw;
     bottom: -7px;
