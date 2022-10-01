@@ -267,7 +267,7 @@
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 30px;
     height: 506px;
-    overflow: scroll;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 
