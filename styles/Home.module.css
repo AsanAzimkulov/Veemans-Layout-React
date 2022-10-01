@@ -35,9 +35,7 @@
 
 
 @media(max-width: 991.5px) {
-  .page {
-    -webkit-overflow-scrolling: touch;
-  }
+
 
   .mainBg {
     background-position: 0 0;

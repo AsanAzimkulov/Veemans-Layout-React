@@ -104,10 +104,7 @@ a {
 }
 
 @media(min-width: 768px) and (max-width: 991.5px) {
-  body {
-    position: relative;
-    overflow-x: hidden;
-  }
+
 
   div.contentWrapper {
     max-width: 650px !important;
