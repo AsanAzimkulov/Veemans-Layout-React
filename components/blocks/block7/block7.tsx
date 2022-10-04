@@ -1,13 +1,31 @@
 import Image from "next/image";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState, useRef, useEffect } from "react";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import styles from "./block7.module.css";
+import { useIsVisible } from 'react-is-visible';
+import classNames from "../../customs/classNames";
+import { useWindowSize } from "../../customs/useWindowDimensions";
 
 interface Props {
 }
 
 const Block7: FunctionComponent<Props> = ({ }) => {
+  const windowSize = useWindowSize();
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (windowSize.width !== undefined) {
+      setIsMobile(windowSize.width <= 991);
+    }
+  }, [windowSize])
+
+  const isAnimated = useRef<boolean>(false);
+
+  const anchorRef = useRef<HTMLLIElement>(null);
+
+  const isChartVisible = useIsVisible(anchorRef);
+  if(isChartVisible) isAnimated.current = true;
   return (
     <div className={styles["container"] + ' contentWrapper'}>
       <div className={styles.block}>
@@ -23,7 +41,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                 <h3 className={styles.listItemTitle}>Car Dealers</h3>
                 <p className={styles.listItemDesc}>Become a car dealer and sell NFT cars to other users on our marketplace.</p>
               </li>
-              <li className={styles.listItem}>
+              <li className={styles.listItem} ref={anchorRef}>
                 <h3 className={styles.listItemTitle}>Augmented reality</h3>
                 <p className={styles.listItemDesc}>Enjoy your amazing car through your phone.</p>
               </li>
@@ -49,7 +67,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
               </li>
             </ol>
           </div>
-          <div className={styles.picture}>
+          <div className={styles.picture + classNames({className: styles.picture_animated, condition: isChartVisible || isAnimated.current})}>
             <img src="/images/revolution-car.png" alt="Красивая тесла с зеленой подсветкой " className={styles.car} />
           </div>
         </div>
