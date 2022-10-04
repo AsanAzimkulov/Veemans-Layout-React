@@ -266,6 +266,7 @@
   .car {
     position: relative;
     z-index: 5;
+    pointer-events: none;
   }
 
   .list {
