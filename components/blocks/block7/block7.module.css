@@ -226,7 +226,7 @@
     left: 9px;
     right: 9px;
     background: linear-gradient(270deg, #11D9EB 20.34%, #E42BC8 90.2%);
-    z-index: 4;
+    z-index: 24;
   }
 
   .block::after {
@@ -283,12 +283,12 @@
     height: 506px;
     position: relative;
     overflow: scroll !important;
-    z-index: 20;
+    z-index: auto;
   }
 
   .listItem:first-child,
   .listItem:last-child {
-    z-index: 2;
+    z-index: 22 !important;
   }
 
   .listItem {
