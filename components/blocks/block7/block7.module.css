@@ -279,7 +279,6 @@
     overflow: auto;
     overflow-y: auto;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
     pointer-events: all;
     height: 506px;
     position: relative;
