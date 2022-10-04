@@ -53,14 +53,14 @@ const Block9: FunctionComponent<Props> = ({ }) => {
   ].reverse();
 
   function getAnimationFrame(unit: TUnit, index: number) {
-    const delay = isMobile ? 0 : 200 * units.length - 50 * index;
+    // const delay = isMobile ? 0 : 200 * units.length - 50 * index;
     if (isChartVisible) {
-      setTimeout(() => isAnimated.current = true, delay)
+      setTimeout(() => isAnimated.current = true, /*delay*/ 2000)
     }
 
     return {
       strokeDasharray: 1100 * unit.percentage + " 10000",
-      animation: `circleChartExpand${index} ${delay}ms cubic-bezier(.43,.32,.21,1) 0ms forwards`,
+      animation: `circleChartExpand${index} ${2000}ms cubic-bezier(.43,.32,.21,1) 0ms forwards`,
     }
   }
   return (
