@@ -278,12 +278,15 @@
     pointer-events: all;
     height: 506px;
     position: relative;
-    z-index: 10;
   }
 
   .listItem:first-child,
   .listItem:last-child {
-    z-index: 3;
+    z-index: 2;
+  }
+
+  .listItem {
+    z-index: 0;
   }
 
   .container h1 {

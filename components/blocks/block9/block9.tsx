@@ -92,7 +92,7 @@ const Block9: FunctionComponent<Props> = ({ }) => {
               strokeWidth="0.887833"
             />
             <rect
-              x="237.767"
+              x="227.767"
               y="248.984"
               width="105.9772"
               height="94.1255"
