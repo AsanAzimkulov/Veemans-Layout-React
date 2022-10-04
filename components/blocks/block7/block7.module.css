@@ -283,7 +283,7 @@
     height: 506px;
     position: relative;
     overflow: scroll !important;
-    z-index: auto;
+    z-index: 20;
   }
 
   .listItem:first-child,
