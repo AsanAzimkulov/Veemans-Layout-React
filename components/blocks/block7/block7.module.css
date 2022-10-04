@@ -293,6 +293,10 @@
     z-index: 3;
   }
 
+  .picture {
+    pointer-events: none;
+  }
+
   .content::before {
     content: '';
     width: 100vw;
@@ -303,6 +307,7 @@
     display: block;
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
     z-index: 1;
+    pointer-events: none;
   }
 
   .content::after {
@@ -315,6 +320,7 @@
     display: block;
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
     transform: rotate(-180deg);
+    pointer-events: none;
   }
 
   div.container {
