@@ -233,7 +233,7 @@
     position: absolute;
     /* clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%); */
     display: block;
-    clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%, 0% 0.5px,
+    clip-path: polygon(
 
         0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(21.77% - 0.5px) calc(100% - 0.5px), calc(26.77% - 0.5px) calc(100% - 38.5px), calc(73.23% + 0.5px) calc(100% - 38.5px), calc(78.23% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 40.5px, calc(100% - 62.5px) 40.5px, calc(100% - 103.5px) 0.5px, 0% 0.5px);
 
@@ -246,7 +246,7 @@
     display: block;
     background: linear-gradient(93.22deg, rgba(206, 67, 255, 0.07) 17.59%, rgba(45, 179, 255, 0.063) 79.62%);
     backdrop-filter: blur(15px);
-    z-index: 2;
+    z-index: 0;
   }
 
   .container h1 {
@@ -378,6 +378,7 @@
   .picture {
     top: 200px;
     left: calc(100% - 70px);
+    z-index: 28;
   }
 
   .picture_animated {
