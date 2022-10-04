@@ -39,7 +39,7 @@
   position: absolute;
   top: 644px;
   left: calc(50% - 350px);
-  transition: top 1200ms  ease-in-out;
+  transition: top 1200ms ease-in-out;
 }
 
 .picture_animated {
@@ -374,9 +374,14 @@
   }
 
   .picture {
-    top: -40px;
+    top: 200px;
     left: calc(100% - 70px);
   }
+
+  .picture_animated {
+    top: -40px;
+  }
+
 
 
 }

@@ -5,26 +5,17 @@ import Title1 from "../../ui/title1/title1";
 import styles from "./block7.module.css";
 import { useIsVisible } from 'react-is-visible';
 import classNames from "../../customs/classNames";
-import { useWindowSize } from "../../customs/useWindowDimensions";
 
 interface Props {
 }
 
 const Block7: FunctionComponent<Props> = ({ }) => {
-  const windowSize = useWindowSize();
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (windowSize.width !== undefined) {
-      setIsMobile(windowSize.width <= 991);
-    }
-  }, [windowSize])
-
   const isAnimated = useRef<boolean>(false);
 
   const anchorRef = useRef<HTMLLIElement>(null);
 
   const isChartVisible = useIsVisible(anchorRef);
+  
   if(isChartVisible) isAnimated.current = true;
   return (
     <div className={styles["container"] + ' contentWrapper'}>
