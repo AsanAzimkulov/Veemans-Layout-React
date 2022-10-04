@@ -286,10 +286,7 @@
     z-index: 20;
   }
 
-  .listItem:first-child,
-  .listItem:last-child {
-    z-index: 22 !important;
-  }
+
 
   .listItem {
     z-index: 0;
