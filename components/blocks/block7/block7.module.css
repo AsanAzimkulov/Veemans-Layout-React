@@ -282,6 +282,8 @@
     pointer-events: all;
     height: 506px;
     position: relative;
+    overflow: scroll !important;
+    z-index: 20;
   }
 
   .listItem:first-child,
@@ -310,7 +312,7 @@
     height: 131px;
     display: block;
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
-    z-index: 1;
+    z-index: 21;
     pointer-events: none;
   }
 
@@ -325,6 +327,7 @@
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
     transform: rotate(-180deg);
     pointer-events: none;
+    z-index: 21;
   }
 
   div.container {
