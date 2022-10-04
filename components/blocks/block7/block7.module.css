@@ -304,6 +304,7 @@
     z-index: 22;
   }
 
+  /* 
   .content::before {
     content: '';
     width: 100vw;
@@ -329,13 +330,13 @@
     transform: rotate(-180deg);
     pointer-events: none;
     z-index: 21;
-  }
+  } */
 
   div.container {
     position: relative;
   }
 
-  .container::after {
+  /* .container::after {
     display: block;
     content: '';
     bottom: -70px;
@@ -344,7 +345,7 @@
     width: 100vw;
     height: 150px;
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
-  }
+  } */
 
   .listItemTitle {
     font-weight: 600;
