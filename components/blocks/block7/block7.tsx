@@ -29,7 +29,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
               </li>
               <li className={styles.listItem}>
                 <h3 className={styles.listItemTitle}>Garage</h3>
-                <p className={styles.listItemDesc}>Upgrade your veeman in your personal personal garage to raise more tokens from travelling.</p>
+                <p className={styles.listItemDesc}>Upgrade your veeman in your personal garage to raise more tokens from travelling.</p>
               </li>
               <li className={styles.listItem}>
                 <h3 className={styles.listItemTitle}>Quests</h3>

@@ -36,6 +36,15 @@
   padding-bottom: 20px;
 }
 
+.visible .toggleButtonCrosshair {
+  transform: rotate(45deg);
+}
+
+.toggleButtonCrosshair {
+  transition: 0.2s ease-out;
+  transform-origin: center;
+}
+
 .faqItem .toggleButton {
   float: right;
   vertical-align: top;

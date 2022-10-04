@@ -95,7 +95,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Form alliances and capture streetss</h4>
+            <h4>Form alliances and capture streets</h4>
           </div>
           <div className={styles["blockDesc"]}>
           Make other players pay for driving through your streets
