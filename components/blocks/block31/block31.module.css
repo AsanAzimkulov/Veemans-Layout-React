@@ -390,6 +390,7 @@
   }
 
   .columns1:nth-child(2) img,
+  .columns1:nth-child(3) img,
   .columns1:nth-child(4) img {
     margin-bottom: 20px;
   }
