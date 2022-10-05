@@ -13,7 +13,6 @@ const Button1: FunctionComponent<Props> = ({ children, variant }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   const onHover = () => {
     setIsHover(true);
-    console.log(3)
   }
   const onLeave = () => {
     setIsHover(false);

@@ -233,9 +233,7 @@
     position: absolute;
     /* clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%); */
     display: block;
-    clip-path: polygon(
-
-        0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(21.77% - 0.5px) calc(100% - 0.5px), calc(26.77% - 0.5px) calc(100% - 38.5px), calc(73.23% + 0.5px) calc(100% - 38.5px), calc(78.23% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 40.5px, calc(100% - 62.5px) 40.5px, calc(100% - 103.5px) 0.5px, 0% 0.5px);
+    clip-path: polygon(0.5px 0.5px, 0.5px calc(100% - 0.5px), calc(21.77% - 0.5px) calc(100% - 0.5px), calc(26.77% - 0.5px) calc(100% - 38.5px), calc(73.23% + 0.5px) calc(100% - 38.5px), calc(78.23% + 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) calc(100% - 0.5px), calc(100% - 0.5px) 40.5px, calc(100% - 62.5px) 40.5px, calc(100% - 103.5px) 0.5px, 0% 0.5px);
 
     width: calc(100vw - 18px);
     height: 100%;
@@ -273,6 +271,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, max-content);
     grid-row-gap: 30px;
+
     height: fit-content;
   }
 
@@ -285,6 +284,8 @@
     position: relative;
     overflow: scroll !important;
     z-index: 20;
+    overscroll-behavior-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
 

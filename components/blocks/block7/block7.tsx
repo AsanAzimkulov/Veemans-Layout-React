@@ -1,28 +1,64 @@
 import Image from "next/image";
-import { FunctionComponent, useState, useRef, useEffect } from "react";
+import React, { FunctionComponent, useState, useRef, useEffect } from "react";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import styles from "./block7.module.css";
 import { useIsVisible } from 'react-is-visible';
 import classNames from "../../customs/classNames";
+import { useWindowSize } from "../../customs/useWindowDimensions";
 
 interface Props {
 }
 
+
+
 const Block7: FunctionComponent<Props> = ({ }) => {
+
+  const windowSize = useWindowSize();
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (windowSize.width !== undefined) {
+      setIsMobile(windowSize.width <= 991);
+    }
+  }, [windowSize])
+
+
+  const scrollElement = useRef<HTMLDivElement>(null);
+
+  const bottomEl = useRef<HTMLDivElement>(null);
+
+  const onScroll = (e: any) => {
+    const bottom = e.target.scrollHeight - Math.ceil(e.target.scrollTop) === e.target.clientHeight;
+    if (bottom && scrollElement.current && isMobile) {
+      window.scrollTo({
+        top: -document.body.getBoundingClientRect().y + 120,
+        behavior: 'smooth'
+      })
+      setTimeout(() => {
+        window.scrollTo({
+          top: -document.body.getBoundingClientRect().y + 120,
+          behavior: 'smooth'
+        })
+      }, 100)
+    }
+
+  }
   const isAnimated = useRef<boolean>(false);
 
   const anchorRef = useRef<HTMLLIElement>(null);
 
   const isChartVisible = useIsVisible(anchorRef);
-  
-  if(isChartVisible) isAnimated.current = true;
+
+  if (isChartVisible) isAnimated.current = true;
   return (
+
     <div className={styles["container"] + ' contentWrapper'}>
       <div className={styles.block}>
-        <Title1>Elements of the Veemans Ecosystem </Title1>
-        <div className={styles.content}>
-          <div className={styles.listWrap}>
+
+        <Title1>Elements of the Veemans Ecosystem</Title1>
+        <div className={styles.content} >
+          <div className={styles.listWrap} onScroll={onScroll} ref={scrollElement}>
             <ol className={styles.list}>
               <li className={styles.listItem}>
                 <h3 className={styles.listItemTitle}>Alliances</h3>
@@ -58,12 +94,13 @@ const Block7: FunctionComponent<Props> = ({ }) => {
               </li>
             </ol>
           </div>
-          <div className={styles.picture + classNames({className: styles.picture_animated, condition: isChartVisible || isAnimated.current})}>
+          <div className={styles.picture + classNames({ className: styles.picture_animated, condition: isChartVisible || isAnimated.current })} >
             <img src="/images/revolution-car.png" alt="Красивая тесла с зеленой подсветкой " className={styles.car} />
           </div>
         </div>
       </div>
     </div >
+
   );
 };
 
