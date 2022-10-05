@@ -301,7 +301,7 @@
     overflow: scroll !important;
 
     overscroll-behavior-y: auto;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: auto;
     z-index: 1;
   }
 
