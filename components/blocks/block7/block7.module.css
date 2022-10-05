@@ -226,7 +226,7 @@
     left: 9px;
     right: 9px;
     background: linear-gradient(270deg, #11D9EB 20.34%, #E42BC8 90.2%);
-    z-index: 2;
+    z-index: 27;
   }
 
   .block::after {
@@ -273,9 +273,22 @@
     grid-row-gap: 30px;
 
     height: fit-content;
+    
+  
+    /* padding-top: 60px;
+    padding-bottom: 70px;
+    margin-top: -60px; */
+
+    padding-bottom: 60px;
+    padding-top: 40px;
+
+  }
+  .block{
+    margin-bottom: 17px;
   }
 
   .listWrap {
+
     overflow: auto;
     overflow-y: auto;
     overflow-x: hidden;
@@ -283,9 +296,16 @@
     height: 506px;
     position: relative;
     overflow: scroll !important;
-    z-index: 20;
+
     overscroll-behavior-y: auto;
     -webkit-overflow-scrolling: touch;
+    z-index: 1;
+  }
+
+  .listItem:first-child, .listItem:last-child{
+
+    position: relative;
+    z-index: 26;
   }
 
 
@@ -303,21 +323,21 @@
     z-index: 5;
   }
 
-  /* 
-  .content::before {
+  
+  .contentB::before {
     content: '';
-    width: 100vw;
-    top: -7px;
-    left: 0px;
+    width: calc(100vw + 41px);
+    top: -20px;
+    left: -41px;
     position: absolute;
     height: 131px;
     display: block;
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
-    z-index: 21;
+    z-index: 26;
     pointer-events: none;
   }
 
-  .content::after {
+  .contentB::after {
     content: '';
     width: 110vw;
     bottom: -7px;
@@ -328,14 +348,17 @@
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
     transform: rotate(-180deg);
     pointer-events: none;
-    z-index: 21;
-  } */
+z-index: 25;
+  }
+  .contentB{
+    position: relative;
+  }
 
   div.container {
     position: relative;
   }
 
-  /* .container::after {
+  .container::after {
     display: block;
     content: '';
     bottom: -70px;
@@ -344,7 +367,25 @@
     width: 100vw;
     height: 150px;
     background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
-  } */
+    z-index: 25;
+  }
+
+  .container h1 {
+    z-index: 28;
+  }
+
+  .container::before {
+    display: block;
+    content: '';
+    top: -20px;
+    left: 0px;
+    position: absolute;
+    width: 100vw;
+    height: 150px;
+    background: linear-gradient(180.89deg, #07031E 15.49%, rgba(7, 3, 30, 0) 99.23%);
+    transform: rotate(180deg);
+    z-index: 25;
+  }
 
   .listItemTitle {
     font-weight: 600;

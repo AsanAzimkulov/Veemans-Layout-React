@@ -57,6 +57,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
       <div className={styles.block}>
 
         <Title1>Elements of the Veemans Ecosystem</Title1>
+        <div className={styles.contentB}>
         <div className={styles.content} >
           <div className={styles.listWrap} onScroll={onScroll} ref={scrollElement}>
             <ol className={styles.list}>
@@ -97,6 +98,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
           <div className={styles.picture + classNames({ className: styles.picture_animated, condition: isChartVisible || isAnimated.current })} >
             <img src="/images/revolution-car.png" alt="Красивая тесла с зеленой подсветкой " className={styles.car} />
           </div>
+        </div>
         </div>
       </div>
     </div >
