@@ -388,4 +388,10 @@
     height: 164.6px;
     width: 290px;
   }
+
+  .columns1:nth-child(2) img,
+  .columns1:nth-child(4) img {
+    margin-bottom: 20px;
+  }
+
 }
