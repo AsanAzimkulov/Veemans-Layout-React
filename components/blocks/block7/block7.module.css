@@ -452,7 +452,7 @@
   }
 }
 
-@media(max-width: 346px) {
+@media(max-width: 347px) {
   .contentB::before {
     top: -50px;
   }
