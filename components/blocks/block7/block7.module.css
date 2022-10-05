@@ -227,9 +227,11 @@
     right: 9px;
     background: linear-gradient(270deg, #11D9EB 20.34%, #E42BC8 90.2%);
     z-index: 27;
+    pointer-events: none;
   }
 
   .block::after {
+    pointer-events: none;
     position: absolute;
     /* clip-path: polygon(0% 0%, calc(100% - 103px) 0%, calc(100% - 62px) 40px, 100% 40px, 100% 100%, 78.23% 100%, 73.23% calc(100% - 38px), 26.77% calc(100% - 38px), 21.77% 100%, 0% 100%); */
     display: block;
