@@ -58,7 +58,7 @@ const Block31: FunctionComponent = () => {
       </div>
       <div className={styles["columns1"]}>
         <div style={{ 'textAlign': 'center' }}>
-          <img src="/images/block31_img3.png" style={{ 'width': '450px', 'marginTop': '50px' }} />
+          <img src="/videos/r81.gif" style={{ 'width': '450px', 'marginTop': '50px', transform: 'scale(1.3) translateY(-40px)'}} />
         </div>
         <div>
           <Cart2>
