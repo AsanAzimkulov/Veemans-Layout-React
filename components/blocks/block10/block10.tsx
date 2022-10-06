@@ -128,7 +128,6 @@ const Block10 = () => {
   return (
     <div className={styles["container"] + ' contentWrapper'}>
       <Title1>Roadmap</Title1>
-      <img className={styles["imgLine"]} src="/images/block10.svg" />
       <ol className={styles.list}>
         {
           items.map(item => (
