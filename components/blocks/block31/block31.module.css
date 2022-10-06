@@ -273,7 +273,7 @@
   .columns1:nth-child(3)>div:nth-child(1) img {
     width: 217px !important;
     height: 217px !important;
-    margin-top: -106px;
+    margin-bottom: -106px;
   }
 
   .columns1:nth-child(4)>div:nth-child(2) img {
