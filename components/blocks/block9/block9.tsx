@@ -16,7 +16,7 @@ interface Props {
 
 
 const Block9: FunctionComponent<Props> = ({ }) => {
-  const {language} = useContext(AppContext);
+  const { language } = useContext(AppContext);
 
   const windowSize = useWindowSize();
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -69,22 +69,28 @@ const Block9: FunctionComponent<Props> = ({ }) => {
     }
   }
   return (
-    <div className={styles["container"] + " contentWrapper" + classNames({className: styles['container_rus'], condition: language === 'RUS'})}>
+    <div className={styles["container"] + " contentWrapper" + classNames({ className: styles['container_rus'], condition: language === 'RUS' })}>
       <div className={styles.block}>
         <div className={styles.first}>
           <Title1>
             {
               language === 'RUS'
-              ?
-              'Распределение токенов VMN'
-              :
-              'VMN Token Distribution'
+                ?
+                'Распределение токенов VMN'
+                :
+                'VMN Token Distribution'
             }
-            
+
           </Title1>
-          <Button1 variant="1">
-            Join the community
-          </Button1>
+          <span className={styles.button}>
+            <Button1 variant="1" wide={language === 'RUS'}>{
+              language === 'RUS'
+                ?
+                'Присоединяйтесь к сообществу'
+                :
+                'Join The Community'
+            }</Button1>
+          </span>
         </div>
         <div className={styles.image} ref={chartRef}>
           <svg
@@ -180,135 +186,139 @@ const Block9: FunctionComponent<Props> = ({ }) => {
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>35%</strong>
               <p className={styles.listItemDesc}>
-              Drive and Earn               
+                Drive and Earn
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>16%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Экосистема / казначейство'
-              :
-              'Ecosystems/ treasury'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Экосистема / казначейство'
+                    :
+                    'Ecosystems/ treasury'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>9%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Фонды'
-              :
-              'Partnerships fund'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Фонды'
+                    :
+                    'Partnerships fund'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>8%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Команда'
-              :
-              'Team'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Команда'
+                    :
+                    'Team'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>7%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Приватный sale №2'
-              :
-              'Private sale#2'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Приватный sale №2'
+                    :
+                    'Private sale#2'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>6%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Маркетинг'
-              :
-              'Marketing'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Маркетинг'
+                    :
+                    'Marketing'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>5%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Приватный sale №1'
-              :
-              'Private sale #1'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Приватный sale №1'
+                    :
+                    'Private sale #1'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>5%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Обеспечение ликвидности'
-              :
-              'Liquidity provision'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Обеспечение ликвидности'
+                    :
+                    'Liquidity provision'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>4%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Публичный sale'
-              :
-              'Public sale'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Публичный sale'
+                    :
+                    'Public sale'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>3%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Эдвайзоры'
-              :
-              'Advisers'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Эдвайзоры'
+                    :
+                    'Advisers'
+                }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>2%</strong>
               <p className={styles.listItemDesc}>
-              {
-              language === 'RUS'
-              ?
-              'Создатели'
-              :
-              'Creators'
-            }
+                {
+                  language === 'RUS'
+                    ?
+                    'Создатели'
+                    :
+                    'Creators'
+                }
               </p>
             </li>
           </ul>
         </div>
         <div className={styles.mobileButton}>
-          <Button1 variant="1">
-            Join the community
-          </Button1>
+          <Button1 variant="1" wide={language === 'RUS'}>{
+            language === 'RUS'
+              ?
+              'Присоединяйтесь к сообществу'
+              :
+              'Join The Community'
+          }</Button1>
         </div>
       </div>
     </div>

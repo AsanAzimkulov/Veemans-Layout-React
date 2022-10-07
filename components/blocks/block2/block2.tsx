@@ -168,7 +168,7 @@ const Block2: FunctionComponent = () => {
                 language === 'RUS'
                   ?
                   <>
-<strong>Создавайте альянсы и захватывайте<br/> территории</strong> для получения <br/> дополнительных наград за проезд по <br/> вашим территориям другими игроками.
+                    <strong>Создавайте альянсы и захватывайте<br /> территории</strong> для получения <br /> дополнительных наград за проезд по <br /> вашим территориям другими игроками.
                   </>
                   :
                   <>
@@ -182,7 +182,13 @@ const Block2: FunctionComponent = () => {
           </Cart1>
         </div>
         <div className={styles["columns3"]}>
-          <Button1 variant="1">Join The Community</Button1>
+          <Button1 variant="1" wide={language === 'RUS'}>{
+            language === 'RUS'
+              ?
+              'Присоединяйтесь к сообществу'
+              :
+              'Join The Community'
+          }</Button1>
           <div className={styles.whitePaperIcon}>
             <Button1 variant="2"> Paper</Button1>
           </div>

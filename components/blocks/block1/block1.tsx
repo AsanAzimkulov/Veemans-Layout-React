@@ -100,7 +100,13 @@ const Block1: FunctionComponent = () => {
               </div>
             </div>
             <div className={styles["first__block3"]}>
-              <Button1 variant="1">Join The Community</Button1>
+              <Button1 variant="1" wide={language === 'RUS'}>{
+                language === 'RUS'
+                ? 
+                'Присоединиться к сообществу'
+                :
+                'Join The Community'
+              }</Button1>
               <div className={styles.whitePaperIcon}>
                 <Button1 variant="2"> Paper</Button1>
               </div>

@@ -406,3 +406,10 @@
   }
 
 }
+
+@media(max-width: 370px){
+  .info__buttons{
+    transform: scale(0.9);
+    margin: 0 auto;
+  }
+}

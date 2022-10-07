@@ -373,3 +373,8 @@
     width: 290px
   }
 }
+@media(max-width: 370px){
+  .columns3{
+    transform: scale(0.9);
+  }
+}
