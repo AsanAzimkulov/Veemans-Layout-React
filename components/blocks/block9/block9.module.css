@@ -373,3 +373,14 @@
   }
 
 }
+
+@media(max-width: 600px){
+  .container_rus .list{
+    grid-template-columns: repeat(2, min-content);
+    grid-column-gap: 20%;
+    justify-content: center;
+    grid-template-rows: repeat(6, max-content);
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

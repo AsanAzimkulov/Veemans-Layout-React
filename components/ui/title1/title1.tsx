@@ -1,4 +1,6 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useContext } from "react";
+import AppContext from "../../../contexts/AppContext";
+import classNames from "../../customs/classNames";
 import styles from "./title1.module.css";
 
 interface Props {
@@ -14,9 +16,11 @@ const Title1: FunctionComponent<Props> = ({
 }) => {
   // children.props.className =  styles.title
 
+  const {language} = useContext(AppContext);
+
   return React.createElement(
     type,
-    { className: styles['title'], style: { fontSize: size } },
+    { className: styles['title'] + classNames({className: styles['title_rus'], condition: language === 'RUS'}), style: { fontSize: size } },
     children
   );
 };

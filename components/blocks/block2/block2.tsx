@@ -1,16 +1,25 @@
 import Image from "next/image";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import styles from "./block2.module.css";
 import Cart1 from "../../carts/cart1/cart1";
+import AppContext from "../../../contexts/AppContext";
 
 const Block2: FunctionComponent = () => {
+  const { language } = useContext(AppContext);
+
   return (
     <div className={styles["container"] + ' contentWrapper'}>
       <div className={styles["top-border"]}></div>
       <div className={styles.content}>
-        <Title1>What is Veemans ?</Title1>
+        <Title1>{
+          language === 'RUS'
+            ?
+            'Что такое Veemans?'
+            :
+            'What is Veemans ?'
+        }</Title1>
         <div className={styles["columns1"]}>
           <div className={styles["video-block"]}>
             <video autoPlay={true} muted loop>
@@ -20,15 +29,36 @@ const Block2: FunctionComponent = () => {
           <div className={styles["info"]}>
             <div>
               <p className={styles["info__paragraph"]}>
-                Its a game where you get tokens while you moving with a transport. It&apos;s simple.
+                {
+                  language === 'RUS'
+                    ?
+                    'Это игра, в которой вы зарабатываете токены, передвигаясь на транспорте. Это просто.'
+                    :
+                    'Its a game where you get tokens while you moving with a transport. It&apos;s simple.'
+
+                }
+
               </p>
               <p className={styles["info__paragraph"]}>
-                Win other players in competitions, upgrade your car and capture territories to get more tokens and rewards.
-              </p>
+                {
+                  language === 'RUS'
+                    ?
+                    'Побеждайте других игроков в соревнованиях, улучшайте свой игровой автомобиль и захватывайте территории, чтобы получить больше токенов и наград.'
+                    :
+                    ' Win other players in competitions, upgrade your car and capture territories to get more tokens and rewards.'
+                }              </p>
             </div>
           </div>
         </div>
-        <Title1>Mechanics</Title1>
+        <Title1>
+          {
+            language === 'RUS'
+              ?
+              'Игровая механика'
+              :
+              'Mechanics'
+          }
+        </Title1>
         <div className={styles["columns2"]}>
           <Cart1>
             <div>
@@ -36,16 +66,40 @@ const Block2: FunctionComponent = () => {
               <img src="/icons/cart1-icon1-mobile.svg" alt="X" className={styles.columns2__cartIcon_mobile} />
             </div>
             <p className={styles.columns2__cartContent}>
-              Activate your GPS tracker in the <br />
-              app before starting your trip and
-              <br />
-              move at a speed of 10 to 60 km/h.{" "}
+              {
+                language === 'RUS'
+                  ?
+                  <>
+                    Активируйте свой GPS-трекер<br />
+                    в приложении перед началом поездки <br /> и двигайтесь со скоростью <br />от 10 до 60 км/ч.
+                  </>
+                  :
+                  <>
+                    Activate your GPS tracker in the <br />
+                    app before starting your trip and
+                    <br />
+                    move at a speed of 10 to 60 km/h.{" "}
+                  </>
+              }
             </p>
 
             <p className={styles.columns2__cartContentMobile}>
-              <strong>Activate your GPS tracker in the
-                app</strong> <br />before starting your trip and
-              move at <br /> a speed of 10 to 60 km/h.{" "}
+
+              {
+                language === 'RUS'
+                  ?
+                  <>
+                    <strong>Активируйте свой GPS-трекер</strong><br />
+                    в приложении перед началом поездки и <br />двигайтесь со скоростью от 10 до 60 км/ч.
+                  </>
+                  :
+                  <>
+                    <strong>Activate your GPS tracker in the
+                      app</strong> <br />before starting your trip and
+                    move at <br /> a speed of 10 to 60 km/h.{" "}
+                  </>
+              }
+
             </p>
           </Cart1>
           <Cart1>
@@ -54,16 +108,38 @@ const Block2: FunctionComponent = () => {
               <img src="/icons/cart1-icon2-mobile.svg" alt="X" className={styles.columns2__cartIcon_mobile} />
             </div>
             <p className={styles.columns2__cartContent}>
-              For every km you get VMS/VMN<br />
-              tokens, which you can use both for <br />
-              in-game purchases and for <br />
-              exchange for real money.
+
+              {
+                language === 'RUS'
+                  ?
+                  <>
+                    За каждый километр вы получаете токены <br /> VMS /VMS, которые вы можете <br /> использовать как для внутриигровых<br /> покупок, так и для обмена<br /> на реальные деньги.
+                  </>
+                  :
+                  <>
+                    For every km you get VMS/VMN<br />
+                    tokens, which you can use both for <br />
+                    in-game purchases and for <br />
+                    exchange for real money.
+                  </>
+              }
             </p>
             <p className={styles.columns2__cartContentMobile}>
-              <strong>For every km you get VMS/VMN
-                tokens,<br /> which you can use</strong> both for
-              in-game <br /> purchases and for
-              exchange for real money.
+              {
+                language === 'RUS'
+                  ?
+                  <>
+                    <strong>За каждый километр вы получаете токены<br /> VMS /VMS,</strong> которые вы можете <br /> использовать как для внутриигровых <br />покупок, так и для обмена на реальные <br /> деньги.
+                  </>
+                  :
+                  <>
+                    <strong>For every km you get VMS/VMN
+                      tokens,<br /> which you can use</strong> both for
+                    in-game <br /> purchases and for
+                    exchange for real money.
+                  </>
+              }
+
             </p>
           </Cart1>
           <Cart1>
@@ -72,16 +148,36 @@ const Block2: FunctionComponent = () => {
               <img src="/icons/cart1-icon3-mobile.svg" alt="X" className={styles.columns2__cartIcon_mobile} />
             </div>
             <p className={styles.columns2__cartContent}>
-              Organize alliances to capture <br />
-              territories and to get additional <br />
-              rewards for passing through your <br />
-              territories with other players.
+              {
+                language === 'RUS'
+                  ?
+                  <>
+                    Создавайте альянсы и захватывайте <br /> территории для получения дополнительных <br /> наград за проезд по вашим территориям <br />другими игроками.
+                  </>
+                  :
+                  <>
+                    Form alliances to capture <br />
+                    territories and to get additional <br />
+                    rewards for passing through your <br />
+                    territories with other players.
+                  </>
+              }
             </p>
             <p className={styles.columns2__cartContentMobile}>
-              <strong>Organize alliances to capture
-                territories</strong><br /> and to get additional
-              rewards for passing <br /> through your
-              territories with other players.
+              {
+                language === 'RUS'
+                  ?
+                  <>
+<strong>Создавайте альянсы и захватывайте<br/> территории</strong> для получения <br/> дополнительных наград за проезд по <br/> вашим территориям другими игроками.
+                  </>
+                  :
+                  <>
+                    <strong>Form alliances to capture
+                      territories</strong><br /> and to get additional
+                    rewards for passing <br /> through your
+                    territories with other players.
+                  </>
+              }
             </p>
           </Cart1>
         </div>

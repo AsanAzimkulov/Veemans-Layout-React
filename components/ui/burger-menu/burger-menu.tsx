@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useContext, useState } from "react";
+import AppContext from "../../../contexts/AppContext";
 import OutsideAlerter from "../../customs/OutsideAlerter";
 import styles from "./burger-menu.module.css";
 
@@ -9,6 +10,9 @@ type PropsType = {
 
 
 const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
+
+
+  const {language} = useContext(AppContext);
   const [isOpened, setIsOpened] = useState<boolean>(false);
   const onCloseMenu = () => {
     setIsOpened(false);
@@ -31,11 +35,11 @@ const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
         </div>
         <div className={styles.menuArea}>
           <img src="/icons/crosshair-blue.svg" alt="Close menu" className={styles.close} onClick={onCloseMenu} />
-          <a href="#" className={styles.menuLink}>About</a>
-          <a href="#" className={styles.menuLink}>NFT Veeman</a>
-          <a href="#" className={styles.menuLink}>EcoSystem</a>
-          <a href="#" className={styles.menuLink}>PVP competition</a>
-          <a href="#" className={styles.menuLink}>Road Map</a>
+          <a href="#" className={styles.menuLink}>{(language === 'RUS') ? 'О компании' : 'About'}</a>
+          <a href="#" className={styles.menuLink}>{(language === 'RUS') ? 'NFT Veeman' : 'NFT Veeman'}</a>
+          <a href="#" className={styles.menuLink}>{(language === 'RUS') ? 'Экосистема' : 'Ecosystem'}</a>
+          <a href="#" className={styles.menuLink}>{(language === 'RUS') ? 'PVP соревнования' : 'PVP competition'}</a>
+          <a href="#" className={styles.menuLink}>{(language === 'RUS') ? 'Дорожная карта проекта' : 'Road Map'}</a>
         </div>
         <div className={styles["first__apps-block"]}>
           <a href="">

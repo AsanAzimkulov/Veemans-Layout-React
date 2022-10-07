@@ -1,11 +1,13 @@
 import Image from "next/image";
-import { FunctionComponent, useEffect, useState } from "react";
+import { FunctionComponent, useContext, useEffect, useState } from "react";
 import { useWindowSize } from "../../customs/useWindowDimensions";
 import Button1 from "../../ui/button1/button1";
 import classNames from "../../customs/classNames";
 import styles from "./block1.module.css";
+import AppContext from "../../../contexts/AppContext";
 
 const Block1: FunctionComponent = () => {
+  const { language } = useContext(AppContext);
   const windowSize = useWindowSize();
   const [isSmallHeight, setIsSmallHeight] = useState<boolean>(false);
 
@@ -31,8 +33,14 @@ const Block1: FunctionComponent = () => {
         <div className={styles.firstWrapper}>
           <div className={styles.mainCC}>
             <div className={styles.first__top}>
-              <div className={styles.first__title1}>
-                Veemans is a web3.0 APP
+              <div className={styles.first__title1 + classNames({ className: styles["first__title1_rus"], condition: language === 'RUS' })}>
+                {
+                  language === 'RUS'
+                    ?
+                    'Veemans - это Web 3.0 приложение '
+                    :
+                    'Veemans is a web3.0 APP'
+                }
               </div>
               <div className={styles["first__apps-block"]}>
                 <a href="">
@@ -55,8 +63,14 @@ const Block1: FunctionComponent = () => {
             </div>
             <img src="/icons/title.png" className={styles.topLogo} alt="" />
             <img src="/icons/title-m.png" className={styles.topLogo + ' ' + styles.topLogo_mobile} alt="" />
-            <div className={styles.first__title1 + ' ' + styles.first__title1_mobile}>
-              Veemans is a web3.0 APP
+            <div className={styles.first__title1 + ' ' + styles.first__title1_mobile + classNames({ className: styles["first__title1_mobile_rus"], condition: language === 'RUS' })}>
+              {
+                language === 'RUS'
+                  ?
+                  'Veemans - это Web 3.0 приложение '
+                  :
+                  'Veemans is a web3.0 APP'
+              }
             </div>
 
             <div className={styles["first__block2"]}>
@@ -68,9 +82,21 @@ const Block1: FunctionComponent = () => {
                 <Image src="/icons/el1.svg" width="72" height="44" alt=""></Image>
               </div>
               <div className={styles["first__text"]}>
-                Make your daily travel profitable
-                <br />
-                with NFT game Veemans
+                {
+                  language === 'RUS'
+                    ?
+                    <>
+                      Сделайте свои ежедневные перемещения<br />
+                      прибыльным с помощью NFT игры Veemans
+                    </>
+                    :
+                    <>
+                      Make your daily travel profitable
+                      < br />
+                      with NFT game Veemans
+                    </>
+                }
+
               </div>
             </div>
             <div className={styles["first__block3"]}>

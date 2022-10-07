@@ -11,6 +11,10 @@
   background: transparent;
 }
 
+.container_opened{
+  z-index: 40;
+}
+
 .topCenterMenu {
   display: grid;
   grid-auto-columns: auto;
@@ -25,6 +29,10 @@
   margin-top: 15px;
   position: absolute;
   margin-left: calc(50vw - 371px);
+}
+
+.topCenterMenu_rus{
+  margin-left: calc(50vw - 449px);
 }
 
 .topCenterMenu a:hover {
@@ -44,6 +52,8 @@
     font-size: 16px;
     margin-left: calc(50vw - 285.5px);
   }
-
+  .topCenterMenu_rus{
+    margin-left: calc(50vw - 351.5px);
+  }
 
 }

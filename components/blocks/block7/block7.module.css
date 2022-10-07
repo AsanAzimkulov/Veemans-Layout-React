@@ -4,6 +4,10 @@
   margin: 120px 10px 0px;
 }
 
+.container_rus h3 {
+  font-family: 'Ruberoid';
+}
+
 .container .imgLine {
   width: 100%;
   margin-top: 100px;
@@ -341,6 +345,10 @@
     pointer-events: none;
   }
 
+  .container_rus .contentB::before{
+    top: -30px;
+  }
+
   .contentB::after {
     content: '';
     width: 110vw;
@@ -432,6 +440,7 @@
     top: -40px;
   }
 
+  
 
 
 }
@@ -455,6 +464,11 @@
 @media(max-width: 377px) {
   .contentB::before {
     top: -52px;
+  }
+
+  .container_rus .contentB::before {
+    top: -65px;
+    height: 265px;
   }
 
   .list {

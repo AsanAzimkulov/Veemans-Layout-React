@@ -1,6 +1,8 @@
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FunctionComponent } from "react";
+import AppContext from "../../../contexts/AppContext";
+import classNames from "../../customs/classNames";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import styles from "./blockFAQ.module.css";
@@ -117,6 +119,7 @@ class BlockFAQItem extends React.Component<ItemProps, BlockFAQItemState> {
 }
 
 const BlockFAQ: FunctionComponent<Props> = (props) => {
+  const {language} = useContext(AppContext);
   const [activeFaq, setActiveFaq] = useState<string>('');
   const onChangeActiveFaq = (title: string) => {
     if (title === activeFaq) {
@@ -126,8 +129,14 @@ const BlockFAQ: FunctionComponent<Props> = (props) => {
     }
   }
   return (
-    <div className={styles["container"] + " contentWrapper"}>
-      <Title1>Frequently asked questions</Title1>
+    <div className={styles["container"] + " contentWrapper" + classNames({className: styles['container_rus'], condition: language === 'RUS'})}>
+      <Title1>{
+        language === 'RUS'
+        ?
+        'Часто задаваемые вопросы'
+        :
+        'Frequently asked questions'
+        }</Title1>
       <div className={styles["faqWrapper"]}>{
         props.items.map((item, index) => <BlockFAQItem key={'faq_' + index} item={item} isVisible={item.title === activeFaq} onToggle={onChangeActiveFaq} />)
       }</div>

@@ -25,6 +25,7 @@
   line-height: 140%;
 }
 
+
 .blockRow {}
 
 .blockRow .blockItem {
@@ -97,6 +98,15 @@
   }
 }*/
 
+@media(min-width: 992px) {
+
+  .blockDesc,
+  .blockTitle {
+    width: 130%;
+    margin-left: -15%;
+  }
+}
+
 @media(min-width: 1550px) {
   .container .blockRow:last-of-type {
     grid-column-gap: 2%;
@@ -105,10 +115,21 @@
 
 }
 
+
+@media(min-width: 1600px) {
+
+  .blockDesc {
+    width: 170%;
+    margin-left: -35%;
+  }
+}
+
 @media(max-width: 1550px) {
   .blockRow:first-of-type {
     grid-template-columns: 1fr 80px 1fr 80px 1fr;
   }
+
+
 
   .container .blockRow:last-of-type {
     grid-column-gap: 3%;

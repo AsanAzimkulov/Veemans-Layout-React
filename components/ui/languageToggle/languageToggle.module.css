@@ -1,0 +1,146 @@
+.variantText {
+  font-family: 'Ruberoid';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.variantText:last-of-type {
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 45px;
+  margin-left: -45px;
+  z-index: 2;
+}
+
+.variantText:first-of-type{
+  padding-right: 45px;
+  margin-right: -45px;
+  z-index: 2;
+}
+
+.root_second .variantText:first-of-type {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.root_second .variantText:last-of-type {
+  color: #FFFFFF;
+}
+
+.root {
+  position: absolute;
+  top: 46px;
+  right: 10%;
+  z-index: 31;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  align-items: center;
+}
+
+.radioButton {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.wrap {
+  width: 60px;
+  height: 35px;
+
+
+  background: rgba(145, 172, 189, 0.25);
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 100px;
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background: linear-gradient(133.71deg, #E42BC8 0%, #1DCEF4 133.07%);
+  transition: left 300ms ease-in-out;
+}
+
+.root_second .ball {
+  left: 30px;
+}
+
+@media(max-width: 1680px){
+  .root{
+    right: 7%;
+  }
+}
+
+@media(min-width: 1150px) and (max-width: 1350px){
+  .root{
+    right: 7%;
+    top: 100px;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1150px){
+.root{
+  right: 20%;
+}
+}
+
+@media(max-width: 992px){
+  .root{
+    top: 23px;
+    right: 161px;
+    grid-column-gap: 8px;
+  }
+
+  .variantText{
+    font-size: 14px;
+  }
+
+  .wrap{
+    width: 45px;
+    height: 26px;
+  }
+
+  .ball {
+    position: absolute;
+    width: 18.75px;
+    height: 18.75px;
+    top: 3.75px;
+    left: 3.75px;
+  }
+  
+  .root_second .ball {
+    left: 22.5px;
+  }
+}
+
+@media(max-width: 500px){
+  .root{
+    right: 100px;
+  }
+}
+
+@media(max-width: 400px){
+  .root{
+    right: 80px;
+    top: 50px;
+  }
+}

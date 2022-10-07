@@ -9,6 +9,9 @@
   text-shadow: 0px 0px 25px var(--color-aqua);
 }
 
+.title_rus{
+  font-family: 'Ruberoid';
+}
 
 @media(max-width: 1550px) {
   .title {

@@ -16,6 +16,11 @@
   display: none;
 }
 
+.container_rus .date {
+  font-family: 'Ruberoid';
+  font-weight: 600;
+}
+
 @media(max-width: 991.5px) {
   div.container {
     margin-top: 120px !important;
@@ -86,6 +91,10 @@
     /* W */
 
     color: #FFFFFF;
+  }
+
+  .container_rus .title {
+    font-family: 'Ruberoid';
   }
 
   .top {
@@ -692,5 +701,106 @@
   .rootWrapper:nth-child(4),
   .rootWrapper:nth-child(6) {
     transform: translateX(150px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:992px) and (max-width: 1015px) {
+  .container_rus .list::after {
+    transform: scaleY(1.45) scalex(1) translateY(21px) translateX(-1px);
+  }
+}
+
+
+@media(min-width:1015px) and (max-width: 1066px) {
+  .container_rus .list::after {
+    transform: scaleY(1.35) scalex(1) translateY(34px) translateX(12px);
+  }
+}
+
+
+@media(min-width:1066px) and (max-width: 1100px) {
+  .container_rus .list::after {
+    transform: scaleY(1.35) translateY(17px) translateX(-6px);
+  }
+}
+
+
+
+@media(min-width:1100px) and (max-width: 1123px) {
+  .container_rus .list::after {
+    transform: scaleY(1.3) translateY(17px) translateX(3px);
+  }
+}
+
+
+@media(min-width:1123px) and (max-width: 1150px) {
+  .container_rus .list::after {
+    transform: scaleY(1.3) translateY(25px) translateX(12px);
+  }
+}
+
+
+@media(min-width:1150px) and (max-width: 1200px) {
+  .container_rus .list::after {
+    transform: scaleY(1.3) translateY(9px) translateX(16px);
+  }
+}
+
+
+@media(min-width:1200px) and (max-width: 1209px) {
+  .container_rus .list::after {
+    transform: scaleY(1.25) translateY(9px) translateX(16px);
+  }
+
+
+
+}
+
+@media(min-width:1209px) and (max-width: 1300px) {
+  .container_rus .list::after {
+    transform: scaleY(1.2) translateY(-8px) translateX(16px);
+  }
+
+}
+
+
+@media(min-width:1300px) and (max-width: 1400px) {
+  .container_rus .list::after {
+    transform: scale(1.1) scaleY(1.12) translateY(10px);
+  }
+}
+
+@media(min-width: 1400px) {
+  .container_rus .list::after {
+    transform: scaleY(1.05) translateY(9px);
+  }
+}
+
+@media(min-width: 1550px) {
+  .container_rus .list::after {
+    transform: scaleY(0.95) translateY(-10px);
+  }
+}
+
+@media(min-width: 1650px) {
+  .container_rus .list::after {
+    transform: scaleY(0.9) translateY(-10px);
   }
 }

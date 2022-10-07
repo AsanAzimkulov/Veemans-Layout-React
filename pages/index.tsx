@@ -21,6 +21,8 @@ import Header from "../components/ui/header/header";
 import Border from '../components/ui/border/border';
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
+import LanguageToggle from "../components/ui/languageToggle/languageToggle";
+import AppContext from "../contexts/AppContext";
 
 const Home: NextPage = () => {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
@@ -28,63 +30,82 @@ const Home: NextPage = () => {
   const onToggleMenu = (flag: boolean) => {
     setIsMenuOpened(flag);
   }
+
+  const [language, setLanguage] = useState('ENG');
+
   return (
-    <div className={styles.page}>
-      <Head>
-        <title>Veemans</title>
-        <meta name="description" content="Veemans" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Header cb={onToggleMenu}></Header>
-      <main className={styles.main}>
-        <Border visibility={true} />
-        <Block1></Block1>
+    <AppContext.Provider value={{
+      language,
+      setLanguage: setLanguage as any
+    }}>
+      <div className={styles.page}>
+        <Head>
+          <title>Veemans</title>
+          <meta name="description" content="Veemans" />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Header cb={onToggleMenu}></Header>
 
-        <div className={styles.mainBg}>
-          <Block2></Block2>
-          <Block3>
-            <Block31></Block31>
-          </Block3>
+        <main className={styles.main}>
+          <Border visibility={true} />
+          <LanguageToggle></LanguageToggle>
+          <Block1></Block1>
 
-          <Block4></Block4>
+          <div className={styles.mainBg}>
+            <Block2></Block2>
+            <Block3>
+              <Block31></Block31>
+            </Block3>
 
-          {/*Classes of NFT*/}
-          <Block5></Block5>
+            <Block4></Block4>
 
-          {/*The Motion Roller is looped*/}
-          <Block6></Block6>
+            {/*Classes of NFT*/}
+            <Block5></Block5>
 
-          {/*Elements of the Veemans Ecosystem*/}
-          <Block7></Block7>
+            {/*The Motion Roller is looped*/}
+            <Block6></Block6>
 
-          {/*Sport PvP competitions with real users*/}
-          <Block8></Block8>
+            {/*Elements of the Veemans Ecosystem*/}
+            <Block7></Block7>
 
-          {/*VMN Token Distribution*/}
-          <Block9></Block9>
+            {/*Sport PvP competitions with real users*/}
+            <Block8></Block8>
 
-          {/*Roadmap*/}
-          <Block10></Block10>
+            {/*VMN Token Distribution*/}
+            <Block9></Block9>
 
-        </div>
+            {/*Roadmap*/}
+            <Block10></Block10>
 
-        {/*Partners*/}
-        <div className={styles.partnersDesctop}><Block11></Block11></div>
+          </div>
 
-        {/*Project Partners*/}
-        <BlockTeam title="Project Partners" members={[
-          { 'title': 'Eleanor Pena', 'email': 'curtis.weaver@example.com' },
-          { 'title': 'Robert Fox', 'email': 'georgia.young@example.com' },
-          { 'title': 'Marvin McKinney', 'email': 'nevaeh.simmons@example.com' },
-          { 'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com' },
-          { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
-        ]}></BlockTeam>
+          {/*Partners*/}
+          <div className={styles.partnersDesctop}><Block11></Block11></div>
 
-  <div className={styles.mtSpace}></div>
-  
-        {/*Team*/}
+          {/*Project Partners*/}
+          <BlockTeam title={
+            language === 'RUS' ?
+              'Партнёры проекта'
+              :
+              "Project Partners"} members={[
+                { 'title': 'Eleanor Pena', 'email': 'curtis.weaver@example.com' },
+                { 'title': 'Robert Fox', 'email': 'georgia.young@example.com' },
+                { 'title': 'Marvin McKinney', 'email': 'nevaeh.simmons@example.com' },
+                { 'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com' },
+                { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
+              ]}></BlockTeam>
 
-          <BlockTeam title="Team" members={[
+          <div className={styles.mtSpace}></div>
+
+          {/*Team*/}
+
+          <BlockTeam title={
+            language === 'RUS' ?
+              'Команда'
+              :
+              "Team"
+          } members={[
             { 'title': 'Jane Cooper', 'email': 'debra.holt@example.com' },
             { 'title': 'Leslie Alexander', 'email': 'bill.sanders@example.com' },
             { 'title': 'Dianne Russell', 'email': 'sara.cruz@example.com' },
@@ -93,18 +114,31 @@ const Home: NextPage = () => {
           ]}></BlockTeam>
 
 
-        {/*FAQ*/}
-        <BlockFAQ items={[
-          { 'title': 'How do I buy NFT Veemans ?', 'desc': 'abcd' },
-          { 'title': 'How much are our NFT’S warth ?', 'desc': 'abcd' },
-          { 'title': 'How do I buy SOL ?', 'desc': 'abcd' },
-          { 'title': 'What if I don’t drive ?', 'desc': 'abcd' },
-          { 'title': 'Why are there no funds on board ?', 'desc': 'abcd' }
-        ]}></BlockFAQ>
+          {/*FAQ*/}
+          <BlockFAQ items={
+            language === 'RUS'
+              ?
+              [
+                { 'title': 'Как мне купить NFT Veemans?', 'desc': 'abcd' },
+                { 'title': 'Сколько стоят наши NFT?', 'desc': 'abcd' },
+                { 'title': 'Как мне купить SOL?', 'desc': 'abcd' },
+                { 'title': 'Что если я не вожу автомобиль?', 'desc': 'abcd' },
+                { 'title': 'Почему на борту нет средств?', 'desc': 'abcd' }
+              ]
+              :
+              [
+                { 'title': 'How do I buy NFT Veemans ?', 'desc': 'abcd' },
+                { 'title': 'How much are our NFT’S warth ?', 'desc': 'abcd' },
+                { 'title': 'How do I buy SOL ?', 'desc': 'abcd' },
+                { 'title': 'What if I don’t drive ?', 'desc': 'abcd' },
+                { 'title': 'Why are there no funds on board ?', 'desc': 'abcd' }
+              ]
+          }></BlockFAQ>
 
-        <Fotter></Fotter>
-      </main>
-    </div>
+          <Fotter></Fotter>
+        </main>
+      </div>
+    </AppContext.Provider>
   );
 };
 

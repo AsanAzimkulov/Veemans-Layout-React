@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
+import AppContext from "../../../contexts/AppContext";
+import classNames from "../../customs/classNames";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import styles from "./fotter.module.css";
@@ -8,8 +10,10 @@ interface Props {
 }
 
 const Fotter: FunctionComponent<Props> = ({ }) => {
+  const { language } = useContext(AppContext);
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container + classNames({className: styles.container_rus, condition: language === 'RUS'})}>
       <div className={styles.wrapper}>
 
         <div className={styles.topArea}>
@@ -18,7 +22,13 @@ const Fotter: FunctionComponent<Props> = ({ }) => {
             <Button1 variant="2"> Paper</Button1>
           </div>
           <div className={styles.topAreaButton + " " + styles.discordButton}>
-            <Button1 variant="2">JOIN DISCORD</Button1>
+            <Button1 variant="2">{
+              language === 'RUS'
+                ?
+                'DISCORD'
+                :
+                'JOIN DISCORD'
+            }</Button1>
           </div>
         </div>
 
@@ -41,8 +51,20 @@ const Fotter: FunctionComponent<Props> = ({ }) => {
           </div>
           <div className={styles.bottomCell + ' ' + styles.bottomCellLast}>
             <a href="#">Cookies Policy</a>
-            <a href="#">Privacy & Policy</a>
-            <a href="#">Terms & Condition</a>
+            <a href="#">{
+              language === 'RUS'
+                ?
+                'Политика конфиденциальности'
+                :
+                'Privacy & Policy'
+            }</a>
+            <a href="#">{
+              language === 'RUS'
+                ?
+                'Правила и условия'
+                :
+                'Terms & Condition'
+            }</a>
           </div>
         </div>
       </div>

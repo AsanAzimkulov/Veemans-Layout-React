@@ -4,6 +4,8 @@
   margin: 200px 120px 0px;
 }
 
+
+
 .faqWrapper {
   max-width: 700px;
   margin: 70px auto 0px;
@@ -111,4 +113,7 @@
 
     color: #ECECEC;
   }
+}
+.container_rus .title{
+  font-weight: 400;
 }

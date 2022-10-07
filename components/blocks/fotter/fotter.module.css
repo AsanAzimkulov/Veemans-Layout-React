@@ -75,6 +75,10 @@
   padding: 0px 10px;
 }
 
+.container_rus .bottomCellLast a:first-child{
+  display: none;
+}
+
 .bottomCellLast a:hover {
   color: #11D9EB;
 }

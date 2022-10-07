@@ -384,6 +384,9 @@
     font-size: 20px !important;
     line-height: 140% !important;
   }
+  .container_rus .main h3 {
+    font-family: 'Ruberoid';
+  }
 
   .cardList {
     margin-top: 32px;

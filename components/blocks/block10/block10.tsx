@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useContext, useState } from "react";
+import AppContext from "../../../contexts/AppContext";
 import classNames from "../../customs/classNames";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
@@ -51,6 +52,7 @@ const FaqItem = ({ date, title, description, color }: TFaq) => {
 
 
 const Block10 = () => {
+  const { language } = useContext(AppContext);
   const items: Array<TFaq> = [
     {
       date: 'September-October 2022',
@@ -125,14 +127,97 @@ const Block10 = () => {
       color: '#1DCEF5'
     },
   ];
+  const rusItems: Array<TFaq> = [
+    {
+      date: 'Сентябрь-октябрь 2022',
+      title: 'Раунд частных инвестиций #1',
+      description: [
+        'Запуск веб-сайта и социальных сетей',
+        'Создание light версии проекта',
+        'Разработка коллекции NFT',
+        'Разработка обновлений и аксессуаров для NFT',
+        'Написание смарт-контрактов для листинга коллекций NFT',
+        'Интеграция с блоггерами',
+        'Запуск сообщества проекта',
+        'Разработка приложений UX/UI',
+      ],
+      color: '#C03DD5'
+    },
+    {
+      date: 'Ноябрь 2022',
+      title: 'Раунд частных инвестиций #2',
+      description: [
+        'Запуск альфа-версии приложения',
+        'Тестирование системы на наличие ошибок и доработка технических решений',
+        'Первый выпуск коллекции NFT, начало продаж',
+        'Запуск торговой платформы для покупки и продажи Veeman и апгрейдов',
+        'Публикация White paper проекта',
+        'Публикация токеномики',
+      ],
+      color: '#A849DE'
+    },
+    {
+      date: 'Декабрь 2022',
+      title: 'Запуск версии приложения 1.0',
+      description: [
+        'Встреча новых Veemans',
+        'Добавление игровой механики сражений в пошаговых мини-играх PVP',
+        'Подписание бирж для листинга токенов',
+        'Листинг токена на DEX и CEX',
+        'Публичный раунд продажи токенов - предварительная продажа',
+        'Создание коллекций бренда NFT совместно с блогерами и инфлюенсерами',
+      ],
+      color: '#7562F2'
+    },
+    {
+      date: 'Январь 2023',
+      title: 'Запуск версии приложения 2.0',
+      description: [
+        'Добавление игровой механики: создание альянсов, захват территорий',
+        'Добавление автодилеров в экосистему Veemans',
+        'Запуск процесса размещения ставок',
+        'Добавление алгоритма дополненной реальности для работы с артефактами на реальной карте',
+        'Добавление игровых квестов',
+        'Создание бесплатной академии Veeman для всех пользователей приложения',
+      ],
+      color: '#4B83FB'
+    },
+    {
+      date: 'Февраль 2023',
+      title: 'Добавление функции создания NFT аватара пользователя',
+      description: [
+        'Появление новых артефактов для вашего аватара NFT, расширенные возможности отслеживания и взаимодействия с WEB 3',
+        'Мы добавим больше обновлений в ближайшее время',
+      ],
+      color: '#33A9F8'
+    },
+    {
+      date: 'Март 2023',
+      title: 'Появление новых обновлений',
+      description: [
+        'Запуск бета-версии продукта',
+        'Создание полноценного навигатора NFT для того, чтобы побудить людей к осторожному вождению',
+      ],
+      color: '#1DCEF5'
+    },
+  ];
   return (
-    <div className={styles["container"] + ' contentWrapper'}>
-      <Title1>Roadmap</Title1>
+    <div className={styles["container"] + ' contentWrapper' + classNames({className: styles['container_rus'], condition: language === 'RUS'})}>
+      <Title1>{
+        language === 'RUS'
+          ?
+          'Дорожная карта'
+          :
+          'Roadmap'
+      }</Title1>
       <ol className={styles.list}>
         {
-          items.map(item => (
-            <FaqItem date={item.date} title={item.title} description={item.description} color={item.color} key={item.title + item.description} />
-          ))
+          (language === 'RUS' ?
+            rusItems
+            :
+            items).map(item => (
+              <FaqItem date={item.date} title={item.title} description={item.description} color={item.color} key={item.title + item.description} />
+            ))
         }
       </ol>
     </div>

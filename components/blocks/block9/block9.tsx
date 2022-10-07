@@ -1,6 +1,6 @@
 // @ts-ignore
 import Image from "next/image";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useContext } from "react";
 import React, { FunctionComponent } from "react";
 import { useIsVisible } from 'react-is-visible';
 import classNames from "../../customs/classNames";
@@ -9,12 +9,14 @@ import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import { useWindowSize } from "../../customs/useWindowDimensions";
 import styles from "./block9.module.css";
+import AppContext from "../../../contexts/AppContext";
 
 interface Props {
 }
 
 
 const Block9: FunctionComponent<Props> = ({ }) => {
+  const {language} = useContext(AppContext);
 
   const windowSize = useWindowSize();
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -67,11 +69,18 @@ const Block9: FunctionComponent<Props> = ({ }) => {
     }
   }
   return (
-    <div className={styles["container"] + " contentWrapper"}>
+    <div className={styles["container"] + " contentWrapper" + classNames({className: styles['container_rus'], condition: language === 'RUS'})}>
       <div className={styles.block}>
         <div className={styles.first}>
           <Title1>
-            VMN Token Distribution
+            {
+              language === 'RUS'
+              ?
+              'Распределение токенов VMN'
+              :
+              'VMN Token Distribution'
+            }
+            
           </Title1>
           <Button1 variant="1">
             Join the community
@@ -171,67 +180,127 @@ const Block9: FunctionComponent<Props> = ({ }) => {
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>35%</strong>
               <p className={styles.listItemDesc}>
-                Drive and Earn
+              Drive and Earn               
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>16%</strong>
               <p className={styles.listItemDesc}>
-                Ecosystems/ treasury
+              {
+              language === 'RUS'
+              ?
+              'Экосистема / казначейство'
+              :
+              'Ecosystems/ treasury'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>9%</strong>
               <p className={styles.listItemDesc}>
-                Partnerships fund
+              {
+              language === 'RUS'
+              ?
+              'Фонды'
+              :
+              'Partnerships fund'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>8%</strong>
               <p className={styles.listItemDesc}>
-                Team
+              {
+              language === 'RUS'
+              ?
+              'Команда'
+              :
+              'Team'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>7%</strong>
               <p className={styles.listItemDesc}>
-                Private sale#2
+              {
+              language === 'RUS'
+              ?
+              'Приватный sale №2'
+              :
+              'Private sale#2'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>6%</strong>
               <p className={styles.listItemDesc}>
-                Marketing
+              {
+              language === 'RUS'
+              ?
+              'Маркетинг'
+              :
+              'Marketing'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>5%</strong>
               <p className={styles.listItemDesc}>
-                Private sale #1
+              {
+              language === 'RUS'
+              ?
+              'Приватный sale №1'
+              :
+              'Private sale #1'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>5%</strong>
               <p className={styles.listItemDesc}>
-                Liquidity provision
+              {
+              language === 'RUS'
+              ?
+              'Обеспечение ликвидности'
+              :
+              'Liquidity provision'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>4%</strong>
               <p className={styles.listItemDesc}>
-                Public sale
+              {
+              language === 'RUS'
+              ?
+              'Публичный sale'
+              :
+              'Public sale'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>3%</strong>
               <p className={styles.listItemDesc}>
-                Advisers
+              {
+              language === 'RUS'
+              ?
+              'Эдвайзоры'
+              :
+              'Advisers'
+            }
               </p>
             </li>
             <li className={styles.listItem}>
               <strong className={styles.listItemStrong}>2%</strong>
               <p className={styles.listItemDesc}>
-                Creators
+              {
+              language === 'RUS'
+              ?
+              'Создатели'
+              :
+              'Creators'
+            }
               </p>
             </li>
           </ul>

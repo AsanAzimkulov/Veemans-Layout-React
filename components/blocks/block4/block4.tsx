@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
+import AppContext from "../../../contexts/AppContext";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import styles from "./block4.module.css";
@@ -8,9 +9,17 @@ interface Props {
 }
 
 const Block4: FunctionComponent<Props> = ({ }) => {
+  const {language} = useContext(AppContext);
   return (
     <div className={styles["container"] + " contentWrapper"}>
-      <Title1>How does it work</Title1>
+      <Title1>
+        {
+          language === 'RUS'
+          ?
+          'Как это работает?'
+          :
+          'How does it work'
+        }</Title1>
       <div className={styles["blockRow"]} style={{ 'marginTop': '70px' }}>
         <div className={styles["blockItem"]}>
           <div className={styles["blockCount"]}>
@@ -19,10 +28,23 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Choose your NFT Veeman car from the NFT store</h4>
+            <h4>
+            {
+          language === 'RUS'
+          ?
+          'Выберите свой NFT автомобиль Veeman в магазине '
+          :
+          'Choose your NFT Veeman car from the NFT store'
+        }</h4>
           </div>
           <div className={styles["blockDesc"]}>
-          There is 5 different types of car with uniq characteristics 
+          {
+          language === 'RUS'
+          ?
+          'Существует 5 различных типов автомобилей с уникальными характеристиками'
+          :
+          'There is 5 different types of car with uniq characteristics '
+        }
           </div>
         </div>
 
@@ -39,10 +61,23 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Drive any type of transport</h4>
+            <h4>
+            {
+          language === 'RUS'
+          ?
+          'Перемещайтесь на любом виде транспорта'
+          :
+          'Drive any type of transport'
+        }</h4>
           </div>
           <div className={styles["blockDesc"]}>
-          With speed from 10 to 60 km.
+          {
+          language === 'RUS'
+          ?
+          'Со скоростью от 10 до 60 км/ ч'
+          :
+          'With speed from 10 to 60 km.'
+        }
           </div>
         </div>
 
@@ -59,10 +94,24 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Get a reward by driving</h4>
+            <h4>
+            {
+          language === 'RUS'
+          ?
+          'Получайте вознаграждение за каждый километр поездки'
+          :
+          'Get a reward by driving'
+        }</h4>
           </div>
           <div className={styles["blockDesc"]}>
-          Earn tokens and mysterious boxes during the trip
+          {
+          language === 'RUS'
+          ?
+          'Зарабатывайте токены и находите таинственные коробки во время поездки'
+          :
+          'Earn tokens and mysterious boxes during the trip'
+        }
+
           </div>
         </div>
       </div>
@@ -75,10 +124,24 @@ const Block4: FunctionComponent<Props> = ({ }) => {
                 </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Upgrade your NFT Veeman</h4>
+            <h4>
+            {
+          language === 'RUS'
+          ?
+          'Прокачивайте ваш Veeman автомобиль'
+          :
+          'Upgrade your NFT Veeman'
+        }</h4>
           </div>
           <div className={styles["blockDesc"]}>
-          Buy the details, upgrade your car, improve performance and characteristics by leveling up to get more rewards.
+          {
+          language === 'RUS'
+          ?
+          'Покупайте детали, улучшайте свой автомобиль, производительность и характеристики чтобы получить больше наград и токенов.'
+          :
+          'Buy the details, upgrade your car, improve performance and characteristics by leveling up to get more rewards.'
+        }
+
           </div>
         </div>
 
@@ -95,10 +158,24 @@ const Block4: FunctionComponent<Props> = ({ }) => {
             </div>
           </div>
           <div className={styles["blockTitle"]}>
-            <h4>Form alliances and capture streets</h4>
+            <h4>
+            {
+          language === 'RUS'
+          ?
+          'Создавайте альянсы чтобы захватывать улицы'
+          :
+          'Form alliances and capture streets'
+        }</h4>
           </div>
           <div className={styles["blockDesc"]}>
-          Make other players pay for driving through your streets
+          {
+          language === 'RUS'
+          ?
+          'и взимать плату за проезд по ним другими пользователями'
+          :
+          'Make other players pay for driving through your streets'
+        }
+
           </div>
         </div>
       </div>
