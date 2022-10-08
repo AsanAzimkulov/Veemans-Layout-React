@@ -428,32 +428,32 @@
 
 
 @media(max-width: 400px) {
-  .mobileButton {
+  .container_rus .mobileButton {
     width: 316px;
     transform: translateX(-6vw);
   }
 }
 
 @media(max-width: 370px) {
-  .mobileButton {
+  .container_rus .mobileButton {
     transform: scale(0.9) translateX(-6vw);
   }
 }
 
 @media(max-width: 350px) {
-  .mobileButton {
+  .container_rus .mobileButton {
     transform: scale(0.9) translateX(-30px);
   }
 }
 
 @media(max-width: 335px) {
-  .mobileButton {
+  .container_rus .mobileButton {
     transform: scale(0.9) translateX(-35px);
   }
 }
 
 @media(max-width: 330px) {
-  .mobileButton {
+  .container_rus .mobileButton {
     transform: scale(0.9) translateX(-37.5px);
   }
 }
