@@ -34,13 +34,8 @@ const Block1: FunctionComponent = () => {
           <div className={styles.mainCC}>
             <div className={styles.first__top}>
               <div className={styles.first__title1 + classNames({ className: styles["first__title1_rus"], condition: language === 'RUS' })}>
-                {
-                  language === 'RUS'
-                    ?
-                    'Veemans - это Web 3.0 приложение '
-                    :
-                    'Veemans is a web3.0 APP'
-                }
+                Veemans is a web3.0 APP
+
               </div>
               <div className={styles["first__apps-block"]}>
                 <a href="">
@@ -64,13 +59,9 @@ const Block1: FunctionComponent = () => {
             <img src="/icons/title.png" className={styles.topLogo} alt="" />
             <img src="/icons/title-m.png" className={styles.topLogo + ' ' + styles.topLogo_mobile} alt="" />
             <div className={styles.first__title1 + ' ' + styles.first__title1_mobile + classNames({ className: styles["first__title1_mobile_rus"], condition: language === 'RUS' })}>
-              {
-                language === 'RUS'
-                  ?
-                  'Veemans - это Web 3.0 приложение '
-                  :
-                  'Veemans is a web3.0 APP'
-              }
+
+                  Veemans is a web3.0 APP
+              
             </div>
 
             <div className={styles["first__block2"]}>
@@ -102,10 +93,10 @@ const Block1: FunctionComponent = () => {
             <div className={styles["first__block3"]}>
               <Button1 variant="1" wide={language === 'RUS'}>{
                 language === 'RUS'
-                ? 
-                'Присоединиться к сообществу'
-                :
-                'Join The Community'
+                  ?
+                  'Присоединиться к сообществу'
+                  :
+                  'Join The Community'
               }</Button1>
               <div className={styles.whitePaperIcon}>
                 <Button1 variant="2"> Paper</Button1>

@@ -236,11 +236,17 @@
 @media(max-width: 420px) {
   .teamLine {
     grid-template-columns: 1fr;
+    transform: scale(1.25) translateY(200px);
+    margin-bottom: 450px;
+  }
+  .teamLine:first-of-type{
+    margin-bottom: 370px;
   }
 
-  .teamItem:nth-child(2) {
-    margin-top: -80px;
+  .teamItem {
+    margin-top: -80px !important;
   }
+
 }
 
 /* @media(min-width: 370px) and (max-width: 420px) {

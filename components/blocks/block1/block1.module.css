@@ -168,14 +168,14 @@
     text-align: left; */
 }
 
-.first__title1_rus {
+/* .first__title1_rus {
   font-family: 'Ruberoid';
   font-style: italic;
   font-weight: 600;
   font-size: 26px;
   line-height: 160%;
   text-shadow: none;
-}
+} */
 
 .first__apps-block {
   display: grid;
@@ -301,10 +301,10 @@
     max-width: 100%;
   }
 
-  .first__title1_mobile_rus {
+  /* .first__title1_mobile_rus {
     font-family:  'Ruberoid';
     font-weight: 600;
-  }
+  } */
 
   .topLogo {
     display: none;
