@@ -34,7 +34,7 @@ const Block2: FunctionComponent = () => {
                     ?
                     'Это игра, в которой вы зарабатываете токены, передвигаясь на транспорте. Это просто.'
                     :
-                    'Its a game where you get tokens while you moving with a transport. It&apos;s simple.'
+                    'Its a game where you get tokens while you moving with a transport. It\'s simple.'
 
                 }
 

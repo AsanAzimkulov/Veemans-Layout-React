@@ -10,7 +10,7 @@ import styles from "./block31.module.css";
 const Block31: FunctionComponent = () => {
   const { language } = useContext(AppContext);
   return (
-    <div className={styles["container"] + classNames({className: styles['container_rus'], condition: language === 'RUS'})}>
+    <div className={styles["container"] + classNames({ className: styles['container_rus'], condition: language === 'RUS' })}>
       <div className={styles["columns1"]}>
         <div style={{ 'textAlign': 'center' }} className={styles.columns1__picture_desctop}>
           <img src="/images/block31_img1.png" className={styles.phonne} />
@@ -43,16 +43,16 @@ const Block31: FunctionComponent = () => {
                   ?
                   'Для этого вам необходимо "привязать" свой аккаунт к мобильному устройству. Каждый пользователь зарабатывает за ежедневные передвижения на любом виде транспорта, развивающем скорость от 10 до 60 км/ч.'
                   :
-                  'To do this, you need to &quot;link&quot; your account with a mobile device. In a specific case, each user earns for daily movements on any type of transport, developing with a speed of 10 to 60 km/h'
+                  'To do this, you need to "link" your account with a mobile device. In a specific case, each user earns for daily movements on any type of transport, developing with a speed of 10 to 60 km/h'
               }
             </p>
             <div className={styles["info__buttons"]}>
-            <Button1 variant="1" wide={language === 'RUS'}>{
+              <Button1 variant="1" wide={language === 'RUS'}>{
                 language === 'RUS'
-                ? 
-                'Присоединиться'
-                :
-                'Join The Community'
+                  ?
+                  'Присоединиться'
+                  :
+                  'Join The Community'
               }</Button1>
               {/* <a className={styles["info__rm"]} href="">
                 Read More
@@ -126,7 +126,7 @@ const Block31: FunctionComponent = () => {
                 language === 'RUS'
                   ?
                   <>
-                  Найдите Таинственную коробку во время <br/> езды и улучшите технические <br/> характеристики машины.
+                    Найдите Таинственную коробку во время <br /> езды и улучшите технические <br /> характеристики машины.
                   </>
                   :
                   <>
