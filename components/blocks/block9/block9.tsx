@@ -86,7 +86,7 @@ const Block9: FunctionComponent<Props> = ({ }) => {
             <Button1 variant="1" wide={language === 'RUS'}>{
               language === 'RUS'
                 ?
-                'Присоединяйтесь к сообществу'
+                'Присоединиться'
                 :
                 'Join The Community'
             }</Button1>
@@ -315,7 +315,7 @@ const Block9: FunctionComponent<Props> = ({ }) => {
           <Button1 variant="1" wide={language === 'RUS'}>{
             language === 'RUS'
               ?
-              'Присоединяйтесь к сообществу'
+              'Присоединиться'
               :
               'Join The Community'
           }</Button1>

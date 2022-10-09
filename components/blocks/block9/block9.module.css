@@ -25,9 +25,9 @@
 
 
 @media(min-width: 992px) and (max-width: 1500px) {
-  .container_rus .button {
+  /* .container_rus .button {
     transform: scale(0.8) translatex(-50px);
-  }
+  }*/
 
   .container_rus h1 {
     transform: translateX(-30px);
@@ -39,9 +39,9 @@
     transform: scale(0.8);
   }
 
-  .container_rus .button {
+  /* .container_rus .button {
     transform: scale(0.9) translatex(-30px);
-  }
+  } */
 }
 
 
@@ -427,7 +427,7 @@
 
 
 
-@media(max-width: 400px) {
+/* @media(max-width: 400px) {
   .container_rus .mobileButton {
     width: 316px;
     transform: translateX(-6vw);
@@ -456,7 +456,7 @@
   .container_rus .mobileButton {
     transform: scale(0.9) translateX(-37.5px);
   }
-}
+} */
 
 
 

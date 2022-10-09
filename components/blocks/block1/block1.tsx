@@ -94,7 +94,7 @@ const Block1: FunctionComponent = () => {
               <Button1 variant="1" wide={language === 'RUS'}>{
                 language === 'RUS'
                   ?
-                  'Присоединиться к сообществу'
+                  'Присоединиться'
                   :
                   'Join The Community'
               }</Button1>
