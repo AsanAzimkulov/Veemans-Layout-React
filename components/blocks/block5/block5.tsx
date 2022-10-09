@@ -9,22 +9,22 @@ interface Props {
 }
 
 const Block5: FunctionComponent<Props> = ({ }) => {
-  const {language} = useContext(AppContext)
+  const { language } = useContext(AppContext)
   return (
     <div className={styles["container"] + ' contentWrapper'}>
       <Title1>
         {
           language === 'RUS'
-          ?
-          'Классы автомобилей'
-          :
-          'Classes of NFT Veemans'
+            ?
+            'Классы автомобилей'
+            :
+            'Classes of NFT Veemans'
         }</Title1>
       <ul className={styles.list}>
         {
           [1, 2, 3, 4, 5, 6].map(index => (
             <li key={index} className={styles.listItem}>
-              <img src={`/images/b5-${index}.png`} className={styles.item} />
+              <img src={`/images/b5-${index}${index}.png`} className={styles.item} />
             </li>
           ))
         }
