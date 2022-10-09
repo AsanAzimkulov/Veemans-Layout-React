@@ -20,7 +20,7 @@ const Block1: FunctionComponent = () => {
 
 
   return (
-    <div className={`${styles["wrapper"]} ${classNames({ className: styles["wrapper_smallHeight"], condition: isSmallHeight })}`}>
+    <div className={`${styles["wrapper"]} ${classNames({ className: styles["wrapper_smallHeight"], condition: isSmallHeight }) + classNames({ className: styles['container_rus'], condition: language === 'RUS' })}`}>
       <div className={styles["video-bg"]}>
         <video autoPlay={true} muted loop>
           <source src="/videos/2.mp4" type="video/mp4" />
@@ -60,8 +60,8 @@ const Block1: FunctionComponent = () => {
             <img src="/icons/title-m.png" className={styles.topLogo + ' ' + styles.topLogo_mobile} alt="" />
             <div className={styles.first__title1 + ' ' + styles.first__title1_mobile + classNames({ className: styles["first__title1_mobile_rus"], condition: language === 'RUS' })}>
 
-                  Veemans is a web3.0 APP
-              
+              Veemans is a web3.0 APP
+
             </div>
 
             <div className={styles["first__block2"]}>

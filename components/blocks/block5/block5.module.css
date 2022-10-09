@@ -45,6 +45,16 @@ div.container {
 }
 
 @media(max-width: 991.5px) {
+
+  .listItem {
+    margin-top: 40px !important;
+  }
+
+  .listItem:nth-last-child(-n + 3) {
+    margin-top: 50px !important;
+  }
+
+
   .list {
     margin-right: 29px;
     margin-left: 29px;

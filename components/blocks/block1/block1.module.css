@@ -271,6 +271,13 @@
     line-height: 160%;
   }
 
+
+}
+
+@media(max-width: 500px) {
+  .container_rus .first__text {
+    transform: scale(0.7) translateY(-10px);
+  }
 }
 
 @media(max-width: 1550px) {}
@@ -357,8 +364,8 @@
   }
 }
 
-@media(max-width: 370px){
-  .first__block3{
+@media(max-width: 370px) {
+  .first__block3 {
     transform: scale(0.9);
   }
 }
