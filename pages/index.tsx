@@ -23,6 +23,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import LanguageToggle from "../components/ui/languageToggle/languageToggle";
 import AppContext from "../contexts/AppContext";
+import 'intersection-observer';
 
 const Home: NextPage = () => {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
@@ -137,6 +138,7 @@ const Home: NextPage = () => {
 
           <Fotter></Fotter>
         </main>
+
       </div>
     </AppContext.Provider>
   );
