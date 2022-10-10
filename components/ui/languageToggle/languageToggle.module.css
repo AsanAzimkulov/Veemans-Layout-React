@@ -7,7 +7,7 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: #FFFFFF;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 .variantText:last-of-type {
@@ -29,6 +29,7 @@
 
 
 
+
 .root_second .variantText:last-of-type {
   color: #FFFFFF;
 }
@@ -46,18 +47,23 @@
 
 .radioButton {
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  top: 0px;
+  width: 32px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioButton:first-of-type {
+  left: 0px;
+}
+
+.radioButton:last-of-type {
+  right: 0px;
 }
 
 .wrap {
+
   width: 60px;
   height: 35px;
 
@@ -127,6 +133,11 @@
   .wrap {
     width: 45px;
     height: 26px;
+  }
+
+  .radioButton{
+    height: 26px;
+    width: 23px;
   }
 
   .ball {

@@ -14,15 +14,15 @@ const LanguageToggle = () => {
 
   return (
     <div className={styles.root + classNames({ className: styles.root_second, condition: language === "RUS" })}>
-      <input type="radio" className={styles.radioButton} id="languageFirst" name='language' value={"ENG"} checked={language === 'ENG'} onChange={onChangeLanguage} />
-      <label className={styles.variantText} htmlFor="languageFirst">ENG</label>
+      <p className={styles.variantText}>ENG</p>
       <div className={styles.button}>
         <div className={styles.wrap}>
+          <input type="radio" className={styles.radioButton} id="languageFirst" name='language' value={"ENG"} checked={language === 'ENG'} onChange={onChangeLanguage} />
           <div className={styles.ball}></div>
+          <input type="radio" className={styles.radioButton} id="languageSecond" name='language' value={"RUS"} checked={language === 'RUS'} onChange={onChangeLanguage} />
         </div>
       </div>
-      <input type="radio" className={styles.radioButton} id="languageSecond" name='language' value={"RUS"} checked={language === 'RUS'} onChange={onChangeLanguage} />
-      <label className={styles.variantText} htmlFor="languageSecond">RUS</label>
+      <p className={styles.variantText}>RUS</p>
     </div>
   )
 }
