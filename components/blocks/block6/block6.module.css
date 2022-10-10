@@ -20,34 +20,67 @@
   justify-items: center;
 }
 
-
-
-@media(max-width: 991.5px) {
-  .items {
-    grid-column-gap: 7.63px;
-    grid-row-gap: 15.74px;
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-
-  .item {
-    width: 91.58px;
-    height: 97.97px;
-
-  }
+.itemWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.targetItem {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.itemInnerWrapper {
+  z-index: 2;
+  position: relative;
+
+}
+
+.itemTitle {
+  font-family: 'Ruberoid';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  line-height: 160%;
+  vertical-align: top;
+  letter-spacing: -2%;
+  color: #EAEAEA;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
 
 @media(max-width: 1550px) {
   .item {
     width: 170px;
     height: 181px;
   }
+
+  .itemInnerWrapper {
+    transform: scale(0.8);
+  }
 }
+
+@media(min-width: 992px) and (max-width: 1400px) {}
 
 @media(max-width: 1300px) {
   .item {
     width: 150px;
     height: 159.78px;
+  }
+
+  .itemInnerWrapper {
+    transform: scale(0.75);
   }
 }
 
@@ -56,19 +89,81 @@
     width: 130px;
     height: 138.476px;
   }
+
+  .itemInnerWrapper {
+    transform: scale(0.65);
+  }
 }
 
 @media(max-width: 991.5px) {
-  .item {
-    width: 91.58px;
-    height: 97.97px;
-  }
-
   .items {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 7.63px;
     grid-row-gap: 15.74px;
     width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: row;
   }
+}
+
+@media(max-width: 440px) {
+  .items {
+    grid-column-gap: 7.63px;
+    grid-row-gap: 15.74px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .item {
+    width: 101.58px;
+    height: 107.97px;
+  }
+
+  .itemInnerWrapper {
+    transform: none;
+    margin-top: -5px;
+  }
+
+  .itemTitle {
+    font-size: 9px;
+    line-height: 14px;
+    margin-top: 0px;
+  }
+
+  .itemTitle:not(.item:first-child .itemTitle) {
+    margin-top: -10px;
+  }
+
+
+  .item:not(.item:first-child) .itemInnerWrapper {
+    margin-top: -15px;
+  }
+
+  .itemIcon {
+    transform: scale(0.7);
+  }
+
+  .item:nth-child(5) .itemTitle {
+    transform: translateY(5px);
+  }
+
+
+
+}
+
+@media(min-width: 440px) and (max-width: 991.5px) {
+  .item:nth-child(1) .itemTitle {
+    transform: translateY(4px);
+  }
+}
+
+@media(min-width: 1550px) {
+  .item {
+    width: 215px;
+    height: 230px;
+  }
+
+
 }

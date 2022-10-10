@@ -9,21 +9,30 @@ interface Props {
 }
 
 const Block6: FunctionComponent<Props> = ({ }) => {
-  const {language} = useContext(AppContext);
+  const items = [
+    'car', 'taxi', 'train', 'skateboard', 'bicycle', 'scooter'
+  ]
+  const { language } = useContext(AppContext);
   return (
     <div className={styles["container"] + ' contentWrapper'}>
       <Title1>
         {
           language === 'RUS'
-          ?
-          'На чем вы можете перемещаться чтобы зарабатывать'
-          :
-          'The Motion Roller is looped'
+            ?
+            'На чем вы можете перемещаться чтобы зарабатывать'
+            :
+            'The Motion Roller is looped'
         }</Title1>
       <div className={styles.items}>
         {
-          [1, 2, 3, 4, 5, 6].map(i => {
-            return <img src={`/icons/bb${i}.png`} alt="Transport" key={i} className={styles.item} />
+          items.map((title, index) => {
+            return <div key={title} className={styles.itemWrapper + ' ' + styles.item}>
+              <img src={`/icons/b6-block.png`} alt="Transport" className={styles.item + ' ' + styles.targetItem} />
+              <div className={styles.itemInnerWrapper}>
+                <img src={`/icons/b6-${index}.svg`} alt={`${title} icon`} className={styles.itemIcon} />
+                <p className={styles.itemTitle}>{title}</p>
+              </div>
+            </div>
           })
         }
       </div>
