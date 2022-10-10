@@ -7,20 +7,18 @@ const LanguageToggle = () => {
   const { language, setLanguage } = useContext(AppContext);
 
   const onChangeLanguage = (e: any) => {
-    if (language !== e.currentTarget.value && e.currentTarget.value) {
-      setLanguage(e.currentTarget.value)
-    }
+    setLanguage(language === 'ENG' ? 'RUS' : 'ENG')
   }
 
   return (
     <div className={styles.root + classNames({ className: styles.root_second, condition: language === "RUS" })}>
       <p className={styles.variantText}>ENG</p>
       <div className={styles.button}>
-        <div className={styles.wrap}>
-          <input type="radio" className={styles.radioButton} id="languageFirst" name='language' value={"ENG"} checked={language === 'ENG'} onChange={onChangeLanguage} />
+        <button className={styles.wrap} onClick={onChangeLanguage}>
+          <input type="radio" className={styles.radioButton} id="languageFirst" name='language' value={"ENG"} checked={language === 'ENG'} />
           <div className={styles.ball}></div>
-          <input type="radio" className={styles.radioButton} id="languageSecond" name='language' value={"RUS"} checked={language === 'RUS'} onChange={onChangeLanguage} />
-        </div>
+          <input type="radio" className={styles.radioButton} id="languageSecond" name='language' value={"RUS"} checked={language === 'RUS'} />
+        </button>
       </div>
       <p className={styles.variantText}>RUS</p>
     </div>
