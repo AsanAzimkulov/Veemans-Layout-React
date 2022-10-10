@@ -83,7 +83,7 @@ const Block9: FunctionComponent<Props> = ({ }) => {
 
           </Title1>
           <span className={styles.button}>
-            <Button1 variant="1" wide={language === 'RUS'}>{
+            <Button1 variant="1" wide={language === 'RUS'}  src={'https://discord.com/invite/Veemans'}>{
               language === 'RUS'
                 ?
                 'Присоединиться'
@@ -312,7 +312,7 @@ const Block9: FunctionComponent<Props> = ({ }) => {
           </ul>
         </div>
         <div className={styles.mobileButton}>
-          <Button1 variant="1" wide={language === 'RUS'}>{
+          <Button1 variant="1" wide={language === 'RUS'}  src={'https://discord.com/invite/Veemans'}>{
             language === 'RUS'
               ?
               'Присоединиться'

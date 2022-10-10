@@ -70,3 +70,9 @@
 
 
 }
+
+@media(max-width: 340px){
+  .containerBorder{
+    width: 60vw;
+  }
+}

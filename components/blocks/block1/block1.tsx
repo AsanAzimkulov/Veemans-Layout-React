@@ -77,8 +77,8 @@ const Block1: FunctionComponent = () => {
                   language === 'RUS'
                     ?
                     <>
-                      Сделайте свои ежедневные перемещения<br />
-                      прибыльным с помощью NFT игры Veemans
+                      Сделайте свои ежедневные перемещения <br />
+                      прибыльным с помощью <br className={styles.br} />NFT игры Veemans
                     </>
                     :
                     <>
@@ -91,7 +91,7 @@ const Block1: FunctionComponent = () => {
               </div>
             </div>
             <div className={styles["first__block3"]}>
-              <Button1 variant="1" wide={language === 'RUS'}>{
+              <Button1 variant="1" wide={language === 'RUS'} src={'https://discord.com/invite/Veemans'}>{
                 language === 'RUS'
                   ?
                   'Присоединиться'

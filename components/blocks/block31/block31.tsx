@@ -47,7 +47,7 @@ const Block31: FunctionComponent = () => {
               }
             </p>
             <div className={styles["info__buttons"]}>
-              <Button1 variant="1" wide={language === 'RUS'}>{
+              <Button1 variant="1" wide={language === 'RUS'}  src={'https://discord.com/invite/Veemans'} >{
                 language === 'RUS'
                   ?
                   'Присоединиться'

@@ -236,11 +236,16 @@
 @media(max-width: 420px) {
   .teamLine {
     grid-template-columns: 1fr;
-    transform: scale(1.25) translateY(200px);
+    transform: scale(1.45) translateY(200px);
     margin-bottom: 450px;
   }
+
   .teamLine:first-of-type{
-    margin-bottom: 370px;
+    margin-top: 150px;
+  }
+
+  .teamLine:first-of-type{
+    margin-bottom: 500px;
   }
 
   .teamItem {

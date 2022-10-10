@@ -4,6 +4,7 @@
   left: 660px;
   cursor: pointer;
   text-transform: uppercase;
+  display: block;
 }
 /* 
 .container_wide {

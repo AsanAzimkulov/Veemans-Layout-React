@@ -18,11 +18,11 @@ const Fotter: FunctionComponent<Props> = ({ }) => {
 
         <div className={styles.topArea}>
           <img className={styles.logo} src="/logo.png" alt=""></img>
-          <div className={styles.whitePaperIcon + " " + styles.topAreaButton}>
+          <div className={styles.whitePaperIcon + " " + styles.topAreaButton} >
             <Button1 variant="2"> Paper</Button1>
           </div>
           <div className={styles.topAreaButton + " " + styles.discordButton}>
-            <Button1 variant="2">{
+            <Button1 variant="2"  src={'https://discord.com/invite/Veemans'}>{
               language === 'RUS'
                 ?
                 'DISCORD'

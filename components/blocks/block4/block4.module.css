@@ -266,4 +266,34 @@
     top: 100px;
     z-index: 0;
   }
+
+  /* .blockRow:first-of-type {
+    grid-template-rows: repeat(3, 120px);
+    margin-bottom: 26px !important;
+  }
+
+  .blockRow:last-of-type {
+    grid-template-rows: repeat(2, 120px);
+  }
+
+
+  .container_rus .blockRow:first-of-type {
+    grid-template-rows: repeat(3, 140px);
+    margin-bottom: 36px !important;
+  }
+
+  .container_rus .blockRow:last-of-type {
+    grid-template-rows: repeat(2, 140px);
+  }
+
+  .blockRow:first-of-type .blockItem:nth-child(even) {
+    display: none !important;
+  }
+
+  .blockRow:last-of-type .blockItem:nth-child(even) {
+    display: none !important;
+  } */
+
+
+
 }

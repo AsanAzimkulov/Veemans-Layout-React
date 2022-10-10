@@ -274,10 +274,27 @@
 
 }
 
+
+.container_rus .first__text .br {
+  display: none;
+}
 @media(max-width: 500px) {
-  .container_rus .first__text {
-    transform: scale(0.8) translateY(-10px);
+  .container_rus .first__text .br {
+    /* transform: scale(0.95) translateY(-10px); */
+    display: block;
   }
+
+  .container_rus .first__text {
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .first__title1_mobile{
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+
 }
 
 @media(max-width: 1550px) {}

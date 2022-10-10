@@ -182,7 +182,7 @@ const Block2: FunctionComponent = () => {
           </Cart1>
         </div>
         <div className={styles["columns3"]}>
-          <Button1 variant="1" wide={language === 'RUS'}>{
+          <Button1 variant="1" wide={language === 'RUS'}  src={'https://discord.com/invite/Veemans'}>{
             language === 'RUS'
               ?
               'Присоединиться'

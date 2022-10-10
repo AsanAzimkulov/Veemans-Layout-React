@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FunctionComponent, useContext } from "react";
 import AppContext from "../../../contexts/AppContext";
+import classNames from "../../customs/classNames";
 import Button1 from "../../ui/button1/button1";
 import Title1 from "../../ui/title1/title1";
 import styles from "./block4.module.css";
@@ -11,7 +12,7 @@ interface Props {
 const Block4: FunctionComponent<Props> = ({ }) => {
   const {language} = useContext(AppContext);
   return (
-    <div className={styles["container"] + " contentWrapper"}>
+    <div className={styles["container"] + " contentWrapper" + classNames({className: styles.container_rus, condition: language === 'RUS'})}>
       <Title1>
         {
           language === 'RUS'

@@ -340,6 +340,7 @@
 
   .mobileButton {
     display: block !important;
+    position: relative;
   }
 
   .block {
@@ -420,6 +421,7 @@
     grid-template-rows: repeat(6, max-content);
     padding-right: 0;
     padding-left: 0;
+    grid-column-gap: 12px !important;
   }
 
 }
