@@ -101,7 +101,9 @@ const Block31: FunctionComponent = () => {
       </div>
       <div className={styles["columns1"]}>
         <div style={{ 'textAlign': 'center' }}>
-          <img src="/videos/r81.gif" style={{ 'width': '450px', 'marginTop': '50px', transform: 'scale(1.3) translateY(-40px)' }} />
+        <video style={{ 'width': '450px', 'marginTop': '50px', transform: 'scale(1.3) translateY(-40px)' }}  autoPlay={true} muted={true} loop={true} >
+          <source src="/videos/aa.webm" type="video/webm" />
+        </video>
         </div>
         <div>
           <Cart2>
