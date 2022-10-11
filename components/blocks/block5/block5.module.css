@@ -4,6 +4,19 @@ div.container {
   margin: 120px 120px 0px;
   margin-top: 100px !important;
   margin-bottom: 100px !important;
+  position: relative;
+}
+
+
+.anchor {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  opacity: 0;
+}
+
+@media(min-width: 1920px){
+
 }
 
 .container .imgLine {

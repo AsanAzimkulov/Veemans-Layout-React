@@ -12,6 +12,7 @@ const Block5: FunctionComponent<Props> = ({ }) => {
   const { language } = useContext(AppContext)
   return (
     <div className={styles["container"] + ' contentWrapper'}>
+      <div className={styles.anchor}  id="nft-veeman"></div>
       <Title1>
         {
           language === 'RUS'

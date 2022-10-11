@@ -28,11 +28,11 @@ const Header: FunctionComponent<PropsType> = ({ cb }) => {
     <header className={styles.container + classNames({className: styles.container_opened, condition: isBurgerOpened})}>
       <Logo></Logo>
       <nav className={styles.topCenterMenu + classNames({className: styles.topCenterMenu_rus, condition: language === 'RUS'})}>
-        <Link href="">{(language === 'RUS') ? 'О компании' : 'About'}</Link>
-        <Link href="">{(language === 'RUS') ? 'NFT Veeman' : 'NFT Veeman'}</Link>
-        <Link href="">{(language === 'RUS') ? 'Экосистема' : 'Ecosystem'}</Link>
-        <Link href="">{(language === 'RUS') ? 'PVP соревнования' : 'PVP competition'}</Link>
-        <Link href="">{(language === 'RUS') ? 'Дорожная карта' : 'Road Map'}</Link>
+        <Link href="#about">{(language === 'RUS') ? 'О компании' : 'About'}</Link>
+        <Link href="#nft-veeman">{(language === 'RUS') ? 'NFT Veeman' : 'NFT Veeman'}</Link>
+        <Link href="#ecosystem">{(language === 'RUS') ? 'Экосистема' : 'Ecosystem'}</Link>
+        <Link href="#pvp-competition">{(language === 'RUS') ? 'PVP соревнования' : 'PVP competition'}</Link>
+        <Link href="#road-map">{(language === 'RUS') ? 'Дорожная карта' : 'Road Map'}</Link>
       </nav>
       <BurgerMenu cb={onOpenMenu}></BurgerMenu>
     </header >

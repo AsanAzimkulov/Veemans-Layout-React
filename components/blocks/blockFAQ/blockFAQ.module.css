@@ -117,3 +117,10 @@
 .container_rus .title{
   font-weight: 400;
 }
+
+@media(min-width: 768px) and (max-width: 991.5px){
+  .container::before{
+    left: -20vw;
+    width: 120vw;
+  }
+}

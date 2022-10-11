@@ -10,7 +10,7 @@ const Block2: FunctionComponent = () => {
   const { language } = useContext(AppContext);
 
   return (
-    <div className={styles["container"] + ' contentWrapper'}>
+    <div className={styles["container"] + ' contentWrapper'} id="about">
       <div className={styles["top-border"]}></div>
       <div className={styles.content}>
         <Title1>{
@@ -182,7 +182,7 @@ const Block2: FunctionComponent = () => {
           </Cart1>
         </div>
         <div className={styles["columns3"]}>
-          <Button1 variant="1" wide={language === 'RUS'}  src={'https://discord.com/invite/Veemans'}>{
+          <Button1 variant="1" wide={language === 'RUS'} src={'https://discord.com/invite/Veemans'}>{
             language === 'RUS'
               ?
               'Присоединиться'

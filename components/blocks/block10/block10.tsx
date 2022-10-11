@@ -202,7 +202,8 @@ const Block10 = () => {
     },
   ];
   return (
-    <div className={styles["container"] + ' contentWrapper' + classNames({className: styles['container_rus'], condition: language === 'RUS'})}>
+    <div className={styles["container"] + ' contentWrapper' + classNames({ className: styles['container_rus'], condition: language === 'RUS' })} >
+      <div className={styles.anchor} id="road-map"></div>
       <Title1>{
         language === 'RUS'
           ?

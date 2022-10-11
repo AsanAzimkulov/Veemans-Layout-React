@@ -2,6 +2,14 @@
   text-align: center;
   min-height: 300px;
   margin: 120px 10px 0px;
+  position: relative;
+}
+
+.anchor{
+  position: absolute;
+  top:-40px;
+  left: 0px;
+  opacity: 0;
 }
 
 .container_rus h3 {

@@ -71,7 +71,8 @@ const Block7: FunctionComponent<Props> = ({ }) => {
   if (isChartVisible) isAnimated.current = true;
   return (
 
-    <div className={styles["container"] + ' contentWrapper' + classNames({ className: styles['container_rus'], condition: language === 'RUS' })}>
+    <div className={styles["container"] + ' contentWrapper' + classNames({ className: styles['container_rus'], condition: language === 'RUS' })} >
+      <div id="ecosystem" className={styles.anchor}></div>
       <div className={styles.block}>
 
         <Title1>

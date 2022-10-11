@@ -6,6 +6,13 @@
   z-index: 1;
 }
 
+.anchor {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  opacity: 0;
+}
+
 .container .imgLine {
   max-width: 100%;
   max-width: calc(min(1400px, 100%));

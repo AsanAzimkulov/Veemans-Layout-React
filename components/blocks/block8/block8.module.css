@@ -2,12 +2,20 @@
   text-align: center;
   min-height: 300px;
   margin: 240px 0;
+  position: relative;
 }
 
 .container .imgLine {
   width: 100%;
   max-width: 1300px;
   margin-top: 100px;
+}
+
+.anchor {
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  opacity: 0;
 }
 
 
@@ -272,9 +280,9 @@
 
   .m_rightC {
     background-image: url(/icons/b8-circles.svg);
-    width: 45px;
+    width: 50px;
     background-size: 100% 100%;
-    height: 20px;
+    height: 10px;
     right: 20px;
     top: 5px;
   }
