@@ -4,7 +4,11 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     workerThreads: true,
+    images: {
+      unoptimized: true
+    }
   }
 }
+
 
 module.exports = nextConfig
