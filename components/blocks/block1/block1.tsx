@@ -22,7 +22,7 @@ const Block1: FunctionComponent = () => {
   return (
     <div className={`${styles["wrapper"]} ${classNames({ className: styles["wrapper_smallHeight"], condition: isSmallHeight }) + classNames({ className: styles['container_rus'], condition: language === 'RUS' })}`}>
       <div className={styles["video-bg"]}>
-        <video autoPlay={true} muted={true} loop={true} >
+        <video autoPlay={true} muted={true} loop={true} playsInline>
           <source src="/videos/2.mp4" type="video/mp4" />
         </video>
       </div>
