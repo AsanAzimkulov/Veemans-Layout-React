@@ -47,7 +47,7 @@ const Block31: FunctionComponent = () => {
               }
             </p>
             <div className={styles["info__buttons"]}>
-              <Button1 variant="1" wide={language === 'RUS'} src={'https://discord.com/invite/Veemans'} >{
+              <Button1 variant="1" wide={language === 'RUS'}  src={'https://discord.com/invite/Veemans'} >{
                 language === 'RUS'
                   ?
                   'Присоединиться'
@@ -101,7 +101,7 @@ const Block31: FunctionComponent = () => {
       </div>
       <div className={styles["columns1"]}>
         <div style={{ 'textAlign': 'center' }}>
-          <img style={{ 'width': '450px', 'marginTop': '50px', transform: 'scale(1.3) translateY(-40px)' }} src="/videos/r81.gif" />
+          <img src="/videos/r81.gif" style={{ 'width': '450px', 'marginTop': '50px', transform: 'scale(1.3) translateY(-40px)' }} />
         </div>
         <div>
           <Cart2>

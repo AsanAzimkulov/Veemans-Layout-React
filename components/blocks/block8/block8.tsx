@@ -103,7 +103,7 @@ const Block8: FunctionComponent<Props> = ({ }) => {
           }</Title1>
         <ul className={styles.cardList}>
           <li className={styles.cardListItem}>
-            <img src="/images/CardList1.png" className={styles.cardListItemImage} />
+            <img src="/images/cardList1.png" className={styles.cardListItemImage} />
             <div>
               <h3 className={styles.cardListItemTitle}>
                 {
@@ -124,7 +124,7 @@ const Block8: FunctionComponent<Props> = ({ }) => {
             </div>
           </li>
           <li className={styles.cardListItem}>
-            <img src="/images/CardList2.png" className={styles.cardListItemImage} />
+            <img src="/images/cardList2.png" className={styles.cardListItemImage} />
             <div>
               <h3 className={styles.cardListItemTitle}>Drag racing</h3>
               <p className={styles.cardListItemDesc}>
@@ -137,7 +137,7 @@ const Block8: FunctionComponent<Props> = ({ }) => {
                 }</p></div>
           </li>
           <li className={styles.cardListItem}>
-            <img src="/images/CardList3.png" className={styles.cardListItemImage} />
+            <img src="/images/cardList3.png" className={styles.cardListItemImage} />
             <div>
               <h3 className={styles.cardListItemTitle}>Crash test</h3>
               <p className={styles.cardListItemDesc}>
