@@ -222,7 +222,10 @@ const Block7: FunctionComponent<Props> = ({ }) => {
               </ol>
             </div>
             <div className={styles.picture + classNames({ className: styles.picture_animated, condition: isChartVisible || isAnimated.current })} >
-              <img src="/images/revolution-car.png" alt="Красивая тесла с зеленой подсветкой " className={styles.car} />
+              <picture>
+                <source srcSet="/images/revolution-car.webp" type="image/webp" />
+                <img src="/images/revolution-car.png" alt="Красивая тесла с зеленой подсветкой " className={styles.car} />
+              </picture>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ const Block6: FunctionComponent<Props> = ({ }) => {
   const { language } = useContext(AppContext);
   return (
     <div className={styles["container"] + ' contentWrapper'}>
-            
+
 
       <Title1>
         {
@@ -29,7 +29,10 @@ const Block6: FunctionComponent<Props> = ({ }) => {
         {
           items.map((title, index) => {
             return <div key={title} className={styles.itemWrapper + ' ' + styles.item}>
-              <img src={`/icons/b6-block.png`} alt="Transport" className={styles.item + ' ' + styles.targetItem} />
+              <picture>
+                <source srcSet='/icons/b6-block.webp' type="image/webp" />
+                <img src='/icons/b6-block.png' alt="Transport" className={styles.item + ' ' + styles.targetItem} />
+              </picture>
               <div className={styles.itemInnerWrapper}>
                 <img src={`/icons/b6-${index}.svg`} alt={`${title} icon`} className={styles.itemIcon} />
                 <p className={styles.itemTitle}>{title}</p>
