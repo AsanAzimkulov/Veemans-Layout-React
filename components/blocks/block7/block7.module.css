@@ -5,9 +5,9 @@
   position: relative;
 }
 
-.anchor{
+.anchor {
   position: absolute;
-  top:-40px;
+  top: -40px;
   left: 0px;
   opacity: 0;
 }
@@ -27,6 +27,12 @@
   padding: 177px 57px;
   position: relative;
   min-height: 1313px;
+}
+
+@supports (gap: 1px) {
+  .block {
+    background-image: url(/images/b-7-bg.webp);
+  }
 }
 
 .block::before {
@@ -353,7 +359,7 @@
     pointer-events: none;
   }
 
-  .container_rus .contentB::before{
+  .container_rus .contentB::before {
     top: -30px;
   }
 
@@ -448,7 +454,7 @@
     top: -40px;
   }
 
-  
+
 
 
 }

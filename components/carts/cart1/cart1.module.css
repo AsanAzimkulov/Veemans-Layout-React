@@ -9,6 +9,12 @@
   position: relative;
 }
 
+@supports (gap: 1px) {
+  .container {
+    background: center no-repeat url("/icons/cart1.webp");
+    background-size: contain;
+  }
+}
 
 
 
@@ -119,6 +125,13 @@
     margin-top: 30px;
     display: grid;
     position: relative;
+  }
+
+  @supports (gap: 1px) {
+    .container {
+      background: center no-repeat url("/icons/cart1-mobile.webp");
+      background-size: contain;
+    }
   }
 
   .icon {

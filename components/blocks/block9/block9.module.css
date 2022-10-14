@@ -61,6 +61,13 @@
   grid-template-columns: 300px 1fr auto;
 }
 
+@supports (gap: 1px) {
+  .block {
+    background-image: url(/icons/Subtract.webp);
+  }
+}
+
+
 .image svg {
   transform: translateX(70px);
 }

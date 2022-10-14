@@ -30,6 +30,12 @@
   position: relative;
 }
 
+@supports (gap: 1px) {
+  .main {
+    background-image: url('/images/block-8-bgg.webp');
+  }
+}
+
 .main::before {
   position: absolute;
   content: '';
@@ -392,6 +398,7 @@
     font-size: 20px !important;
     line-height: 140% !important;
   }
+
   .container_rus .main h3 {
     font-family: 'Ruberoid';
   }
