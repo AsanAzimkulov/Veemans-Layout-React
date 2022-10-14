@@ -56,8 +56,13 @@ const Block1: FunctionComponent = () => {
                 </a>
               </div>
             </div>
-            <img src="/icons/title.png" className={styles.topLogo} alt="" />
-            <img src="/icons/title-m.png" className={styles.topLogo + ' ' + styles.topLogo_mobile} alt="" />
+            <picture>
+              <source media="(max-width: 991.5px)" srcSet="/icons/title-m.webp" type="image/webp" />
+              <source srcSet="/icons/title.webp" type="image/webp" />
+              <source media="(min-width: 991.5px)" srcSet="/icons/title.png" type="image/png" />
+              <img src="/icons/title-m.png" className={styles.topLogo} alt="" />
+            </picture>
+            {/* <img src="/icons/title-m.png" className={styles.topLogo + ' ' + styles.topLogo_mobile} alt="" /> */}
             <div className={styles.first__title1 + ' ' + styles.first__title1_mobile + classNames({ className: styles["first__title1_mobile_rus"], condition: language === 'RUS' })}>
 
               Veemans is a web3.0 APP

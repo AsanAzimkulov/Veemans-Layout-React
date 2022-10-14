@@ -12,7 +12,7 @@ const Block5: FunctionComponent<Props> = ({ }) => {
   const { language } = useContext(AppContext)
   return (
     <div className={styles["container"] + ' contentWrapper'}>
-      <div className={styles.anchor}  id="nft-veeman"></div>
+      <div className={styles.anchor} id="nft-veeman"></div>
       <Title1>
         {
           language === 'RUS'
@@ -25,7 +25,10 @@ const Block5: FunctionComponent<Props> = ({ }) => {
         {
           [1, 2, 3, 4, 5, 6].map(index => (
             <li key={index} className={styles.listItem}>
-              <img src={`/images/b5-${index}${index}.png`} className={styles.item} />
+              <picture>
+                <source srcSet={`/images/b5-${index}${index}.webp`} type="image/webp" />
+                <img src={`/images/b5-${index}${index}.png`} className={styles.item} />
+              </picture>
             </li>
           ))
         }

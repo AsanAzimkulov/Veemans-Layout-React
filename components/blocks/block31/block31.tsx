@@ -13,7 +13,10 @@ const Block31: FunctionComponent = () => {
     <div className={styles["container"] + classNames({ className: styles['container_rus'], condition: language === 'RUS' })}>
       <div className={styles["columns1"]}>
         <div style={{ 'textAlign': 'center' }} className={styles.columns1__picture_desctop}>
-          <img src="/images/block31_img1.png" className={styles.phonne} />
+          <picture>
+            <source srcSet="/images/block31_img1.webp" type="image/webp" />
+            <img src="/images/block31_img1.png" className={styles.phonne} />
+          </picture>
         </div>
         <div className={styles["info"]}>
           <div>
@@ -26,7 +29,10 @@ const Block31: FunctionComponent = () => {
             }
             </Title1>
             <div style={{ 'textAlign': 'center' }} className={styles.columns1__picture_mobile}>
-              <img src="/images/block31_img1.png" className={styles.phonne} />
+              <picture>
+                <source srcSet="/images/block31_img1.webp" type="image/webp" />
+                <img src="/images/block31_img1.png" className={styles.phonne} />
+              </picture>
             </div>
             <p className={styles["info__paragraph"]}>
               {
@@ -47,7 +53,7 @@ const Block31: FunctionComponent = () => {
               }
             </p>
             <div className={styles["info__buttons"]}>
-              <Button1 variant="1" wide={language === 'RUS'}  src={'https://discord.com/invite/Veemans'} >{
+              <Button1 variant="1" wide={language === 'RUS'} src={'https://discord.com/invite/Veemans'} >{
                 language === 'RUS'
                   ?
                   'Присоединиться'
@@ -139,7 +145,10 @@ const Block31: FunctionComponent = () => {
           </Cart2>
         </div>
         <div style={{ 'textAlign': 'center' }} className={styles.orderPrefer}>
-          <img src="/images/block31_img4.png" style={{ 'width': '500px', 'marginTop': '50px' }} />
+          <picture>
+            <source srcSet="/images/block31_img4.webp" type="image/webp" />
+            <img src="/images/block31_img4.png" style={{ 'width': '500px', 'marginTop': '50px' }} />
+          </picture>
         </div>
       </div>
     </div>

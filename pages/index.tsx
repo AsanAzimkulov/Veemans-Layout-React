@@ -20,10 +20,11 @@ import Button1 from "../components/ui/button1/button1";
 import Header from "../components/ui/header/header";
 import Border from '../components/ui/border/border';
 import styles from "../styles/Home.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LanguageToggle from "../components/ui/languageToggle/languageToggle";
 import AppContext from "../contexts/AppContext";
 import 'intersection-observer';
+
 
 const Home: NextPage = () => {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
@@ -34,10 +35,13 @@ const Home: NextPage = () => {
 
   const [language, setLanguage] = useState('ENG');
 
+
+
+
   return (
     <AppContext.Provider value={{
       language,
-      setLanguage: setLanguage as any
+      setLanguage: setLanguage as any,
     }}>
       <div className={styles.page}>
         <Head>

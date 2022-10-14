@@ -18,7 +18,9 @@ function check_webp_feature(feature, callback) {
 }
 
 check_webp_feature('lossless', (a, res) => {
-  console.log(res);
+  if (res) {
+    window.isWebpSupported = true;
+  }
 })
 
 

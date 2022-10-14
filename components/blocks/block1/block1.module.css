@@ -24,9 +24,7 @@
   transform: rotate(-180deg);
 }
 
-.topLogo_mobile {
-  display: none;
-}
+
 
 .first__title1_mobile {
   display: none;
@@ -278,6 +276,7 @@
 .container_rus .first__text .br {
   display: none;
 }
+
 @media(max-width: 500px) {
   .container_rus .first__text .br {
     /* transform: scale(0.95) translateY(-10px); */
@@ -289,7 +288,7 @@
     padding-left: 9px;
   }
 
-  .first__title1_mobile{
+  .first__title1_mobile {
     padding-right: 9px;
     padding-left: 9px;
   }
@@ -334,7 +333,7 @@
     display: none;
   }
 
-  .topLogo_mobile {
+  .topLogo {
     display: block;
     margin-bottom: 5px;
   }
