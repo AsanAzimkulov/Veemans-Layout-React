@@ -336,6 +336,7 @@
   .topLogo {
     display: block;
     margin-bottom: 5px;
+    margin-left: -4px;
   }
 
   .firstWrapper {
