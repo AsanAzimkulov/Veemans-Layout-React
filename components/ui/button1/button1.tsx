@@ -22,7 +22,7 @@ const Button1: FunctionComponent<Props> = ({ children, variant, wide = false, sr
   const onLeave = () => {
     setIsHover(false);
   }
-  const defaultSrc = `./public/whitePaper/Veemans[${language === 'RUS'
+  const defaultSrc = `./whitePaper/Veemans[${language === 'RUS'
     ?
     'rus'
     :
