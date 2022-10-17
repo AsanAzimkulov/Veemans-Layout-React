@@ -184,7 +184,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                       ?
                       'Вы мало перемещаетесь на транспорте? Нет проблем, просто купите NFT Veeman, сдайте его в аренду и получайте доход.'
                       :
-                      'You don&rsquo;t have your own car or you don&rsquo;t travel much? No problem, just buy NFT Veeman, rent it out and earn income.'
+                      'You don\'t have your own car or you don\' travel much? No problem, just buy NFT Veeman, rent it out and earn income.'
                   }</p>
                 </li>
                 <li className={styles.listItem}>
@@ -195,7 +195,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                       :
                       'PvP - Competitions'
                   }</h3>
-                  <p className={styles.listItemDesc}>          {
+                  <p className={styles.listItemDesc}>         {
                     language === 'RUS'
                       ?
                       'Участвуйте в турнирных гонках и получайте призы и бонусы.'
