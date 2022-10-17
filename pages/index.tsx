@@ -85,11 +85,12 @@ const Home: NextPage = () => {
 
           </div>
 
-          {/*Partners*/}
-          <div className={styles.partnersDesctop}><Block11></Block11></div>
+          {/* Partners */}
+          {/*<div className={styles.partnersDesctop}><Block11></Block11></div>*/}
 
           {/*Project Partners*/}
-          <BlockTeam title={
+
+          {/*<BlockTeam title={
             language === 'RUS' ?
               'Партнёры проекта'
               :
@@ -101,7 +102,7 @@ const Home: NextPage = () => {
                 { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
               ]}></BlockTeam>
 
-          <div className={styles.mtSpace}></div>
+            <div className={styles.mtSpace}></div> */}
 
           {/*Team*/}
 
@@ -144,7 +145,7 @@ const Home: NextPage = () => {
         </main>
 
       </div>
-    </AppContext.Provider>
+    </AppContext.Provider >
   );
 };
 

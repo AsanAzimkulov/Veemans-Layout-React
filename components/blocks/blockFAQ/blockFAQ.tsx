@@ -38,7 +38,7 @@ class BlockFAQItem extends React.Component<ItemProps, BlockFAQItemState> {
   render() {
     return (
       <div className={styles["faqItem"] + ' ' + (this.props.isVisible ? styles.visible : '')}>
-        <button onClick={() => this.props.onToggle(this.props.item.title)} className={styles["toggleButton"] + " " + styles.toggleButtonWrapper}>
+        <button onClick={() => /*this.props.onToggle(this.props.item.title)*/{}} className={styles["toggleButton"] + " " + styles.toggleButtonWrapper}>
           {/* <img className={styles["toggleButton"]} src="/images/plus.svg" /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ class BlockFAQItem extends React.Component<ItemProps, BlockFAQItemState> {
 }
 
 const BlockFAQ: FunctionComponent<Props> = (props) => {
-  const {language} = useContext(AppContext);
+  const { language } = useContext(AppContext);
   const [activeFaq, setActiveFaq] = useState<string>('');
   const onChangeActiveFaq = (title: string) => {
     if (title === activeFaq) {
@@ -129,14 +129,14 @@ const BlockFAQ: FunctionComponent<Props> = (props) => {
     }
   }
   return (
-    <div className={styles["container"] + " contentWrapper" + classNames({className: styles['container_rus'], condition: language === 'RUS'})}>
+    <div className={styles["container"] + " contentWrapper" + classNames({ className: styles['container_rus'], condition: language === 'RUS' })}>
       <Title1>{
         language === 'RUS'
-        ?
-        'Часто задаваемые вопросы'
-        :
-        'Frequently asked questions'
-        }</Title1>
+          ?
+          'Часто задаваемые вопросы'
+          :
+          'Frequently asked questions'
+      }</Title1>
       <div className={styles["faqWrapper"]}>{
         props.items.map((item, index) => <BlockFAQItem key={'faq_' + index} item={item} isVisible={item.title === activeFaq} onToggle={onChangeActiveFaq} />)
       }</div>
