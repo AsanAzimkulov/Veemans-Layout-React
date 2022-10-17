@@ -112,7 +112,7 @@ const Home: NextPage = () => {
               :
               "Team"
           } members={[
-            { 'title': 'Jane Cooper', 'email': 'debra.holt@example.com' },
+            { 'title': 'Anatoliy Betin', 'email': 'Co founder / Product' },
             { 'title': 'Leslie Alexander', 'email': 'bill.sanders@example.com' },
             { 'title': 'Dianne Russell', 'email': 'sara.cruz@example.com' },
             { 'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com' },

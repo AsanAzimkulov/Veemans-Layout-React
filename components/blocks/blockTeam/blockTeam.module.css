@@ -19,12 +19,54 @@
   display: inline-block;
   width: 272px;
   height: 283px;
-  background: url(/images/teamFrame.png) no-repeat;
-  background-size: contain;
   text-align: center;
   align-items: center;
   padding-top: 155px;
   margin: 0px 10px;
+}
+
+.teamItem:nth-child(1) {
+  background: url(/images/teamFrame-1.png) no-repeat;
+  background-size: 100%;
+}
+
+
+.teamItem:nth-child(2) {
+  background: url(/images/teamFrame-2.png) no-repeat;
+  background-size: 100%;
+}
+
+.teamItem:nth-child(3) {
+  background: url(/images/teamFrame-3.png) no-repeat;
+  background-size: 100%;
+}
+
+.teamItem:nth-child(4) {
+  background: url(/images/teamFrame-4.png) no-repeat;
+  background-size: 100%;
+}
+
+@supports (gap: 1px) {
+  .teamItem:nth-child(1) {
+    background: url(/images/teamFrame-1.webp) no-repeat;
+    background-size: 100%;
+  }
+
+
+  .teamItem:nth-child(2) {
+    background: url(/images/teamFrame-2.webp) no-repeat;
+    background-size: 100%;
+  }
+
+  .teamItem:nth-child(3) {
+    background: url(/images/teamFrame-3.webp) no-repeat;
+    background-size: 100%;
+  }
+
+  .teamItem:nth-child(4) {
+    background: url(/images/teamFrame-4.webp) no-repeat;
+    background-size: 100%;
+  }
 }
 
 .teamItem .socialsList {
@@ -154,9 +196,10 @@
 
 
 @media(max-width: 991.5px) {
-  .container{
+  .container {
     margin-top: 20px !important;
   }
+
   .teamLine {
     margin-top: 35px;
     grid-column-gap: 14px;
@@ -243,11 +286,11 @@
     margin-bottom: 450px;
   }
 
-  .teamLine:first-of-type{
+  .teamLine:first-of-type {
     margin-top: 150px;
   }
 
-  .teamLine:first-of-type{
+  .teamLine:first-of-type {
     margin-bottom: 500px;
   }
 
