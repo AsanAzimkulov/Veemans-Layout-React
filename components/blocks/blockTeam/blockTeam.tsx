@@ -25,7 +25,7 @@ const BlockTeamItem: FunctionComponent<ItemProps> = (props) => {
       <div className={styles["title"]}>{props.member.title}</div>
       <div className={styles["email"]}>{props.member.email}</div>
       <div className={styles.socials}>
-        <ul className={styles.socialsList}>
+        {/*<ul className={styles.socialsList}>
           <li className={styles.socialsItem}>
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 28 28" fill="none">
@@ -88,7 +88,7 @@ const BlockTeamItem: FunctionComponent<ItemProps> = (props) => {
                 </defs>
               </svg>              </a>
           </li>
-        </ul>
+  </ul> */}
       </div>
     </div>
   );

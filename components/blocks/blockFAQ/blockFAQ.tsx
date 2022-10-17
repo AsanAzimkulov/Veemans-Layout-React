@@ -38,7 +38,7 @@ class BlockFAQItem extends React.Component<ItemProps, BlockFAQItemState> {
   render() {
     return (
       <div className={styles["faqItem"] + ' ' + (this.props.isVisible ? styles.visible : '')}>
-        <button onClick={() => /*this.props.onToggle(this.props.item.title)*/{}} className={styles["toggleButton"] + " " + styles.toggleButtonWrapper}>
+        <button onClick={() => /*this.props.onToggle(this.props.item.title)*/ { }} className={styles["toggleButton"] + " " + styles.toggleButtonWrapper}>
           {/* <img className={styles["toggleButton"]} src="/images/plus.svg" /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ class BlockFAQItem extends React.Component<ItemProps, BlockFAQItemState> {
             </defs>
           </svg>
         </button>
-        <div className={styles["title"]} onClick={() => this.props.onToggle(this.props.item.title)}>{this.props.item.title}</div>
+        <div className={styles["title"]} onClick={() => /*this.props.onToggle(this.props.item.title)*/ { }}>{this.props.item.title}</div>
         <div className={styles["desc"]}>{this.props.item.desc}</div>
       </div>
     );
