@@ -30,7 +30,7 @@ const Button1: FunctionComponent<Props> = ({ children, variant, wide = false, sr
     }].pdf`;
 
   return (
-    <a href={src || defaultSrc} target="_blank" rel="noreferrer" >
+    <a href={src || defaultSrc} target="_blank" rel="noreferrer" onClick={(e) => e.preventDefault()}>
       <div className={styles.container + classNames({ className: styles.container_hover, condition: isHover }) + classNames({ className: styles.container_wide, condition: wide })} onMouseEnter={onHover} onMouseLeave={onLeave}>
         <svg xmlns="http://www.w3.org/2000/svg" width={265} height={70} viewBox="0 0 265 70" fill="none" className={styles.bgsvg}>
           <path d="M1 51.1548L20 69.5203H1V51.1548Z" fill="url(#paint0_linear_1070_549)" fillOpacity="0.3" />
