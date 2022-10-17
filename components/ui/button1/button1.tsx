@@ -11,7 +11,7 @@ interface Props {
   src?: string
 }
 
-const Button1: FunctionComponent<Props> = ({ children, variant, wide = false, src = '#' }) => {
+const Button1: FunctionComponent<Props> = ({ children, variant, wide = false, src = '../.././../public/whitePaper/Veemans[ru].pdf' }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   const onHover = () => {
     setIsHover(true);
