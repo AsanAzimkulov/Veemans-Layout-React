@@ -113,10 +113,14 @@ const Home: NextPage = () => {
               "Team"
           } members={[
             { 'title': 'Anatoliy Betin', 'email': 'Co founder / Product' },
-            { 'title': 'Leslie Alexander', 'email': 'bill.sanders@example.com' },
-            { 'title': 'Dianne Russell', 'email': 'sara.cruz@example.com' },
-            { 'title': 'Ralph Edwards', 'email': 'michelle.rivera@example.com' },
-            { 'title': 'Darrell Steward', 'email': 'alma.lawson@example.com' }
+            { 'title': 'Timofey Grigorenko', 'email': 'Co founder' },
+            { 'title': 'Lev Gayun', 'email': 'CMO' },
+            { 'title': 'Dmitriy Zyuskun', 'email': 'Project Manager' },
+            { 'title': 'Nikita Kuznecov', 'email': 'CTO' },
+            { 'title': 'Nikita Trotila', 'email': 'Head 3D' },
+            { 'title': 'Kirill Frolov', 'email': 'Head of Design' },
+            { 'title': 'Timur Valiev', 'email': 'Community manager' },
+            { 'title': 'Slava Voroncov', 'email': '3d Unity' },
           ]}></BlockTeam>
 
 
