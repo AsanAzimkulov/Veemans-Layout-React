@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { FunctionComponent, useContext, useState } from "react";
+import { FunctionComponent, useContext, useState, useEffect } from "react";
 import AppContext from "../../../contexts/AppContext";
 import OutsideAlerter from "../../customs/OutsideAlerter";
 import Link from "next/link";
 import styles from "./burger-menu.module.css";
+import { useWindowSize } from '../../customs/useWindowDimensions';
 
 type PropsType = {
   cb?: (flag: boolean) => void
@@ -11,6 +12,16 @@ type PropsType = {
 
 
 const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
+
+
+  const windowSize = useWindowSize();
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (windowSize.width !== undefined) {
+      setIsMobile(windowSize.width <= 991);
+    }
+  }, [windowSize])
 
 
   const { language } = useContext(AppContext);
@@ -28,6 +39,13 @@ const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
     }
   }
 
+
+  const onClickLink = () => {
+    if (isMobile) {
+      setIsOpened(false);
+    }
+  }
+
   return (
     <OutsideAlerter cb={onCloseMenu} className={`${styles.containerBorder} ${styles.polygon} ${isOpened ? styles.containerBorder_opened : ''}`}>
       <div className={`${styles.container} ${isOpened ? styles.container_opened : ''} ${styles.polygon}`}>
@@ -36,11 +54,11 @@ const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
         </div>
         <div className={styles.menuArea}>
           <img src="/icons/crosshair-blue.svg" alt="Close menu" className={styles.close} onClick={onCloseMenu} />
-          <a href="#about" className={styles.menuLink}>{(language === 'RUS') ? 'О компании' : 'About'}</a>
-          <a href="#nft-veeman" className={styles.menuLink}>{(language === 'RUS') ? 'NFT Veeman' : 'NFT Veeman'}</a>
-          <a href="#ecosystem" className={styles.menuLink}>{(language === 'RUS') ? 'Экосистема' : 'Ecosystem'}</a>
-          <a href="#pvp-competition" className={styles.menuLink}>{(language === 'RUS') ? 'PVP соревнования' : 'PVP competition'}</a>
-          <a href="#road-map" className={styles.menuLink}>{(language === 'RUS') ? 'Дорожная карта проекта' : 'Road Map'}</a>
+          <a onClick={onClickLink} href="#about" className={styles.menuLink}>{(language === 'RUS') ? 'О компании' : 'About'}</a>
+          <a onClick={onClickLink} href="#nft-veeman" className={styles.menuLink}>{(language === 'RUS') ? 'NFT Veeman' : 'NFT Veeman'}</a>
+          <a onClick={onClickLink} href="#ecosystem" className={styles.menuLink}>{(language === 'RUS') ? 'Экосистема' : 'Ecosystem'}</a>
+          <a onClick={onClickLink} href="#pvp-competition" className={styles.menuLink}>{(language === 'RUS') ? 'PVP соревнования' : 'PVP competition'}</a>
+          <a onClick={onClickLink} href="#road-map" className={styles.menuLink}>{(language === 'RUS') ? 'Дорожная карта проекта' : 'Road Map'}</a>
         </div>
         <div className={styles["first__apps-block"]}>
           <a href="">
@@ -115,7 +133,7 @@ const BurgerMenu: FunctionComponent<PropsType> = ({ cb }) => {
                 </svg>              </a>
             </li>
             <li className={styles.socialsItem}>
-              <a href="https://discord.com/invite/Veemans"  target={'_blank'} rel="noreferrer">
+              <a href="https://discord.com/invite/Veemans" target={'_blank'} rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                   <circle cx="19.215" cy="18.8896" r="18.5344" fill="#6F92ED" fillOpacity="0.1" stroke="url(#paint0_linear_1098_2768)" strokeWidth="0.5" />
                   <path d="M25.8235 13.415C24.6604 12.8813 23.4131 12.4881 22.109 12.2629C22.0852 12.2586 22.0615 12.2694 22.0493 12.2911C21.8889 12.5764 21.7112 12.9487 21.5868 13.2412C20.1841 13.0312 18.7887 13.0312 17.4148 13.2412C17.2903 12.9421 17.1062 12.5764 16.945 12.2911C16.9328 12.2701 16.9091 12.2593 16.8853 12.2629C15.582 12.4874 14.3347 12.8806 13.1708 13.415C13.1608 13.4193 13.1521 13.4266 13.1464 13.436C10.7806 16.9705 10.1325 20.4181 10.4504 23.823C10.4519 23.8396 10.4612 23.8555 10.4742 23.8657C12.0351 25.012 13.547 25.7079 15.031 26.1691C15.0547 26.1764 15.0799 26.1677 15.095 26.1481C15.446 25.6688 15.7589 25.1633 16.0272 24.6318C16.043 24.6007 16.0279 24.5637 15.9956 24.5514C15.4992 24.3631 15.0267 24.1336 14.572 23.8729C14.5361 23.8519 14.5332 23.8005 14.5663 23.7759C14.662 23.7042 14.7576 23.6296 14.849 23.5543C14.8655 23.5405 14.8885 23.5376 14.908 23.5463C17.8945 24.9099 21.1278 24.9099 24.0791 23.5463C24.0986 23.5369 24.1216 23.5398 24.1389 23.5536C24.2302 23.6289 24.3259 23.7042 24.4223 23.7759C24.4554 23.8005 24.4532 23.8519 24.4172 23.8729C23.9626 24.1387 23.49 24.3631 22.993 24.5507C22.9606 24.563 22.9462 24.6007 22.9621 24.6318C23.2361 25.1626 23.549 25.668 23.8936 26.1474C23.908 26.1677 23.9338 26.1764 23.9576 26.1691C25.4487 25.7079 26.9607 25.012 28.5216 23.8657C28.5353 23.8555 28.5439 23.8403 28.5453 23.8237C28.9258 19.8873 27.908 16.4679 25.8472 13.4367C25.8422 13.4266 25.8336 13.4193 25.8235 13.415ZM16.4732 21.7497C15.574 21.7497 14.8332 20.9243 14.8332 19.9105C14.8332 18.8967 15.5597 18.0712 16.4732 18.0712C17.3939 18.0712 18.1276 18.9039 18.1132 19.9105C18.1132 20.9243 17.3867 21.7497 16.4732 21.7497ZM22.537 21.7497C21.6378 21.7497 20.8969 20.9243 20.8969 19.9105C20.8969 18.8967 21.6234 18.0712 22.537 18.0712C23.4577 18.0712 24.1914 18.9039 24.177 19.9105C24.177 20.9243 23.4577 21.7497 22.537 21.7497Z" fill="white" />

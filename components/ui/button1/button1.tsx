@@ -24,7 +24,7 @@ const Button1: FunctionComponent<Props> = ({ children, variant, wide = false, sr
   }
   const defaultSrc = `./whitePaper/VMN-Paper[${language === 'RUS'
     ?
-    'rus'
+    'ru'
     :
     'eng'
     }].pdf`;
