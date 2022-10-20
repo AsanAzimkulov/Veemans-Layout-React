@@ -24,6 +24,7 @@ import { useEffect, useState } from "react";
 import LanguageToggle from "../components/ui/languageToggle/languageToggle";
 import AppContext from "../contexts/AppContext";
 import 'intersection-observer';
+import AcceptPopup from "../components/blocks/AcceptPopup";
 
 
 const Home: NextPage = () => {
@@ -53,6 +54,30 @@ const Home: NextPage = () => {
         <Header cb={onToggleMenu}></Header>
 
         <main className={styles.main}>
+          <AcceptPopup text={
+            language === 'RUS'
+              ?
+              'Мы используем файлы cookie для наилучшего взаимодействия. Вы можете узнать больше о том, какие файлы cookie мы используем, в нашей'
+              :
+              'We are using cookies for the best possible experience. You can find out more about which cookies we are using in our'
+          }
+            linkText={
+              language === 'RUS'
+                ?
+                'политике использования файлов cookie.'
+                :
+                'cookie policy.'
+            }
+            onAccept={() => {}}
+            buttonText={
+              language === 'RUS'
+              ?
+              'Принять файлы cookie'
+              :
+              'Accept cookies'
+            }
+            href="#"
+          />
           <Border visibility={true} />
           <LanguageToggle></LanguageToggle>
           <Block1></Block1>
@@ -78,7 +103,7 @@ const Home: NextPage = () => {
             <Block8></Block8>
 
             {/*VMN Token Distribution*/}
-            <Block9></Block9>
+            {/* <Block9></Block9> */}
 
             {/*Roadmap*/}
             <Block10></Block10>
@@ -117,6 +142,9 @@ const Home: NextPage = () => {
             { 'title': 'Lev Gayun', 'email': 'CMO' },
             { 'title': 'Dmitriy Zyuskun', 'email': 'Project Manager' },
             { 'title': 'Nikita Kuznecov', 'email': 'CTO' },
+          ]}></BlockTeam>
+
+          <BlockTeam title={''} mini members={[
             { 'title': 'Nikita Trotila', 'email': 'Head 3D' },
             { 'title': 'Kirill Frolov', 'email': 'Head of Design' },
             { 'title': 'Timur Valiev', 'email': 'Community manager' },

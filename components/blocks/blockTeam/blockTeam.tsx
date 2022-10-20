@@ -16,7 +16,8 @@ interface ItemProps {
 
 interface Props {
   title: string,
-  members: Array<MemberType>
+  members: Array<MemberType>,
+  mini?: boolean
 }
 
 const BlockTeamItem: FunctionComponent<ItemProps> = (props) => {
@@ -96,7 +97,10 @@ const BlockTeamItem: FunctionComponent<ItemProps> = (props) => {
 
 const BlockTeam: FunctionComponent<Props> = (props) => {
   return (
-    <div className={styles["container"] + " contentWrapper"}>
+    <div className={styles["container"] + " contentWrapper" + classNames({
+      className: styles['container_mini'],
+      condition: props.mini || false
+    })}>
       <Title1>{props.title}</Title1>
       <div className={styles["teamLine"]}>{
         props.members.map((member, index) => <BlockTeamItem key={'faq_' + index} member={member} />)

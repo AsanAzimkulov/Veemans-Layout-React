@@ -109,7 +109,7 @@ const Block1: FunctionComponent = () => {
             </div>
           </div>
           <div className={styles["first__solana"]}>
-            <Image src="/icons/solana.svg" width="180" height="28" alt=""></Image>
+            <Image src="/icons/polygon.png" width="180" height="32" alt=""></Image>
           </div>
         </div>
       </div>
