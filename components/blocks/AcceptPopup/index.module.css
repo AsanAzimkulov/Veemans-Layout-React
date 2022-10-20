@@ -79,6 +79,8 @@
   pointer-events: none;
   transition: opacity ease-in-out .3s;
   position: relative;
+    width: 15px;
+  height: 15px;
 }
 
 .closeIcon:hover {
