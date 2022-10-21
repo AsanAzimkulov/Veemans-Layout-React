@@ -244,7 +244,7 @@ const Block10 = () => {
     {
       date: 'February',
       description: [
-        'TCreating free Veemans Academy for all community members Launching Beta version of the app',
+        'Creating free Veemans Academy for all community members Launching Beta version of the app',
         'Testing app for bugs and finalizing tech decisions',
         'Launching our own NFT Marketplace for buying and selling veeman vehicles and tuning',
         'Adding gameplay mechanics for turn-based PvP mini-battles'
