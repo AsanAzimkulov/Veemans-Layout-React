@@ -26,7 +26,7 @@ const Block5: FunctionComponent<Props> = ({ }) => {
           [1, 2, 3, 4, 5, 6].map(index => (
             <li key={index} className={styles.listItem}>
               <picture>
-                <source srcSet={`/images/b5-${index}${index}.webp`} type="image/webp" />
+                {/* <source srcSet={`/images/b5-${index}${index}.webp`} type="image/webp" /> */}
                 <img src={`/images/b5-${index}${index}.png`} className={styles.item} />
               </picture>
             </li>
