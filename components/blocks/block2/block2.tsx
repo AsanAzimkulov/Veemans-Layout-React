@@ -22,9 +22,9 @@ const Block2: FunctionComponent = () => {
         }</Title1>
         <div className={styles["columns1"]}>
           <div className={styles["video-block"]}>
-            <video autoPlay={true} muted loop>
-              <source src="/videos/1.mp4" type="video/mp4" />
-            </video>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m82B-FxnaA0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
           </div>
           <div className={styles["info"]}>
             <div>
@@ -34,7 +34,7 @@ const Block2: FunctionComponent = () => {
                     ?
                     'Это игра, в которой вы зарабатываете токены, передвигаясь на транспорте. Это просто.'
                     :
-                    'Its a game where you get tokens while you moving with a transport. It\'s simple.'
+                    'Veemans is a game where you get tokens for moving with a transport. It\'s simple.'
 
                 }
 
@@ -45,7 +45,7 @@ const Block2: FunctionComponent = () => {
                     ?
                     'Побеждайте других игроков в соревнованиях, улучшайте свой игровой автомобиль и захватывайте территории, чтобы получить больше токенов и наград.'
                     :
-                    ' Win other players in competitions, upgrade your car and capture territories to get more tokens and rewards.'
+                    ' Win in competitions versus other players, upgrade your car and capture territories to get more tokens and rewards.'
                 }              </p>
             </div>
           </div>
@@ -118,8 +118,8 @@ const Block2: FunctionComponent = () => {
                   :
                   <>
                     For every km you get VMS/VMN<br />
-                    tokens, which you can use both for <br />
-                    in-game purchases and for <br />
+                    tokens, which you can use for <br />
+                    in-game purchases or <br />
                     exchange for real money.
                   </>
               }
@@ -134,8 +134,8 @@ const Block2: FunctionComponent = () => {
                   :
                   <>
                     <strong>For every km you get VMS/VMN
-                      tokens,<br /> which you can use</strong> both for
-                    in-game <br /> purchases and for
+                      tokens,<br /> which you can use</strong> for
+                    in-game <br /> purchases or
                     exchange for real money.
                   </>
               }
@@ -158,8 +158,8 @@ const Block2: FunctionComponent = () => {
                   <>
                     Form alliances to capture <br />
                     territories and to get additional <br />
-                    rewards for passing through your <br />
-                    territories with other players.
+                    rewards when other players <br />
+                    passing through them.
                   </>
               }
             </p>
@@ -174,8 +174,7 @@ const Block2: FunctionComponent = () => {
                   <>
                     <strong>Form alliances to capture
                       territories</strong><br /> and to get additional
-                    rewards for passing <br /> through your
-                    territories with other players.
+                    rewards when other players <br /> are passing through them.
                   </>
               }
             </p>

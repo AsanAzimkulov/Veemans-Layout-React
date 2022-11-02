@@ -103,7 +103,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                         ?
                         'Объединения с другими пользователями для захвата территорий.'
                         :
-                        'Create your own alliances in your city, capture the streets of the territory and charge other players for travel.'
+                        'Create your own alliances in your city, capture the territory  and charge other players for traveling through.'
                     }</p>
                 </li>
                 <li className={styles.listItem}>
@@ -152,7 +152,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                       ?
                       'Обновите свой veeman в вашем личном гараже, чтобы получать больше токенов от поездок.'
                       :
-                      'Upgrade your veeman in your personal garage to raise more tokens from travelling.'
+                      'Upgrade your veeman in your personal garage to raise more tokens from traveling.'
                   }</p>
                 </li>
                 <li className={styles.listItem}>
@@ -184,7 +184,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                       ?
                       'Вы мало перемещаетесь на транспорте? Нет проблем, просто купите NFT Veeman, сдайте его в аренду и получайте доход.'
                       :
-                      'You don\'t have your own car or you don\' travel much? No problem, just buy NFT Veeman, rent it out and earn income.'
+                      'You do not have your own car or you do not travel much? No problem, just buy NFT Veeman, rent it out and earn income.'
                   }</p>
                 </li>
                 <li className={styles.listItem}>
@@ -200,7 +200,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                       ?
                       'Участвуйте в турнирных гонках и получайте призы и бонусы.'
                       :
-                      'Take part in tourmament races and get prizes and bonuses.'
+                      'Take part in tournament races and get prizes and bonuses.'
                   }</p>
                 </li>
                 <li className={styles.listItem}>
@@ -216,7 +216,7 @@ const Block7: FunctionComponent<Props> = ({ }) => {
                       ?
                       'Торговая площадка и кошелек, встроенные в приложение, позволяют вам покупать и продавать NFT.'
                       :
-                      'The marketplace and wallet built into the application allow you to buy and sell NFTs.'
+                      'The marketplace and wallet built into the application allows you to buy and sell NFTs.'
                   }</p>
                 </li>
               </ol>

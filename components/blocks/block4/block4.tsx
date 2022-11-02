@@ -44,7 +44,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
           ?
           'Существует 5 различных типов автомобилей с уникальными характеристиками'
           :
-          'There is 5 different types of car with uniq characteristics '
+          'There are 5 different types of cars with unique characteristics '
         }
           </div>
         </div>
@@ -77,7 +77,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
           ?
           'Со скоростью от 10 до 60 км/ ч'
           :
-          'With speed from 10 to 60 km.'
+          'With speed from 10 to 60 km/h.'
         }
           </div>
         </div>
@@ -101,7 +101,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
           ?
           'Получайте вознаграждение за каждый километр поездки'
           :
-          'Get a reward by driving'
+          'Get rewards for driving'
         }</h4>
           </div>
           <div className={styles["blockDesc"]}>
@@ -110,7 +110,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
           ?
           'Зарабатывайте токены и находите таинственные коробки во время поездки'
           :
-          'Earn tokens and mysterious boxes during the trip'
+          'Earn tokens and find mysterious boxes during the trip'
         }
 
           </div>
@@ -140,7 +140,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
           ?
           'Покупайте детали, улучшайте свой автомобиль, производительность и характеристики чтобы получить больше наград и токенов.'
           :
-          'Buy the details, upgrade your car, improve performance and characteristics by leveling up to get more rewards.'
+          'Buy details, upgrade your car, improve performance and characteristics by leveling up to get more rewards.'
         }
 
           </div>
@@ -174,7 +174,7 @@ const Block4: FunctionComponent<Props> = ({ }) => {
           ?
           'и взимать плату за проезд по ним другими пользователями'
           :
-          'Make other players pay for driving through your streets'
+          'Make other players pay for driving through your territory.'
         }
 
           </div>

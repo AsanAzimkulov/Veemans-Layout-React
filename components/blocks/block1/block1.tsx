@@ -87,7 +87,7 @@ const Block1: FunctionComponent = () => {
                     </>
                     :
                     <>
-                      Make your daily travel profitable
+                      Make your daily travels profitable
                       < br />
                       with NFT game Veemans
                     </>

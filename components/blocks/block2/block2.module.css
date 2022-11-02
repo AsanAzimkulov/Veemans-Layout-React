@@ -103,26 +103,33 @@
   justify-self: end;
 }
 
+.container iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .video-block {
   /* height: 464px; */
   /* width: 826px; */
   /* aspect-ratio: 1.7778/1; */
   /* border: 1px solid var(--color-aqua); */
   box-sizing: content-box;
-  background: url("/icons/video-border1.svg") center no-repeat;
+  /* background: url("/icons/video-border1.svg") center no-repeat; */
   background-size: contain;
   position: relative;
   max-width: 700px;
 
   height: 391px;
   width: 701px;
+  display: flex;
+  align-items: center;
 }
 
 .video-block video {
   height: 392.5px;
   z-index: -1;
   width: 698px;
-  clip-path: polygon(2px 7.5%, 2px calc(92.5% - 2px), 4.5% calc(100% - 2px), calc(95.5% + 1px) calc(100% - 2px), calc(100% - 2px) calc(92.5% - 1px), calc(100% - 2px) 7.5%, calc(95.5% + 2px) 2px, 4.5% 1px);
+  /* clip-path: polygon(2px 7.5%, 2px calc(92.5% - 2px), 4.5% calc(100% - 2px), calc(95.5% + 1px) calc(100% - 2px), calc(100% - 2px) calc(92.5% - 1px), calc(100% - 2px) 7.5%, calc(95.5% + 2px) 2px, 4.5% 1px); */
   z-index: -1;
   -o-object-fit: cover;
   object-fit: cover;
@@ -270,9 +277,6 @@
 
 }
 
-.video-block video {
-  display: none;
-}
 
 
 @media(max-width: 1600px) and (min-width: 992px) {
@@ -362,19 +366,20 @@
   }
 }
 
-@media(max-width: 420px){
-  .video-block{
+@media(max-width: 420px) {
+  .video-block {
     width: 320px
   }
 }
 
-@media(max-width: 350px){
-  .video-block{
+@media(max-width: 350px) {
+  .video-block {
     width: 290px
   }
 }
-@media(max-width: 370px){
-  .columns3{
+
+@media(max-width: 370px) {
+  .columns3 {
     transform: scale(0.9);
   }
 }

@@ -40,7 +40,7 @@ const Block31: FunctionComponent = () => {
                   ?
                   'Это новая концепция, дающая возможность заработка токенов за действия, которые пользователь совершает в реальном мире.'
                   :
-                  'A new concept that suggests the possibility of virtual earnings for the actions that the user performs in the real world.'
+                  'It is a new concept that suggests the possibility of virtual earnings for the actions a user performs in the real world.'
               }
             </p>
             <p className={styles["info__paragraph"]}>
@@ -49,7 +49,7 @@ const Block31: FunctionComponent = () => {
                   ?
                   'Для этого вам необходимо "привязать" свой аккаунт к мобильному устройству. Каждый пользователь зарабатывает за ежедневные передвижения на любом виде транспорта, развивающем скорость от 10 до 60 км/ч.'
                   :
-                  'To do this, you need to "link" your account with a mobile device. In a specific case, each user earns for daily movements on any type of transport, developing with a speed of 10 to 60 km/h'
+                  'To enroll, you need to link your account with a mobile device. Each user earns tokens for daily movements by any type of transport with a speed from 10 to 60 km/h.'
               }
             </p>
             <div className={styles["info__buttons"]}>
@@ -139,8 +139,7 @@ const Block31: FunctionComponent = () => {
                   </>
                   :
                   <>
-                    Find the Mystery box while driving and <br /> contains an
-                    improvement in the technical <br /> characteristics of the
+                    Find the Mystery box while driving and <br /> enhance  characteristics<br />  of the
                     machine.
                   </>
               }

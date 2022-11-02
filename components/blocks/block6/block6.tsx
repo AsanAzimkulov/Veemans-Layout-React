@@ -23,7 +23,7 @@ const Block6: FunctionComponent<Props> = ({ }) => {
             ?
             'На чем вы можете перемещаться чтобы зарабатывать'
             :
-            'The Motion Roller is looped'
+            'Transport you can use to get around'
         }</Title1>
       <div className={styles.items}>
         {
